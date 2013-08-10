@@ -1,0 +1,125 @@
+Sequence Number	Deposit	Latitude	Longitude	MILSREF	MRDSREC	Orange Number
+PL   1	Carrico Placer (Bockmier; Mother Lode; Gold Creek Mines)	46.9975	-116.8039	160570084	W015875	1
+PL   2	Milbert Prospect	46.9978	-116.7961	160570002	W015876	2
+PL   3	Prosperity Group (Lavigne & Maher Tungsten Prospect)	46.9936	-116.7919	160570001	D006569	3
+PL   4	Lost Wheelbarrow Mine (Fitsum Mining Co.)	46.9975	-116.7833	N/A	N/A	200
+PL   5	Midway Placer (Southern; Evergreen; White Fir)	46.9819	-116.8244	N/A	N/A	201
+PL   6	Milbert Placer	46.9786	-116.8008	160570040	W015878	4
+PL   7	Reservoir Creek Prospect	46.9772	-116.7919	N/A	N/A	202
+PL   8	Milbert Prospect (Carrico Iron; Hoteling Creek)	46.9775	-116.7847	160570064	W015877	5
+PL   9	Black Horse Prospect	46.9661	-116.7667	160570006	W015879	7
+PL  10	Cassidy Prospect	46.9583	-116.7636	160570013	W015886	13
+PL  11	Copper Ridge Prospect	46.9711	-116.75	160570007	W015880	8
+PL  12	Bishop Claim Prospect	46.9667	-116.7481	160570098	W015933	10
+PL  13	Boulder Creek Placer	46.9714	-116.7289	160570097	W015927	9
+PL  14	Daisy Mine	46.9661	-116.7217	160570009	W015882	12
+PL  15	Gold Bug Prospect (Pinnell Vein)	46.9636	-116.7425	160570008	W015881	11
+PL  16	Jerome Creek Placer	46.9619	-116.7317	160570096	W015929	6
+PL  17	Blackfoot Prospect	46.9519	-116.7189	160570010	W015883	16
+PL  18	Last Chance Prospect (Early Bird)	46.9511	-116.7322	160570012	W015885	15
+PL  19	Gold Hill Prospect (Pinnell Vein)	46.9572	-116.7464	160570011	W015884	14
+PL  20	Camas Creek Placer	46.9394	-116.7633	160570105	W015928	51
+PL  21	Brickner Mine	46.9492	-116.9047	160570070	W015874	26
+PL  22	Onaway Mine	46.9297	-116.8828	160570021	W015890	28
+PL  23	Potlatch Clay Deposit	46.9289	-116.9	160570060	W015954	27
+PL  24	Potlatch Corporation Pit	46.9083	-116.9167	160570088	N/A	29
+PL  25	Potlatch (South) Clay Occurrence	46.8919	-116.965	N/A	W015953	30
+PL  26	McKinney Prospect	46.8792	-116.7814	160570067	W015962	31
+PL  27	Yale Clay Occurrence	46.8561	-116.6914	160570106	W015947	52
+PL  28	Ten-Said	46.9861	-116.5853	N/A	N/A	189
+PL  29	Lodestone (Lode Stone; Peewee; Flat Nugget Claim)	46.9769	-116.5822	N/A	N/A	184
+PL  30	Poorman Placer	46.9694	-116.5836	160570099	W015975	17
+PL  31	Question Mark	46.9664	-116.5731	N/A	N/A	203
+PL  32	Northwest Gold Fields Co. Dredge (Doffner Group; Annie Marie; Lower North Fork Mine)	46.9819	-116.5608	160570014	W015887	18
+PL  33	Gold Prospect	46.9864	-116.5456	160570100	W015937	19
+PL  34	Freeburg Placer	46.9586	-116.5508	N/A	N/A	204
+PL  35	Mizpah Mine (Merger; Copper Mountain)	46.9964	-116.5011	160570019	W015888	20
+PL  36	Copper King Mine	46.9947	-116.4958	160570039	W015902	21
+PL  37	McKinley	46.9814	-116.4947	N/A	N/A	183
+PL  38	Copper Occurrence	46.9775	-116.4694	160570101	W015935	22
+PL  39	Feather Creek Prospect (Peacock; Olson)	46.9625	-116.4169	160570065	W015974	25
+PL  40	Emerald Creek Garnet Occurrence	46.9969	-116.375	160570102	W015889	23
+PL  41	Blister Rust Plot 21	46.9972	-116.3586	N/A	N/A	24
+PL  42	Sunshine Claim (Atlas; Violet)	46.9047	-116.5639	160570038	W015901	32
+PL  43	Lucky Jim Prospect (J. H. Nesbitt; Olsen)	46.9033	-116.5611	160570037	W015964	34
+PL  44	Morning Star Claims	46.8997	-116.5678	160570022	W015891	35
+PL  45	Lindquist Prospect (Munro Mill; Avon; Monroe Mill)	46.8964	-116.5661	160570036	W015963	33
+PL  46	Muscovite Mine	46.8897	-116.5783	160570028	M060826	36
+PL  47	Luella Mine	46.8781	-116.6022	160570023	W015892	38
+PL  48	McCornack Prospect	46.8717	-116.6003	160570035	W015899	41
+PL  49	Silver White Prospect (Maybe; Thatuna Mines Prospect)	46.8789	-116.5867	160570025	N/A	163
+PL  50	Last Chance Mine (Silver White; Maybe)	46.8786	-116.5808	160570026	W015894	39
+PL  51	Witherow Mine (Last Chance)	46.8789	-116.5733	160570089	N/A	164
+PL  52	Doerr Mine (Bentz Claim)	46.88	-116.5686	160570024	W015893	37
+PL  53	Gillis Lease	46.8786	-116.5644	N/A	N/A	162
+PL  54	Steel Smith Mica Mine (Olson Vennigerholz; Levi Anderson; Steelsmith; Olsen-Vennigerholz; Tonopah; Murphy Lease; McDonnell Lease)	46.8753	-116.5703	160570027	W015900	45
+PL  55	Campbell Mine (Thatuna Lease 7)	46.8756	-116.5786	160570029	W015895	40
+PL  56	Maxine No. 2 Mine	46.8744	-116.5828	160570031	W015896	43
+PL  57	Olson Mine (Scott Rogers Mine; Fitzgerald-Olson Prospect)	46.8731	-116.5789	160570033	W015897	44
+PL  58	Little Bear Prospect	46.87	-116.5842	N/A	N/A	170
+PL  59	Hungry Gut Mine (Avon; Avon Mica Co. Mine)	46.8669	-116.5903	160570034	W015898	42
+PL  60	Carlson Lease (Fitzgerald-Carlson Prospect)	46.8692	-116.58	160570030	N/A	171
+PL  61	Fitzgerald Property	46.8658	-116.5814	160570032	N/A	172
+PL  62	Vassar Clay Occurrence	46.8347	-116.6181	160570107	W015948	54
+PL  63	Stanford Clay Deposit	46.8278	-116.6431	160570048	W015908	53
+PL  64	Sherwin Garnet Placer	46.9183	-116.3397	160570103	W015961	46
+PL  66	Moose Creek Clay Mine	46.8697	-116.4319	160570104	W015973	48
+PL  67	Miclasil Mine and Mill	46.8478	-116.4311	160570087	N/A	49
+PL  68	Bovill Clay-Sand Mine (Kilbourne; Simplot; Balsa)	46.8425	-116.4272	160570005	W015913	50
+PL  69	Unnamed clay pit	46.825	-116.4728	N/A	N/A	158
+PL  70	Unnamed clay pit	46.8175	-116.4814	N/A	N/A	159
+PL  71	Helmer Clay Deposit	46.8175	-116.4681	160570051	W015912	56
+PL  72	Troy Division Mine	46.7867	-116.4647	160550094	N/A	169
+PL  73	Little Echo 1	46.785	-116.4461	160570066	N/A	76
+PL  74	Ables Placer	46.8	-116.3781	160350142	W015938	59
+PL  77	Silver King Property (Jennifer)	46.8072	-116.3364	160570052	W015952	64
+PL  78	Yellowjacket #1 (Yellow Jacket #1; Jennifer)	46.8081	-116.3297	N/A	N/A	186
+PL  86	Park Clay Occurrence 2	46.7469	-116.3814	160570115	W015956	92
+PL 102	Ayer Deposit 1	46.7953	-117.0311	160570043	N/A	65
+PL 104	Canfield Rogers Clay Deposit Mine (Rogers; Canfield-Rogers)	46.7553	-116.9803	160570004	W015920	67
+PL 105	Christianson Placer (Howard Creek Placer)	46.7969	-116.9283	N/A	N/A	205
+PL 106	White Cross Prospect	46.8	-116.9169	160570044	W015906	68
+PL 107	Moscow Queen	46.7997	-116.8972	N/A	N/A	194
+PL 108	Gnat Creek Placer (Washington; Spray; Emerson; Wigen; Hart)	46.7817	-116.9217	N/A	N/A	206
+PL 109	Saad Mine	46.8133	-116.8581	N/A	N/A	187
+PL 110	Paradise Ridge Silica Deposit (Paradise Mountain)	46.6822	-116.9686	160570068	W015919	77
+PL 111	Joel Clay Mine	46.72	-116.8836	160570054	W015921	79
+PL 112	Moscow Clay Pit	46.74	-116.8453	160570111	W015969	80
+PL 113	East Moscow Mountain Prospect	46.7222	-116.8286	160570069	N/A	69
+PL 114	Joel Quartz Occurrence	46.6906	-116.8642	160570110	W015966	78
+PL 115	McKeehan Clay Mine	46.7425	-116.7664	160570055	W015922	81
+PL 116	Carlson Clay Prospect (Watertrough; Flynn)	46.7344	-116.7572	160570056	W015923	82
+PL 117	Little Bear Creek Clay Prospect	46.7161	-116.7517	160570059	W015926	83
+PL 118	Clayton Mulalley	46.7822	-116.7281	160570090	N/A	70
+PL 119	Benson Clay Deposit (Troy Firebrick Co.)	46.7719	-116.7108	160570045	W015907	71
+PL 120	Johansen Clay Pit (Johnson Pit; Calen Ranch)	46.7714	-116.6986	160570046	N/A	173
+PL 121	Linderman (Lindman)	46.7683	-116.6964	160570047	N/A	174
+PL 122	O. K. Olson Prospect	46.7325	-116.6981	160570057	W015924	84
+PL 123	Troy Mining & Milling Co.	46.7261	-116.6975	N/A	N/A	193
+PL 124	Gemmill Prospect (Olson; Camp Canyon; Troy Gold and Copper)	46.7189	-116.6978	160570058	W015925	85
+PL 125	Olson Clay Deposit (Olson and Stanford Hi-Al Clay)	46.7861	-116.6444	160570003	W015909	72
+PL 126	Deary Prospect	46.7808	-116.6244	160570063	W015911	73
+PL 127	High Iron Olson Clay Deposit (Dry Ridge)	46.7631	-116.6244	160570092	W015970	86
+PL 128	Troy Sillimanite Co. Prospect (Olson)	46.7344	-116.6311	160570071	W015996	87
+PL 129	Copper Chief Mine	46.7289	-116.6386	160570061	W015997	88
+PL 130	Wild Rose Limestone	46.6703	-116.6117	160570112	W015965	89
+PL 131	Deary Clay Prospect	46.8067	-116.5686	160570108	W015999	55
+PL 132	Deary Clay Prospect (East Deary Clay Prospect)	46.7986	-116.5408	160570109	W015998	75
+PL 133	Deary Clay Deposit (Big Bear Ridge)	46.7706	-116.5656	160570050	W015910	74
+PL 134	Park Clay Occurrence 3	46.7342	-116.4731	160570113	W015967	90
+PL 135	Park Clay Occurrence 1	46.73	-116.4364	160570114	W015957	91
+PL 136	Pine Grove School Clay Deposit	46.5806	-116.7961	160570117	W015968	106
+PL 145	Mason Butte Titanium Placer	46.6556	-116.4014	160570116	W015993	98
+PL 146	Olson Prospect	46.6311	-116.4069	160570062	N/A	102
+PL 149	Dicks Creek Placer (Dick Creek Placer)	46.6433	-116.3419	160350060	W015992	99
+SP 378	Mountain Gulch Prospect	47.0295	-116.5185	160570118	W019405	171
+SP 384	Idaho Garnet Abrasive Placer (Garnet Group)	47.0128	-116.3292	160570020	W019490	182
+SP 385	Mary Lee Placer	47.0111	-116.5322	160570015	W019443	172
+SP 386	Dollie F. Wolfe	47.0078	-116.5633	160790189	N/A	185
+SP 387	Copper Occurrence	47.0072	-116.4786	160570121	W019532	178
+SP 388	Taylor Placer Claim (Gold Nugget Mining Co.)	47.0056	-116.5389	160570018	W019545	173
+SP 389	Black Dust Placer (Gold Nugget Mining Co.)	47.0044	-116.5419	160570016	W019530	174
+SP 391	Behrens Brothers Placer (Upper North Fork Mine)	47.0036	-116.5344	160570119	W019531	175
+SP 392	Enterprise Placer	47.0036	-116.5267	N/A	N/A	342
+SP 394	Hecla Prospect	47.0036	-116.5039	160570120	W019404	177
+SP 396	Hidden Treasure Placer (Gold Nugget Mining Co.)	47	-116.5431	160570017	W019543	176

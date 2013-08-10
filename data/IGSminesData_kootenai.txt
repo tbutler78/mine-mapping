@@ -1,0 +1,83 @@
+Sequence Number	Deposit	Latitude	Longitude	MILSREF	MRDSREC	Orange Number
+SP   5	Bayview Limestone Pit (Silver King Limestone)	47.9833	-116.5575	160550065	W019431	3
+SP  12	Echo Bay	47.9497	-116.5264	N/A	N/A	316
+SP  28	Sage Prospect	47.895	-116.5739	160550134	N/A	25
+SP  29	Chilco Prospect (Tricia Lynn; Serena Marie; Patricia D.)	47.8772	-116.7556	N/A	N/A	302
+SP  30	West Coeur d'Alene Mine	47.8758	-116.7503	N/A	N/A	407
+SP  31	Chilco Moly Deposit	47.8744	-116.6972	160550050	N/A	322
+SP  32	Lost Stand (Last Stand)	47.8736	-116.5039	160550136	N/A	27
+SP  33	Cedar Mountain (Cedar Mountain Lode Group)	47.8825	-116.6133	160550089	N/A	323
+SP  34	Tom Levin Creek Prospect	47.8681	-116.5069	160550124	W019524	26
+SP  35	Bradbury Prospect	47.8647	-116.6036	160550005	W019444	30
+SP  38	Two Brothers Prospect	47.8528	-116.6408	160550068	W019441	33
+SP  39	Lucky Bud Claim	47.8483	-116.5131	160550142	N/A	32
+SP  40	Connie Prospect (Dandy Mine)	47.855	-116.5564	160550006	W019445	31
+SP  42	Shamrock Prospect	47.8419	-116.6481	160550008	W019446	35
+SP  43	Inland Group (Tierney)	47.8325	-116.6264	N/A	N/A	327
+SP  44	Lower Property (Lucky Joe Mining Company; Silver Star Group)	47.8228	-116.6281	N/A	N/A	333
+SP  45	Commonwealth Mine (Nighthawk; Hayden Creek Mines)	47.8231	-116.6572	160550004	W019442	37
+SP  47	Hayden Lake (Coeur d'Alene Oil & Development Co.)	47.7975	-116.7722	N/A	N/A	313
+SP  48	Big Elk Group	47.7933	-116.3769	N/A	N/A	410
+SP  51	Great Western Copper Prospect (Jack Hill; Big Prong Mining & Milling Co.)	47.7797	-116.645	160550126	W019491	38
+SP  53	Burnt Cabin Prospect (Inland Premier Mine)	47.7719	-116.5781	160550010	W019447	41
+SP  54	Silver Strand	47.7517	-116.5233	160550141	N/A	42
+SP  55	Rainbow No. 2 Prospect	47.7525	-116.4161	160550011	W019448	46
+SP  56	Riverside	47.7369	-116.4122	160550012	W019449	47
+SP  57	Hamburg-American Prospect (Leiberg Creek)	47.7269	-116.3667	160550013	W019450	48
+SP  58	Twin Gulch	47.7178	-116.7242	N/A	N/A	335
+SP  60	Hand Spike Group (Little North Fork Mining Co.)	47.7056	-116.3869	160550020	W019455	50
+SP  61	Brower (Estella; Rosebud)	47.7044	-116.5289	160550016	N/A	43
+SP  63	Stanley Hill Clay Deposit	47.6967	-116.7467	160550015	W019452	55
+SP  64	High Cropping Group	47.6961	-116.4856	N/A	N/A	326
+SP  65	Homebuilder Property	47.6986	-116.5608	160550018	W019453	45
+SP  66	Coeur d'Alene Clay Co.	47.6914	-116.8678	N/A	N/A	312
+SP  67	Idaho Queen (Aetna)	47.6861	-116.3628	160550052	N/A	52
+SP  68	Stockton Clay Deposit	47.6853	-116.835	160550014	W019451	54
+SP  69	Fernan Hill Clay Deposit	47.6836	-116.7442	160550138	W019554	56
+SP  70	Horseshoe	47.6831	-116.4014	160550051	N/A	51
+SP  72	Blue Creek	47.6692	-116.6383	N/A	N/A	307
+SP  73	Coeur d'Alene - Robish Mountain Mining Co., Ltd.	47.6533	-116.4047	N/A	N/A	314
+SP  74	Kid Island Clay Prospect	47.6503	-116.8042	160550139	D006578	57
+SP  78	Varnum Prospect	47.6372	-116.5819	160550019	W019454	74
+SP  80	Blue Creek Clay Deposit	47.6322	-116.6808	160550140	N/A	59
+SP  82	Burns Group	47.6267	-116.5392	N/A	N/A	311
+SP  83	Kootenai King	47.6219	-116.5217	N/A	N/A	330
+SP  84	Idaho Diamond Sulphide Group	47.6208	-116.9225	160550023	W019456	58
+SP  85	Wolf Lodge Property	47.6203	-116.6381	N/A	N/A	411
+SP  86	Erickson (Kootenai Mines, Inc.)	47.6197	-116.5644	N/A	N/A	331
+SP  89	Wilson Mutual Prospect	47.6172	-116.665	160550024	W019457	62
+SP  90	Fourth of July Canyon	47.6161	-116.5361	160550137	N/A	75
+SP  91	Beauty Bay Prospect	47.6119	-116.6736	160550025	W019458	61
+SP  92	Lost Cabin Mine (Idaho Goldfields; Donahoe Lease)	47.6122	-116.525	160550143	D006584	76
+SP  93	Blue Goose Group	47.6164	-116.5736	N/A	N/A	309
+SP  94	Coeur d'Alene Mountain Prospect	47.6089	-116.6872	160550027	W019460	60
+SP  96	Lucky Tuesday Prospect (Magnum Tin Corporation)	47.6044	-116.6725	160550003	W019459	64
+SP  97	Mission Group	47.6006	-116.3286	160550039	N/A	80
+SP  98	Blue Fox	47.6003	-116.6325	N/A	N/A	308
+SP  99	Caribou Mine	47.6011	-116.6592	160550029	W019462	65
+SP 100	King Tut Prospect	47.5986	-116.5025	160550038	W019470	77
+SP 102	Blue Jay	47.5967	-116.6089	N/A	N/A	310
+SP 103	Blue Bird Prospect	47.5972	-116.6242	160550032	W019465	69
+SP 105	Elk Mountain Group (Murphy Tungsten; Painted Desert U. and Oil Co.; Elk and Elk Extension)	47.5928	-116.6422	160550001	W019466	68
+SP 106	Gray Wolf Prospect (Hollywood)	47.5978	-116.6567	160550028	W019461	66
+SP 107	Crystal Spring Prospect	47.5917	-116.4125	160550036	W019468	79
+SP 108	King Solomon Prospect	47.5889	-116.4783	160550037	W019469	78
+SP 110	Johnny Mack Prospect	47.5894	-116.6267	160550031	W019464	71
+SP 111	Silver Tip Mine	47.5867	-116.6389	160550030	W019463	72
+SP 113	White Knob (Imperial)	47.5758	-116.5503	N/A	N/A	336
+SP 114	Radio Prospect (Brennan's; Brennan Mine)	47.5742	-116.6208	160550035	W019467	73
+SP 116	Master Mine No. 1	47.5697	-116.4469	160550088	N/A	303
+SP 120	Killsarney Lake Mining Co. (Pine Group)	47.5644	-116.5569	N/A	N/A	329
+SP 134	Red Horse Prospect	47.5422	-116.6481	160550043	W019475	92
+SP 138	Silver Mist Claim	47.5386	-116.5683	160550135	N/A	95
+SP 143	Cataldo Clay Deposit	47.5344	-116.3564	160550044	W019476	100
+SP 151	Stroebel Prospect (Strobel)	47.53	-116.5583	160550041	W019473	96
+SP 156	Gray Eagle Prospect	47.5278	-116.5419	160550040	W019472	97
+SP 170	Silver King Prospect (Hidden Treasure)	47.5239	-116.6108	160550042	W019474	93
+SP 220	Coeur d'Alene Meadows Peat Occurrence	47.5097	-116.5489	160550127	W019363	99
+SP 227	Saxby Clay Occurrence	47.5069	-117.0314	160550101	N/A	122
+SP 292	Peat Occurrence	47.4647	-116.6531	160550047	N/A	132
+SP 305	Jumbo Claim Group (Rainbow No. 4)	47.4456	-116.5328	160550100	N/A	324
+SP 312	Palisades Property	47.4264	-116.3525	160550046	W019479	108
+SP 313	Eagle and Bluebell	47.4242	-116.7917	N/A	N/A	315
+SP 317	Rainbow No. 3 Prospect	47.4172	-116.5033	160090001	W019478	135

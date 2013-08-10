@@ -1,0 +1,44 @@
+Sequence Number	Deposit	Latitude	Longitude	MILSREF	MRDSREC	Orange Number
+AS   7	Scott and Bucy Coal Mine (Continental Divide Area)	44.5472	-111.9472	160330044	N/A	5
+AS   8	East Dry Creek Phosphate Mine	44.5219	-111.7792	160330078	W015645	6
+AS   9	Troublesome Ridge Phosphate Deposit (Area No. 2 Phosphate Deposit; Centennial Phosphate Mine; Ruby Mine)	44.55	-111.6914	160330111	W015647	7
+AS  10	Taylor Creek Area	44.5475	-111.6728	160330110	N/A	8
+AS  11	Unnamed coal deposit	44.5511	-111.6631	160330113	N/A	9
+AS  13	South Slope Taylor Creek Phosphate Deposit (Area No. 3 Phosphate Deposit)	44.5314	-111.6786	160330114	W015648	13
+AS  14	Carrot Ridge Area Phosphate Deposit (Area No. 1 Phosphate Deposit)	44.5308	-111.6453	160330112	W015646	14
+AS  15	Tanner Manganese Prospect	44.5272	-111.6719	160430069	N/A	11
+AS  18	Blue Ledge Mining Co.	44.4328	-111.9919	N/A	N/A	16
+AS  21	Swan Butte	44.3072	-111.9178	160330115	N/A	19
+DU 459	Bald Mountain Gulch Prospect	44.1289	-112.9742	160330127	N/A	N/A
+DU 472	Sagebrush	44.0181	-112.9394	160330088	N/A	416
+DU 491	Pocahontas 1, 2, 3, and 4 Claims (Bare and Chastaine)	44.2239	-112.8933	160330023	D006761	443
+DU 497	Weimer Mine (Paymaster; Towlgreen Group; Valley View; Weimer Copper)	44.1853	-112.8586	160330037	W015805	449
+DU 500	Hill No. 3 Prospect	44.1575	-112.8558	160330063	W015765	452
+DU 502	Rainbow Hill	44.1536	-112.8544	160330117	N/A	454
+DU 507	Jeppeson (Jeppson)	44.1389	-112.8494	160330082	N/A	459
+DU 508	Worthing Prospect	44.1319	-112.8478	160330041	W015807	461
+DU 510	Long Canyon	44.1161	-112.8519	160330100	N/A	464
+DU 516	Montana Travertine Company	44.0956	-112.7958	160330077	N/A	N/A
+DU 517	Iron Blowout Prospect	44.0906	-112.7903	160330119	N/A	469
+DU 518	Peterson Mine	44.0842	-112.7825	160330035	W015722	470
+DU 521	Scott Mine (Birch Creek Mine)	44.0661	-112.7886	160330040	W015723	473
+DU 529	Fritz Creek Travertine Mine	44.4264	-112.6669	160330106	W015801	417
+DU 530	Medicine Lodge Canyon	44.4231	-112.6689	160330030	N/A	418
+DU 531	White Rock	44.4111	-112.61	160330128	N/A	N/A
+DU 532	Medicine Lodge Mining Co.	44.3511	-112.6794	N/A	N/A	N/A
+DU 533	First Discovery Claim	44.3319	-112.8014	160330108	N/A	420
+DU 534	Elkhorn (Myers Creek Area-Elkhorn Group)	44.3086	-112.7208	160330031	N/A	421
+DU 536	Canyon West	44.2964	-112.7397	160330125	N/A	N/A
+DU 537	Heart Canyon	44.2967	-112.7306	160330032	N/A	423
+DU 540	Heart Creek Adit	44.2831	-112.7406	160330124	N/A	N/A
+DU 541	Limestone Occurrence	44.2369	-112.6642	160330105	N/A	481
+DU 542	Golden Ridge Uranium Co.	44.3289	-112.4047	N/A	N/A	N/A
+DU 546	Bentonite Occurrence	44.1789	-112.5267	160330104	N/A	492
+DU 548	Bentonite Occurrence	44.1375	-112.5514	160330120	W015859	483
+DU 549	Lidy Hot Springs Occurrence	44.1364	-112.5458	160330121	W015808	485
+DU 550	Bentonite Occurrence	44.1347	-112.5625	160330043	W015860	484
+DU 551	Birch Creek	44.1322	-112.5461	160330122	N/A	486
+DU 553	Lidy Hot Springs Limestone Occurrence	44.13	-112.5597	160330123	N/A	487
+DU 561	Spencer Opal Mine	44.3847	-112.0964	160330065	N/A	433
+DU 562	Lone Pine Group	44.3806	-112.1264	160330101	N/A	434
+DU 565	Opal Mountain Mine	44.3797	-112.1	160330064	N/A	432
