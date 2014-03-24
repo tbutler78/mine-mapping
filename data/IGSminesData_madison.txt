@@ -1,6 +1,0 @@
-Sequence Number	Deposit	Latitude	Longitude	MILSREF	MRDSREC	Orange Number
-DR   1	Green Canyon Tufa Deposit (Pincock Deposit)	43.7833	-111.4375	160650013	W019314	1
-DR  68	Grover, Grover, and Terry Phosphate Deposit	43.6536	-111.4528	160650016	W019310	54
-DR  70	Coalmine Creek Phosphate Deposit	43.6494	-111.4486	160650015	N/A	52
-DR  71	Limekiln Canyon Limestone Mine	43.6622	-111.5328	160650017	W019298	55
-DR  72	Morning Glory Mine	43.6489	-111.5336	160650003	W019332	57
