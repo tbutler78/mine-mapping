@@ -1,0 +1,118 @@
+Sequence Number	Deposit	Latitude	Longitude	MILSREF	MRDSREC	Orange Number
+DR 189	Portneuf Area Limestone Occurrence	43.0133	-111.8744	160290023	W019256	163
+PO 192	Unnamed prospects	42.98	-112.0381	N/A	N/A	19
+PO 224	Garden City Dolomite	42.7222	-112.0025	160050020	N/A	206
+PR   1	Chesterfield Range Limestone Occurrence	42.9864	-111.9967	160290038	N/A	1
+PR   2	Limestone Occurrence	42.9711	-111.9942	160290135	N/A	2
+PR   3	Phosphate Occurrence	42.9836	-111.7786	160290144	N/A	11
+PR   4	Grizzly Creek Phosphate Property (Grizzley Creek)	42.9547	-111.8033	160290058	W026172	12
+PR   5	Graves Creek Phosphate Property	42.9353	-111.8581	160290057	W026176	6
+PR   6	Fort Hall Indian Reservation Phosphate Bed	42.9422	-111.9458	160290143	W026091	3
+PR   7	Portneuf Reservoir Phosphate Property	42.9394	-111.9331	160290049	W026177	4
+PR   8	Rocky Canyon Phosphate Deposit	42.93	-111.9489	160290041	W026186	5
+PR   9	Phosphate Deposit	42.8703	-111.8369	160290042	W026129	7
+PR  10	Eighteen Mile Creek	42.8256	-111.8458	160290139	N/A	8
+PR  11	Monroe Canyon	42.7733	-111.8042	160290140	N/A	9
+PR  12	Unnamed location	42.7639	-111.9764	N/A	N/A	10
+PR  13	Crater Mountain	42.9825	-111.6178	160290061	N/A	23
+PR  14	Phosphate Deposit (Monsanto Lease)	42.9628	-111.6861	160290054	W026133	13
+PR  15	Bear Creek Phosphate Occurrence	42.94	-111.7125	160290145	N/A	14
+PR  16	Phosphate Deposi	42.9517	-111.5581	160290132	W026134	24
+PR  17	Blackfoot Reservoir Phosphate Occurrence	42.9392	-111.5992	160290146	N/A	25
+PR  18	Phosphate Deposit	42.8972	-111.7122	160290045	W026130	15
+PR  19	Phosphate Deposit	42.8728	-111.6939	160290108	W026132	235
+PR  20	Scoria Occurrence	42.8475	-111.6342	160290153	N/A	16
+PR  21	Cinder Occurrence	42.8244	-111.6853	160290133	N/A	21
+PR  22	Broken Crater	42.8244	-111.6594	160290048	N/A	17
+PR  23	Unnamed location	42.8058	-111.685	160290134	N/A	18
+PR  24	China Hat	42.8072	-111.6097	160290059	N/A	20
+PR  27	Limestone Occurrence	42.9933	-111.4428	160290136	N/A	30
+PR  28	Unnamed location	42.9672	-111.3472	N/A	N/A	31
+PR  29	Limestone Occurrence	42.9817	-111.2444	160290137	N/A	53
+PR  30	Phosphate Deposit	42.9386	-111.4078	160290084	W026137	32
+PR  31	Blackfoot River Phosphate Occurrence	42.9394	-111.3661	160290147	N/A	33
+PR  32	Phosphate Deposit	42.9378	-111.3481	160290085	W026144	34
+PR  33	Webster Range	42.9097	-111.2539	160290138	N/A	55
+PR  34	Phosphate Occurrence	42.8944	-111.3003	160290149	N/A	56
+PR  35	Rainey Creek Road	42.8811	-111.2258	160290087	N/A	57
+PR  36	Blue Jay Gulch Nitrates	42.8378	-111.2669	160290088	W026115	58
+PR  37	Stump and White Springs (Old Stump and White Springs)	42.8439	-111.1311	160290070	W026118	61
+PR  38	North Rasmussen Ridge (Lanes Creek NW, Area B, 8, 9)	42.8981	-111.41	160290082	N/A	35
+PR  39	Rasmussen Ridge Mine (Rasmussen Ridge, East Slope; Rasmussen Ridge, Southwest Slope; Lanes Creek NW, Area D, 15-24; Lower Valley, Area  (cont.)	42.8794	-111.3908	160290064	W026181	37
+PR  40	North Rasmussen Valley	42.8428	-111.3581	160290029	N/A	40
+PR  41	Lanes Creek Phosphate Property	42.8406	-111.3306	160290086	W026184	41
+PR  42	Phosphate Deposit (Henry North Continuation)	42.9081	-111.5131	160290161	W026131	26
+PR  43	Henry Phosphate Mine (North Wooley Range; Lanes Creek NW, Area A, 1-7; Lower Valley, Area B, 2-6; Henry NE, Area A, 2, 3, 4)	42.8761	-111.4731	160290055	W026182	36
+PR  44	Wooley Valley Unit 3 (Little Long Valley Mine)	42.8428	-111.4203	160290159	W026180	42
+PR  45	Wooley Valley Mine (Blackfoot Narrows Mine; Little Long Valley; Lower Valley, Area C, 7-11; Lower Valley, Area D, 12-15; Lower Valley, Area E, 16,  (cont.)	42.8122	-111.3781	20	W026179	45
+PR  46	Phosphate Occurrence	42.8114	-111.3219	160290152	N/A	50
+PR  47	Diamond Creek Proposed Mine	42.78	-111.2483	160290163	W026151	59
+PR  48	Dry Ridge Phosphate Occurrence	42.7683	-111.2611	160290130	N/A	60
+PR  49	Reed Springs	42.7978	-111.0864	160290069	W026117	62
+PR  50	McGrew Spring	42.7856	-111.0775	160290068	W026116	63
+PR  51	Phosphate Deposit	42.7736	-111.1181	160290089	W026157	65
+PR  52	Petersen Spring	42.7728	-111.0794	160290067	W026120	64
+PR  54	Salt Deposit	42.7603	-111.0636	160290155	N/A	66
+PR  55	Ballard Mine	42.8186	-111.4742	160290040	W026178	43
+PR  56	Wooley Valley Phosphate Occurrence	42.8114	-111.4414	160290150	N/A	44
+PR  58	West Bank, Blackfoot River	42.8136	-111.5506	160290063	N/A	27
+PR  59	Blackfoot Bridge Proposed Mine (Aspen Range North Property)	42.7908	-111.5236	160290052	W026135	28
+PR  60	Trail Creek	42.7703	-111.4986	160290083	N/A	29
+PR  61	Schmid Ridge Phosphate Occurrence                                                                                                                (cont.)	42.7683	-111.3839	160290151	N/A	48
+PR  62	Unnamed location (North Dry Valley)	42.7736	-111.3606	160290028	N/A	47
+PR  63	Maybe Canyon Phosphate Mine (South Maybe Canyon Proposed Mine; Mabie Canyon; Kendall Canyon; Dry Valley, Area D, 22-258; Upper Valley, Area C, 22-35; cont.	42.7622	-111.3117	160290034	W026183	52
+PR  64	Dry Valley	42.7383	-111.3314	160290165	W026127	104
+PR  65	Dry Valley Mine	42.7214	-111.3078	160290047	N/A	107
+PR  66	Trail Creek Proposed Mine (Aspen Range Property; Johnson Creek; Johnson Creek, Area B, 33-35; Johnson Creek, Area D, 36-51; Slug Creek Syncline)	42.7356	-111.4236	160290160	W026164	103
+PR  67	Caldwell Canyon Proposed Mine (Dry Canyon Prospect)	42.7275	-111.3708	160290162	W026163	106
+PR  68	Slug Creek Valley Phosphate Deposit	42.7014	-111.3636	160290017	W026187	110
+PR  69	Draney Spring	42.7208	-111.0806	160290031	W026119	130
+PR  70	Smokey Canyon (Crow Creek NE, Area A; Stewart Flat, Area D, 35 through 48B)	42.7069	-111.1314	160290079	N/A	131
+PR  71	Phosphate Deposit	42.6983	-111.1081	160290100	W026158	132
+PR  72	Pole Canyon	42.6786	-111.1292	160290103	N/A	136
+PR  73	Phosphate Deposit	42.6339	-111.1175	160290106	W026159	139
+PR  74	Poison Canyon Sandstone Quarry	42.6492	-111.0792	160290104	W026103	137
+PR  75	Crow Creek Rock Salt (Rock Salt Mine)	42.6169	-111.0817	160290030	W026121	140
+PR  76	Timber Creek	42.7139	-111.2025	160290101	N/A	133
+PR  77	Lone Pine Spring	42.6817	-111.1986	160290102	N/A	134
+PR  78	Freeman Ridge Phosphate Property (Diamond Creek; Stewart Flat, Area B, 16-18; Stewart Flat, Area C, 19-23; Stewart Flat, Area C, 26-34; North  (cont.)	42.67	-111.1975	160290065	W026170	135
+PR  79	Freeman Ridge Phosphate Property, Unit 2 (South Freeman Ridge, West Slope; East Limb Georgetown Syncline; Snowdrift Mtn., Area A, 4-9;    (cont.)	42.62	-111.2069	160290039	W026168	141
+PR  80	Phosphate Deposit (Deer Creek-Wells Canyon Area; South Fork Sage Creek to Sand Wash Flat; Snowdrift Mtn., Areas C, D; Stewart Flat, Area D, 48A, (cont.)	42.5978	-111.1781	160290051	W026152	144
+PR  81	Wells Canyon	42.5758	-111.2006	160290107	N/A	147
+PR  82	Booth Spring Mine (LD Salt Spring Mine)	42.5533	-111.1581	160290066	N/A	150
+PR  83	Husky No. 1 Proposed Mine (Dry Ridge Unit 1; Stewart Canyon; Dry Valley, Area D, 26, 27; Stewart Flat, Area A, 1-4; West Limb Georgetown Syncline)	42.6883	-111.2436	160290166	W026171	121
+PR  84	Pole Canyon Phosphate Deposit	42.66	-111.2422	160290099	W026169	123
+PR  85	Dry Ridge Deposit (Middle Dry Ridge; West Limb Georgetown Syncline; Stewart Flat, Area A, 5 through 11; Dry Ridge Prospect)	42.6486	-111.2231	160290056	W026165	124
+PR  86	Dry Ridge Phosphate Deposit, Unit 3 (Green Mountain Deposits; West Limb Georgetown Syncline; Snowdrift Mtn., Area A, 1-3; Stewart Flat, Area A, 12; (cont.)	42.6067	-111.2353	160290037	W026166	142
+PR  88	Champ Lease (Dry Valley Prospect; Upper Dry Valley)	42.6714	-111.2742	160290035	W026173	122
+PR  89	Mountain Fuel Lease (Dry Canyon Prospect; South Schmid Ridge; Dry Canyon; Dry Valley, Area C, 10-17; Harrington Peak, Area B, 8)	42.6394	-111.2847	160290014	W026175	127
+PR  91	Conda Mine (Soda Springs NE, Area A; Henry SE, Area B, 6-10; Johnson Creek, Area A; Johnson Creek, Area B, 19-28)	42.7272	-111.5256	160290004	W026092	84
+PR  92	North Trail Canyon Proposed Mine (J. R. Simplot Co.-Conda; Trail Canyon)	42.7078	-111.4886	160290157	W026094	85
+PR  94	Trail Canyon	42.7031	-111.5022	160290090	N/A	86
+PR  95	Trail Canyon Quarry	42.6981	-111.5031	160290141	N/A	88
+PR  97	Unnamed location	42.6811	-111.4975	N/A	N/A	91
+PR  98	Johnson Creek Prospect	42.6711	-111.3947	160290129	N/A	111
+PR  99	Dry Canyon Phosphate Deposit	42.6558	-111.4103	160290095	W026161	112
+PR 100	Burchert Canyon	42.6544	-111.3992	160290096	N/A	113
+PR 101	Johnson Creek Phosphate Deposit (South Fork, Johnson Creek)	42.6575	-111.4361	160290097	W026162	114
+PR 102	West Dairy Phosphate	42.6311	-111.3539	160290046	N/A	128
+PR 103	Dairy Syncline (Harrington Peak, Area A; Dry Valley, Area B)	42.6139	-111.3383	160290081	N/A	129
+PR 104	Cinder Pit	42.7278	-111.6342	160290154	N/A	71
+PR 105	Monsanto Quartzite Quarry	42.7111	-111.6103	160290011	N/A	72
+PR 106	Hooper Spring	42.6814	-111.6103	160290001	N/A	73
+PR 107	Kerr McGee Plant	42.6486	-111.6078	160290115	N/A	78
+PR 108	Monsanto Plant	42.6594	-111.5978	160290116	N/A	76
+PR 109	East of Soda Springs	42.6594	-111.5464	160290092	N/A	92
+PR 110	Idaho Sulphur Mine (Lloyd Ranch Sulfur Deposit No. 3; Wood Canyon)	42.6625	-111.5175	160290003	W026099	93
+PR 111	Phosphate Deposit	42.6619	-111.4911	160290093	W026136	94
+PR 112	Dewey Sulphur Mine (Lloyd Ranch Sulfur Deposit No. 1; Sulfur Canyon)	42.6467	-111.5114	160290002	W026097	95
+PR 113	Middle Sulphur Canyon Proposed Mine (J. R. Simplot Co.-Conda)	42.6481	-111.4617	160290158	W026160	97
+PR 114	Anaconda Strip Mine	42.6403	-111.4592	160290094	N/A	98
+PR 115	Lloyd Ranch Sulfur Deposit No. 2	42.6364	-111.4997	160290033	W026098	96
+PR 118	Swan Lake Gulch Proposed Mine	42.63	-111.4103	160290164	W026093	115
+PR 119	Aspen Range	42.6247	-111.3992	160290098	N/A	116
+PR 120	Diamond Gulch Phosphate Mine	42.6056	-111.4428	160290019	W026138	102
+PR 121	Oil Shale Occurrence	42.6078	-111.5686	N/A	N/A	80
+PR 132	Phosphate Deposit (Beaver Dam Creek; Meade Peak, Area A, 2-7; Snowdrift Mtn., Area E, 37)	42.4889	-111.2208	160290080	W026154	159
+PR 133	Crow Creek Gypsum Occurrence	42.4825	-111.1839	160070007	N/A	160
+PR 138	White Quartz Nos. 1, 2, and 3	42.4244	-111.5906	160070035	FS00404	163

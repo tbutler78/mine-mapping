@@ -1,0 +1,6 @@
+Sequence Number	Deposit	Latitude	Longitude	MILSREF	MRDSREC	Orange Number
+HA 779	Gem Opal Location	43.0742	-114.9947	160470015	N/A	844
+TF  49	Boulder Hill Placer (Last chance)	42.9158	-114.98	160470014	N/A	74
+TF  51	Cinder Deposit	42.9178	-114.7708	160470016	W012808	34
+TF  54	Brown Placer (Snake River Placer)	42.8	-114.93	160830017	W012828	29
+TF  58	Snake River Placer	42.6739	-114.8183	160830001	W012827	32

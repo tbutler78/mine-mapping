@@ -1,0 +1,3 @@
+Sequence Number	Deposit	Latitude	Longitude	MILSREF	MRDSREC	Orange Number
+PO   3	Cinder Pit	42.5936	-113.9267	N/A	W013153	116
+PO  10	Rupert Placer (Marsh Creek Placer)	42.5372	-113.66	160310142	W013177	113
