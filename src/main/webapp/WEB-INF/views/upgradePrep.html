@@ -24,15 +24,22 @@ body {
 <script type="text/javascript">
     // just a test
       function initialize() {
-        var myLatlng = new google.maps.LatLng(42.92828, -116.7737);
-
+    	// Set point
+        var myLatlng = new google.maps.LatLng(43.00337, -116.69986);
+        //Terrain by Default
+		var mapType = google.maps.MapTypeId.TERRAIN;
+        
+        //Setup map
         var mapOptions = {
           center: myLatlng,
-          zoom: 8,
+          zoom: 14,
+          mapTypeId: mapType,
           mapTypeControl: true
         };
+        
         var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
+		//Place point on map
         var marker = new google.maps.Marker({
         	position: myLatlng,
         	map: map,

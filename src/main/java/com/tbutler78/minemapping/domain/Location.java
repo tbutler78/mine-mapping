@@ -1,12 +1,27 @@
 package com.tbutler78.minemapping.domain;
 
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.GeometryFactory;
 import com.vividsolutions.jts.geom.Point;
 import com.vividsolutions.jts.operation.overlay.PointBuilder;
 
-public class Location {
-	private String Deposit;
+
+@Entity
+@Table(name="mines")
+public class Location  implements Serializable, Comparable<Location>{
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long id;
+	
+	private String deposit;
 	private Double Latitude;
 	private Double Longitude;
 	private String MilsREF;
@@ -15,11 +30,11 @@ public class Location {
 	private Point point;
 
 	public String getDeposit() {
-		return Deposit;
+		return deposit;
 	}
 
 	public void setDeposit(String deposit) {
-		Deposit = deposit;
+		this.deposit = deposit;
 	}
 
 	public Double getLatitude() {
@@ -75,6 +90,26 @@ public class Location {
 		
 	}
 	
+	
+	 @Override
+	public String toString() {
+		return "Location [id=" + id + ", deposit=" + deposit + ", Latitude="
+				+ Latitude + ", Longitude=" + Longitude + "]";
+	}
 
+	public int compareTo(Location other) {
+		 	if (this.deposit == null){
+		 		return -1;
+		 	}
+		 	else if (other.getDeposit() == null){
+		 		return 1;
+		 	}
+		 	else if (this.deposit== (other.getDeposit()))
+	            return 0;
+	        else if ((this.deposit).compareTo(other.getDeposit()) > 0)
+	            return 1;
+	        else
+	            return -1;
+	    }
 
 }
