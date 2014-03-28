@@ -2,7 +2,11 @@ package com.tbutler78.minemapping.domain;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
@@ -11,10 +15,14 @@ public class Name implements Serializable{
 
 	private static final long serialVersionUID = -8551478845763476317L;
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	private String sequenceNumber;
+	@Column(name="SeparatedNames_Deposit_FieldName")
 	private String separatedNamesDepositFieldName;
 	private String nameKey;
+	@Column(name="R_Index2_Deposit_FieldName")
 	private String rIndexDepositFieldName;
 	private long metric;
 	private long autoNumber;
@@ -63,6 +71,14 @@ public class Name implements Serializable{
 	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+	@Override
+	public String toString() {
+		return "Name [id=" + id + ", sequenceNumber=" + sequenceNumber
+				+ ", separatedNamesDepositFieldName="
+				+ separatedNamesDepositFieldName + ", nameKey=" + nameKey
+				+ ", rIndexDepositFieldName=" + rIndexDepositFieldName
+				+ ", metric=" + metric + ", autoNumber=" + autoNumber + "]";
 	}
 	
 	

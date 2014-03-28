@@ -1,4 +1,4 @@
-package com.tbutler78.minemapping.repository;
+package com.tbutler78.minemapping.repositories;
 
 import java.io.Serializable;
 import java.util.List;

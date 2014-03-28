@@ -23,7 +23,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages="com.tbutler78.minemapping.repository")
+@EnableJpaRepositories(basePackages="com.tbutler78.minemapping.repositories")
 public class PersistenceConfig 
 {
 	@Autowired
