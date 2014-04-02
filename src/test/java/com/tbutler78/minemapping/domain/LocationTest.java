@@ -9,6 +9,7 @@ import java.util.List;
 
 
 
+
 import org.apache.commons.lang.math.RandomUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,6 +25,7 @@ import com.tbutler78.minemapping.service.LocationService;
 import com.tbutler78.minemapping.service.MineService;
 import com.tbutler78.minemapping.service.NameService;
 import com.tbutler78.minemapping.springapp.config.AppConfig;
+import com.tbutler78.minemapping.web.MineCommand;
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.GeometryFactory;
 import com.vividsolutions.jts.geom.Point;
@@ -48,12 +50,21 @@ public class LocationTest {
 
 	@Test
 	public void testMines(){
+		
+	
+		
 		/*
 		ObjectMapper mapper = new ObjectMapper();
 		ObjectWriter writer = mapper.writer();
 		writer.
 		*/
 		List<Mine> mines = mineService.findByCounty("Owyhee");
+		MineCommand cmd = new MineCommand(mines);
+		log.debug("Bottom: " + cmd.getBottomOuterBound());
+		log.debug("Top: " + cmd.getTopOuterBound());
+		log.debug("Left: " + cmd.getLeftOuterBound());
+		log.debug("Right: " + cmd.getRightOuterBound());
+		
 		for (int i=0; i< 20; i++){
 		Mine mine = mines.get(RandomUtils.nextInt(mines.size()));
 		//TestUtils.dumpList(mines);

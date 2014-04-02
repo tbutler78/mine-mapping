@@ -15,7 +15,7 @@ import com.vividsolutions.jts.operation.overlay.PointBuilder;
 
 
 @Entity
-@Table(name="mines")
+@Table(name="locations")
 public class Location  implements Serializable, Comparable<Location>{
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

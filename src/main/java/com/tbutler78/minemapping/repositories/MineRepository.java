@@ -9,6 +9,5 @@ import com.tbutler78.minemapping.domain.Mine;
 
 @Component
 public interface MineRepository extends JpaRepository<Mine, Long> {
-	public List<Mine> findByCountyName(String county);
-
+	public List<Mine> findByCountyNameAndLatitudeIsNotNullAndLongitudeIsNotNull(String county);
 }

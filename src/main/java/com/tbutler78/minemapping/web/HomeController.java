@@ -1,5 +1,6 @@
-package com.tbutler78.minemapping;
+package com.tbutler78.minemapping.web;
 
+import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.tbutler78.minemapping.domain.Mine;
 import com.tbutler78.minemapping.service.MineService;
+import com.tbutler78.minemapping.web.MineCommand;
 
 /**
  * Handles requests for the application home page.
@@ -28,6 +30,8 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
+	// Constants
+
 	@Autowired
 	private MineService mineService;
 	
@@ -50,17 +54,22 @@ public class HomeController {
 	
 	
 	@RequestMapping(value="/mines")
-	public ResponseEntity<List<Mine>> getMines(){
-		List<Mine> mines =  mineService.findByCounty("Owyhee");
-		
+	public ResponseEntity<MineCommand> getMines(){
+		return buildResponse(new MineCommand(mineService.findByCounty("Owyhee")));
+	}
+	
+	@RequestMapping(value="/mine")
+	public ResponseEntity<Mine> getMine(){
+		return buildResponse(mineService.findMine());
+	}	
+	
+	private <T> ResponseEntity<T> buildResponse(T item){
 		HttpHeaders responseHeaders = new HttpHeaders();
 		responseHeaders.add("Access-Control-Allow-Origin", "*");
 		responseHeaders.add("Access-Control-Allow-Methods", "GET, OPTIONS, POST");
 		responseHeaders.add("Access-Control-Allow-Headers", "Content-Type");
 		responseHeaders.add("Access-Control-Max-Age", "86400");
-
-		return new ResponseEntity<List<Mine>>(mines, responseHeaders, HttpStatus.OK);
-		
+		return new ResponseEntity<T>(item, responseHeaders, HttpStatus.OK);
 	}
 
 }

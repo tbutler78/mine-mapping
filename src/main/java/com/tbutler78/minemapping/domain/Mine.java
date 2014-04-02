@@ -27,8 +27,10 @@ public class Mine  implements Serializable, Comparable<Mine>{
 	private String newLoc;
 	private String mapLoc;
 	private String deposit;
-	private BigDecimal Latitude;
-	private BigDecimal Longitude;
+	
+	private BigDecimal latitude;
+	
+	private BigDecimal longitude;
 	private String locationType;
 	private BigDecimal dmsLat;
 	private BigDecimal dmsLong;
@@ -93,19 +95,19 @@ public class Mine  implements Serializable, Comparable<Mine>{
 	}
 
 	public BigDecimal getLatitude() {
-		return Latitude;
+		return latitude;
 	}
 
 	public void setLatitude(BigDecimal latitude) {
-		Latitude = latitude;
+		this.latitude = latitude;
 	}
 
 	public BigDecimal getLongitude() {
-		return Longitude;
+		return longitude;
 	}
 
 	public void setLongitude(BigDecimal longitude) {
-		Longitude = longitude;
+		this.longitude = longitude;
 	}
 
 	public String getLocationType() {
@@ -273,9 +275,9 @@ public class Mine  implements Serializable, Comparable<Mine>{
 		builder.append(", deposit=");
 		builder.append(deposit);
 		builder.append(", Latitude=");
-		builder.append(Latitude);
+		builder.append(latitude);
 		builder.append(", Longitude=");
-		builder.append(Longitude);
+		builder.append(longitude);
 		builder.append(", locationType=");
 		builder.append(locationType);
 		builder.append(", dmsLat=");
