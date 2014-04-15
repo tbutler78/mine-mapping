@@ -29,6 +29,7 @@ public class MineCommand {
 		this.latitudeRange = new TreeSet<BigDecimal>();
 		this.longitudeRange = new TreeSet<BigDecimal>();
 		for (Mine m : mines){
+		
 			this.latitudeRange.add(m.getLatitude());
 			this.longitudeRange.add(m.getLongitude());
 		}

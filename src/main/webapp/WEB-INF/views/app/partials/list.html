@@ -1,0 +1,28 @@
+<div class="google-map"
+     center="map.center"
+     zoom="map.zoom"
+     draggable="true"
+     dragging="map.dragging"
+     bounds="map.bounds"
+     events="map.events"
+     options="map.options"
+     pan="true"
+     control="map.control"
+       />
+
+<!--
+<markers models="[{latitude:43.9431, longitude:-116.2225, title:'test'}]" coords="'self'">
+
+
+</markers>
+-->
+<div>
+<ul>
+
+    <li ng-repeat="mine in mines">
+        <marker coords="mine"></marker>
+        <a href="" ng-click="showApp()">{{mine.deposit}}</a>
+    </li>
+
+</ul>
+</div>f

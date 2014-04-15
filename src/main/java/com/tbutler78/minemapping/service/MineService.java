@@ -33,7 +33,7 @@ public class MineService
 	}
 	
 	public Mine findMine(){
-		return mineRepository.findByCountyNameAndLatitudeIsNotNullAndLongitudeIsNotNull("Owyhee").get((int)Math.random());
+		return mineRepository.findByCountyNameAndLatitudeIsNotNullAndLongitudeIsNotNull("Adams").get((int)Math.random());
 	}
 	
 }
