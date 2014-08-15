@@ -75,17 +75,7 @@
 
                  
 
-        <dependency>
 
-            <groupId>com.fasterxml.jackson.core</groupId>
-
-            <artifactId>jackson-databind</artifactId>
-
-            <version>${jackson-json.version}</version>
-
-        </dependency>
-
-         
  
  
 	<!-- Hibernate framework -->
