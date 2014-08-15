@@ -11,12 +11,14 @@ import javax.persistence.Table;
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.GeometryFactory;
 import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.operation.overlay.PointBuilder;
 
 
 @Entity
 @Table(name="locations")
 public class Location  implements Serializable, Comparable<Location>{
+
+	private static final long serialVersionUID = 8257252570649825576L;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;

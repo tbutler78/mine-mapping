@@ -1,9 +1,7 @@
 package com.tbutler78.minemapping.web;
 
-import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 
 import org.slf4j.Logger;
@@ -17,8 +15,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.tbutler78.minemapping.domain.Mine;
 import com.tbutler78.minemapping.service.MineService;
 import com.tbutler78.minemapping.web.MineCommand;

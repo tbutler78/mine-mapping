@@ -2,8 +2,6 @@ package com.tbutler78.minemapping.domain;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.math.BigInteger;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,15 +9,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.operation.overlay.PointBuilder;
-
 
 @Entity
 @Table(name="mines")
 public class Mine  implements Serializable, Comparable<Mine>{
+
+	private static final long serialVersionUID = -5708387226479386241L;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;

@@ -1,6 +1,8 @@
 package com.tbutler78.minemapping.domain;
 
+import java.util.Collection;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 
@@ -9,6 +11,8 @@ import java.util.List;
 
 
  
+
+
 
 import org.apache.commons.lang.math.RandomUtils;
 import org.junit.Test;
@@ -49,7 +53,7 @@ public class LocationTest {
 	@Test
 	public void testMines(){
 		
-	
+		
 		
 		/*
 		ObjectMapper mapper = new ObjectMapper();

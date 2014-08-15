@@ -4,8 +4,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
 import com.tbutler78.minemapping.domain.Location;
 import com.tbutler78.minemapping.repositories.LocationRepository;
 
