@@ -1,14 +1,9 @@
 package com.tbutler78.minemapping.web;
 
 import java.math.BigDecimal;
-import java.util.Collection;
 import java.util.List;
-import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
-
-import net.minidev.json.JSONArray;
-import net.minidev.json.JSONObject;
 
 import com.tbutler78.minemapping.domain.Mine;
 
