@@ -8,7 +8,7 @@ import java.util.List;
 
 
 
-
+ 
 
 import org.apache.commons.lang.math.RandomUtils;
 import org.junit.Test;
@@ -62,6 +62,7 @@ public class LocationTest {
 		log.debug("Top: " + cmd.getTopOuterBound());
 		log.debug("Left: " + cmd.getLeftOuterBound());
 		log.debug("Right: " + cmd.getRightOuterBound());
+		log.debug("testing");
 		
 		for (int i=0; i< 20; i++){
 		Mine mine = mines.get(RandomUtils.nextInt(mines.size()));
