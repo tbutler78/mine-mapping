@@ -16,7 +16,7 @@ public class MineCommand {
 	private SortedSet<BigDecimal> latitudeRange;
 	private SortedSet<BigDecimal> longitudeRange;
 	private BigDecimal middleLat;
-	private BigDecimal middleLong;
+	private BigDecimal middleLong; 
 	
 	public MineCommand(List<Mine> mines){
 
