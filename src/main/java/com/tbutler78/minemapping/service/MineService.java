@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.tbutler78.minemapping.domain.Mine;
-import com.tbutler78.minemapping.repositories.MineRepository;
+import com.tbutler78.minemapping.repository.MineRepository;
 
 @Service
 
@@ -34,4 +34,3 @@ public class MineService
 	}
 	
 }
-	

@@ -1,22 +1,22 @@
 package com.tbutler78.minemapping.domain;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.List;
-
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
 
 public class DataAccessTest {
 
     public static void main(String args[]) {
         // simple DS for test (not for production!)
         SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
-        dataSource.setDriverClass(com.mysql.jdbc.Driver.class);
-        dataSource.setUsername("root");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/idahomines");
-        dataSource.setPassword("adpcarsql");
+        //dataSource.setDriverClass(com.mysql.jdbc.Driver.class);
+        dataSource.setUsername("sa");
+        dataSource.setUrl("jdbc:hsqldb:mem:testdb;shutdown=true");
+        //dataSource.setPassword("adpcarsql");
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
 

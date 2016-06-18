@@ -6,14 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 
-
-
-
-
- 
-
-
-
+import com.tbutler78.minemapping.system.MineMappingApplication;
 import org.apache.commons.lang.math.RandomUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,7 +19,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.tbutler78.minemapping.service.LocationService;
 import com.tbutler78.minemapping.service.MineService;
 import com.tbutler78.minemapping.service.NameService;
-import com.tbutler78.minemapping.springapp.config.AppConfig;
+
 import com.tbutler78.minemapping.web.MineCommand;
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.GeometryFactory;
@@ -34,15 +27,15 @@ import com.vividsolutions.jts.geom.Point;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes=AppConfig.class)
+@ContextConfiguration(classes=MineMappingApplication.class)
 public class LocationTest {
 	
 	private static TestUtils util;
 	
 	private static Logger log = LoggerFactory.getLogger(LocationTest.class);
-	
-	@Autowired
-	LocationService lService;
+
+  @Autowired
+  LocationService lService;
 
 	@Autowired
 	NameService nameService;
