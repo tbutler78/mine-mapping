@@ -57,7 +57,38 @@ public class MineCommand {
 		}
 		}*/
 	}
-	
+
+
+/*
+	interface Functor<T,F extends Functor<?,?>> {
+		<R> F map(Function<T,R> f);
+	}
+
+	class Identity<T> implements Functor<T,Identity<?>> {
+
+		private final T value;
+
+		Identity(T value) { this.value = value; }
+
+		public <R> Identity<R> map(Function<T,R> f) {
+			final R result = f.apply(value);
+			return new Identity<>(result);
+		}
+
+	}
+
+	Identity<String> idString = new Identity<>("abc");
+	Identity<Integer> idInt = idString.map(String::length);
+
+*/
+	Mine mine;
+	/*Identity<byte[]> idBytes = new Identity<>(mine)
+			.map(Mine::getCountyName)
+			//.map(Mine::getDmsLat)
+			.map((String s) -> s.substring(0, 3))
+			.map(String::toLowerCase)
+			.map(String::getBytes);
+*/
 	public List<Mine> getMines() {
 		return mines;
 	}
