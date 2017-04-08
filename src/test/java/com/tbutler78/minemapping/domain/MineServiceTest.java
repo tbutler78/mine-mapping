@@ -1,13 +1,14 @@
 package com.tbutler78.minemapping.domain;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
-import org.springframework.test.context.ContextConfiguration;
+
+import com.tbutler78.minemapping.MineMappingApplicationTest;
+
+import static org.junit.Assert.fail;
 
 
-@ContextConfiguration(locations={"*servlet-context.xml"})
-public class MineServiceTest {
+
+public class MineServiceTest extends MineMappingApplicationTest{
 
 	@Test
 	public void testFindAll() {

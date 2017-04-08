@@ -1,14 +1,14 @@
-package com.tbutler78.minemapping.repository;
+package com.tbutler78.minemapping.repositories;
 
-import com.tbutler78.minemapping.domain.Location;
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;
 
-import java.io.Serializable;
-import java.util.List;
+import com.tbutler78.minemapping.domain.Location;
 
 @Component
-public interface LocationRepository extends JpaRepository<Location, Serializable>{
+public interface LocationRepository extends JpaRepository<Location, Long>{
 
 	//@Query("select u from User u where u.email=?1 and u.password=?2")
 	//User login(String email, String password);
