@@ -1,1 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
+
+/.clover/
+/.idea/
+/.settings/
+/target/
+/minemapping.iml
