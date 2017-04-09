@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.tbutler78.minemapping.domain.Location;
-import com.tbutler78.minemapping.repositories.LocationRepository;
+import com.tbutler78.minemapping.repository.LocationRepository;
 
 
 
