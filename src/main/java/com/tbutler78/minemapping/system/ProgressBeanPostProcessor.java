@@ -8,7 +8,6 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.boot.context.embedded.EmbeddedServletContainer;
 import org.springframework.boot.context.embedded.EmbeddedServletContainerFactory;
 import org.springframework.boot.web.servlet.ServletContextInitializer;
-import org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory;
 
 class ProgressBeanPostProcessor implements BeanPostProcessor {
 
@@ -35,9 +34,9 @@ private static final Logger log = LoggerFactory.getLogger(ProgressBeanPostProces
       @Override
       public EmbeddedServletContainer getEmbeddedServletContainer(ServletContextInitializer... initializers) {
         final EmbeddedServletContainer container = factory.getEmbeddedServletContainer(initializers);
-        if (factory instanceof TomcatEmbeddedServletContainerFactory) {
+        /*if (factory instanceof TomcatEmbeddedServletContainerFactory) {
           ((TomcatEmbeddedServletContainerFactory) factory).addContextValves(new ProgressValve());
-        }
+        }*/
         log.info("Eagerly starting {}", container);
         container.start();
         return container;

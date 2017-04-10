@@ -1,4 +1,4 @@
-package com.tbutler78.minemapping.repositories;
+package com.tbutler78.minemapping.repository;
 
 import java.util.List;
 
