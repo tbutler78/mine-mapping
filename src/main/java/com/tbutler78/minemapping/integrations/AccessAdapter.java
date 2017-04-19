@@ -1,24 +1,34 @@
 package com.tbutler78.minemapping.integrations;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 
+@Component
 public class AccessAdapter {
 
-    Connection connection = null;
-    Statement statement = null;
-    ResultSet resultSet = null;
+    Logger log = LoggerFactory.getLogger(AccessAdapter.class);
 
-    public void testDb() {
+    String MS_ACC_DB = "src/main/resources/batch/MinesAndProspects_1.2015.1.mdb";
 
-        // variables
+    String DB_URL = "jdbc:ucanaccess://" + MS_ACC_DB;
+    Connection connection;
+    Statement statement;
+    ResultSet resultSet;
 
 
-        // Step 1: Loading or registering Oracle JDBC driver class
+// "SELECT * FROM PLAYER"
+
+    public AccessTable getResultSet(String query, int maxRows) {
+            List<String> results = new ArrayList<>();
+        AccessTable accessTable = new AccessTable();
+
         try {
 
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
@@ -30,31 +40,41 @@ public class AccessAdapter {
             cnfex.printStackTrace();
         }
 
-        // Step 2: Opening database connection
         try {
 
-            String msAccDB = "./resources/batch/MinesAndProspects_1.2015.1.mdb";
-            String dbURL = "jdbc:ucanaccess://" + msAccDB;
+            connection = DriverManager.getConnection(DB_URL); //Create and get connection using DriverManager class
+            statement = connection.createStatement(); // Create JDBC Statement
+            resultSet = statement.executeQuery(query); //Execute SQL & retrieve data into ResultSet
+            ResultSetMetaData rsmd = resultSet.getMetaData();
+            int columns = rsmd.getColumnCount();
 
-            // Step 2.A: Create and get connection using DriverManager class
-            connection = DriverManager.getConnection(dbURL);
-
-            // Step 2.B: Creating JDBC Statement
-            statement = connection.createStatement();
-
-            // Step 2.C: Executing SQL & retrieve data into ResultSet
-            resultSet = statement.executeQuery("SELECT * FROM PLAYER");
+            int counter = 0;
 
             System.out.println("ID\tName\t\t\tAge\tMatches");
             System.out.println("==\t================\t===\t=======");
-
+            HashMap<String, String> result;
             // processing returned data and printing into console
-            while(resultSet.next()) {
+
+
+            while(resultSet.next() && counter < maxRows) {
+                counter++;
+                result = new HashMap<>();
+                for (int i=1; i<=columns; i++){
+                    result.put(rsmd.getColumnName(i), resultSet.getString(i) != null ? resultSet.getString(i) : "");
+                   // log.info(rsmd.getColumnTypeName(i) + " - " + rsmd.getColumnName(i));
+                    // log.info((CaseFormat.UPPER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, rsmd.getColumnName(i))));
+                }
+                /*resultSet.toString();
                 System.out.println(resultSet.getInt(1) + "\t" +
                                            resultSet.getString(2) + "\t" +
                                            resultSet.getString(3) + "\t" +
-                                           resultSet.getString(4));
+                                           resultSet.getString(4) + "\t" +
+                     resultSet.getString(5));
+*/
+                accessTable.addRow(result);
+log.info(result.toString());
             }
+
         }
         catch(SQLException sqlex){
             sqlex.printStackTrace();
@@ -80,6 +100,7 @@ public class AccessAdapter {
                 sqlex.printStackTrace();
             }
         }
+        return accessTable;
     }
 }
 

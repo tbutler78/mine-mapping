@@ -1,30 +1,28 @@
 package com.tbutler78.minemapping.service;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import com.tbutler78.minemapping.domain.Location;
 import com.tbutler78.minemapping.repository.LocationRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 
 
 
 @Service
 
-public class LocationService 
+public class LocationService
 {
 	//private UserDao userDao;
-	
-	@Autowired
 	private LocationRepository locationRepository;
-	
-	/*
+
 	@Autowired
-	public UserService(UserDao userDao) {
-		this.userDao = userDao;
+	public LocationService(LocationRepository locationRepository) {
+		this.locationRepository = locationRepository;
 	}
-	*/
+
+
 	public List<Location> findAll() {
 		//return userDao.findAll();
 		return locationRepository.findAll();
@@ -58,5 +56,5 @@ public class LocationService
 		return userRepository.findUserByEmail(email);
 	}
 	*/
-	
+
 }

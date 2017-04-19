@@ -4,7 +4,7 @@ mine-mapping
 Abandoned mines plotted on google maps
 
 
-
+numeric(19,2)
 
 Multiple underscores in words
 

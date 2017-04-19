@@ -1,12 +1,9 @@
 package com.tbutler78.minemapping.domain;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import java.util.List;
 
 
 @Entity
@@ -18,6 +15,8 @@ public class Mine  implements Serializable, Comparable<Mine>{
 	@Id
 	private long id;
 
+
+	private String sequenceNumber;
 	private String newLoc;
 	private String mapLoc;
 	private String deposit;
@@ -54,6 +53,8 @@ public class Mine  implements Serializable, Comparable<Mine>{
 	private String mrdsrec;
 
 	private String point;
+	@Transient
+	private List<PropertyFileScan> propertyFileScans;
 
 
 	public long getId() {
@@ -62,6 +63,14 @@ public class Mine  implements Serializable, Comparable<Mine>{
 
 	public void setId(long id) {
 		this.id = id;
+	}
+
+	public String getSequenceNumber() {
+		return sequenceNumber;
+	}
+
+	public void setSequenceNumber(String sequenceNumber) {
+		this.sequenceNumber = sequenceNumber;
 	}
 
 	public String getNewLoc() {
@@ -257,61 +266,16 @@ public class Mine  implements Serializable, Comparable<Mine>{
 		this.point = point;
 	}
 
-	@Override
-	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("Mine [id=");
-		builder.append(id);
-		builder.append(", newLoc=");
-		builder.append(newLoc);
-		builder.append(", mapLoc=");
-		builder.append(mapLoc);
-		builder.append(", deposit=");
-		builder.append(deposit);
-		builder.append(", Latitude=");
-		builder.append(latitude);
-		builder.append(", Longitude=");
-		builder.append(longitude);
-		builder.append(", locationType=");
-		builder.append(locationType);
-		builder.append(", dmsLat=");
-		builder.append(dmsLat);
-		builder.append(", dmsLong=");
-		builder.append(dmsLong);
-		builder.append(", twentyFourQuad=");
-		builder.append(twentyFourQuad);
-		builder.append(", oneHundredQuad=");
-		builder.append(oneHundredQuad);
-		builder.append(", countyName=");
-		builder.append(countyName);
-		builder.append(", trs=");
-		builder.append(trs);
-		builder.append(", landOwner=");
-		builder.append(landOwner);
-		builder.append(", idahoRegion=");
-		builder.append(idahoRegion);
-		builder.append(", fsAgencyName=");
-		builder.append(fsAgencyName);
-		builder.append(", orangeNum=");
-		builder.append(orangeNum);
-		builder.append(", oneByTwoDegreeQuad=");
-		builder.append(oneByTwoDegreeQuad);
-		builder.append(", township=");
-		builder.append(township);
-		builder.append(", range=");
-		builder.append(range);
-		builder.append(", section=");
-		builder.append(section);
-		builder.append(", longwgs=");
-		builder.append(longwgs);
-		builder.append(", latwgs=");
-		builder.append(latwgs);
-		builder.append(", mrdsrec=");
-		builder.append(mrdsrec);
-		builder.append(", point=");
-		builder.append(point);
-		builder.append("]");
-		return builder.toString();
+	public List<PropertyFileScan> getPropertyFileScans() {
+		return propertyFileScans;
+	}
+
+	public void setPropertyFileScans(List<PropertyFileScan> propertyFileScans) {
+		this.propertyFileScans = propertyFileScans;
+	}
+
+	public void addPropertyFileScan(PropertyFileScan propertyFileScan){
+		this.propertyFileScans.add(propertyFileScan);
 	}
 
 	@Override
@@ -331,4 +295,34 @@ public class Mine  implements Serializable, Comparable<Mine>{
 	}
 
 
+	@Override
+	public String toString() {
+		return "Mine{" +
+				"id=" + id +
+				", newLoc='" + newLoc + '\'' +
+				", mapLoc='" + mapLoc + '\'' +
+				", deposit='" + deposit + '\'' +
+				", latitude=" + latitude +
+				", longitude=" + longitude +
+				", locationType='" + locationType + '\'' +
+				", dmsLat=" + dmsLat +
+				", dmsLong=" + dmsLong +
+				", twentyFourQuad='" + twentyFourQuad + '\'' +
+				", oneHundredQuad='" + oneHundredQuad + '\'' +
+				", countyName='" + countyName + '\'' +
+				", trs='" + trs + '\'' +
+				", landOwner='" + landOwner + '\'' +
+				", idahoRegion='" + idahoRegion + '\'' +
+				", fsAgencyName='" + fsAgencyName + '\'' +
+				", orangeNum='" + orangeNum + '\'' +
+				", oneByTwoDegreeQuad='" + oneByTwoDegreeQuad + '\'' +
+				", township='" + township + '\'' +
+				", range='" + range + '\'' +
+				", section='" + section + '\'' +
+				", longwgs=" + longwgs +
+				", latwgs=" + latwgs +
+				", mrdsrec='" + mrdsrec + '\'' +
+				", point='" + point + '\'' +
+				'}';
+	}
 }

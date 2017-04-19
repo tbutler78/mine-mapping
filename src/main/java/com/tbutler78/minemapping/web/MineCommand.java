@@ -1,11 +1,11 @@
 package com.tbutler78.minemapping.web;
 
+import com.tbutler78.minemapping.domain.Mine;
+
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.SortedSet;
 import java.util.TreeSet;
-
-import com.tbutler78.minemapping.domain.Mine;
 
 public class MineCommand {
 	private List<Mine> mines;
@@ -16,44 +16,44 @@ public class MineCommand {
 	private SortedSet<BigDecimal> latitudeRange;
 	private SortedSet<BigDecimal> longitudeRange;
 	private BigDecimal middleLat;
-	private BigDecimal middleLong; 
-	
+	private BigDecimal middleLong;
+
 	public MineCommand(List<Mine> mines){
 
 		this.mines = mines;
 		this.latitudeRange = new TreeSet<BigDecimal>();
 		this.longitudeRange = new TreeSet<BigDecimal>();
 		for (Mine m : mines){
-		
+
 			this.latitudeRange.add(m.getLatitude());
 			this.longitudeRange.add(m.getLongitude());
 		}
-		
-		
+
+
 		this.leftOuterBound = longitudeRange.first();
 		this.rightOuterBound = longitudeRange.last();
 		this.topOuterBound = latitudeRange.first();
 		this.bottomOuterBound = latitudeRange.last();
 		this.middleLat = bottomOuterBound.subtract(topOuterBound).divide(new BigDecimal(2)).add(topOuterBound) ;
 		this.middleLong = leftOuterBound.subtract(rightOuterBound).divide(new BigDecimal(2)).add(rightOuterBound) ;
-        
-       
-		
+
+
+
 			/*
 			if (m.getLongitude() != null) {
 			if (this.leftOuterBound.compareTo(m.getLongitude()) > 0 )
 				this.leftOuterBound = m.getLongitude();
-			
+
 			else if (this.rightOuterBound.compareTo(m.getLongitude()) > 0)
 				this.rightOuterBound = m.getLongitude();
-			
+
 			if (this.topOuterBound.compareTo(m.getLatitude()) < 0 )
 				this.topOuterBound = m.getLatitude();
-			
+
 			else if (this.bottomOuterBound.compareTo(m.getLatitude()) < 0)
 				this.bottomOuterBound = m.getLatitude();
-			
-			
+
+
 		}
 		}*/
 	}
@@ -135,6 +135,6 @@ public class MineCommand {
 	public void setMiddleLong(BigDecimal middleLong) {
 		this.middleLong = middleLong;
 	}
-	
-  
+
+
 }

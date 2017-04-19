@@ -1,7 +1,0 @@
-Sequence Number	Deposit	Latitude	Longitude	MILSREF	MRDSREC	Orange Number
-PO   4	Snake River Placers (Milner Placer)	42.5356	-113.9736	160310080	W013175	117
-TF  67	Cinder Pits	42.6408	-114.5219	160530035	N/A	36
-TF  69	Snake River Placer	42.6144	-114.4936	160830016	W012825	37
-TF  80	Eden Butte Cinder Deposit	42.5886	-114.2353	160530001	W012807	41
-TF  83	Cinder Pits	42.6592	-114.0844	160530013	N/A	40
-TF  88	Murtaugh Placer (Snake River Placer; Snake River Queen)	42.505	-114.1569	160530040	W012818	43
