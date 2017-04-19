@@ -5,7 +5,10 @@ import java.util.Collections;
 import java.util.List;
 
 import org.apache.commons.lang.math.RandomUtils;
+import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +38,15 @@ public class LocationTest extends MineMappingApplicationTest {
 	@Autowired
 	MineService mineService;
 
+	@Mock
+	MineCommand mineCommand;
+
+	@Before
+	public void setUp() {
+		MockitoAnnotations.initMocks(this);
+	}
+
+
 	@Test
 	public void testMines(){
 
@@ -48,7 +60,7 @@ public class LocationTest extends MineMappingApplicationTest {
 		List<Mine> mines = mineService.findByCounty("Owyhee");
 		if (mines == null)
 			mines = new ArrayList<>();
-		MineCommand cmd = new MineCommand(mines);
+		MineCommand cmd = mineCommand;//new MineCommand(mines);
 		log.debug("Bottom: " + cmd.getBottomOuterBound());
 		log.debug("Top: " + cmd.getTopOuterBound());
 		log.debug("Left: " + cmd.getLeftOuterBound());

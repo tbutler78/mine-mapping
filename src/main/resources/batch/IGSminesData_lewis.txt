@@ -1,9 +1,0 @@
-Sequence Number	Deposit	Latitude	Longitude	MILSREF	MRDSREC	Orange Number
-PL 187	Lindgren (Arthur; Lindgreen)	46.2783	-116.1069	N/A	N/A	214
-PL 190	Nez Perce Limestone Quarry	46.2961	-116.6894	160610026	N/A	136
-PL 191	Jacques Spur	46.2939	-116.6972	160610025	N/A	135
-PL 192	Mission Creek Limestone Deposit	46.2858	-116.6939	160610011	W015971	137
-PL 194	Lyndon's	46.1967	-116.5597	N/A	N/A	161
-PL 218	Birch Placer	46.0414	-116.6253	N/A	N/A	211
-PL 219	Morris Placer	46.0008	-116.68	N/A	N/A	213
-PL 222	Nez Perce Clay Prospect (Booth Pit)	46.2319	-116.2494	160610010	W015960	132
