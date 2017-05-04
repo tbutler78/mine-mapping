@@ -17,8 +17,12 @@ import java.util.List;
 @RequestMapping("mrdslookup")
 public class MrdsLookupController {
 
+    private final MrdsService mrdsService;
+
     @Autowired
-    MrdsService mrdsService;
+    public MrdsLookupController(MrdsService mrdsService) {
+        this.mrdsService = mrdsService;
+    }
 
     @RequestMapping
     @ResponseBody

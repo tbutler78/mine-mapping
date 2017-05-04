@@ -11,12 +11,14 @@ import java.util.List;
 
 public class NameService 
 {
-	//private UserDao userDao;
 	
-	@Autowired
-	private NameRepository nameRepository;
+	private final NameRepository nameRepository;
 
-	
+	@Autowired
+	public NameService(NameRepository nameRepository) {
+		this.nameRepository = nameRepository;
+	}
+
 	public List<Name> findAll(){
 		return nameRepository.findAll();
 	}

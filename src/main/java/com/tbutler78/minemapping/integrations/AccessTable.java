@@ -4,12 +4,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * Created by butlert on 4/10/17.
- */
 public class AccessTable {
 
-    private List<HashMap<String, String>>  rows;
+    private final List<HashMap<String, String>>  rows;
 
     AccessTable (){
         rows= new ArrayList<>();

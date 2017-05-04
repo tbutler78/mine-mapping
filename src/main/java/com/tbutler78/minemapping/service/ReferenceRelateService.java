@@ -14,7 +14,7 @@ import java.util.List;
 public class ReferenceRelateService {
 
 
-    private ReferenceRelateRepository referenceRelateRepository;
+    private final ReferenceRelateRepository referenceRelateRepository;
 
     @Autowired
     ReferenceRelateService(ReferenceRelateRepository referenceRelateRepository){

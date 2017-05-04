@@ -17,9 +17,9 @@ import java.util.stream.Collectors;
 @Service
 
 public class MineService {
-	private MineRepository mineRepository;
-	private PropertyFileScanService propertyFileScanService;
-	private ReferenceService referenceService;
+	private final MineRepository mineRepository;
+	private final PropertyFileScanService propertyFileScanService;
+	private final ReferenceService referenceService;
 
 	@Autowired
 	MineService(MineRepository mineRepository, PropertyFileScanService propertyFileScanService, ReferenceService referenceService) {
@@ -34,7 +34,7 @@ public class MineService {
 
 	public List<MineResponse> findAllMineSummaries() {
 		List<MineResponse> summaries = new ArrayList<>();
-		mineRepository.findAll().stream().forEach(m ->
+		mineRepository.findAll().forEach(m ->
 				summaries.add(new MineResponse(m.getDeposit(), m.getLatitude(), m.getLongitude()))
 		);
 		return summaries;
@@ -44,17 +44,13 @@ public class MineService {
 
 		List<MineResponse> summaries = new ArrayList<>();
 		mineRepository.findByCountyNameAndLatitudeIsNotNullAndLongitudeIsNotNull(county).stream()
-				.sorted(Comparator.comparing(Mine::getDeposit)).forEach(m -> {
-			summaries.add(new MineResponse(m.getDeposit(), m.getLatitude(), m.getLongitude()));
-		});
+				.sorted(Comparator.comparing(Mine::getDeposit)).forEach(m -> summaries.add(new MineResponse(m.getDeposit(), m.getLatitude(), m.getLongitude())));
 		return summaries;
 	}
 
 	public List<Mine> findByCounty(String county) {
-		List<Mine> mines = mineRepository.findByCountyNameAndLatitudeIsNotNullAndLongitudeIsNotNull(county).stream()
+		return mineRepository.findByCountyNameAndLatitudeIsNotNullAndLongitudeIsNotNull(county).stream()
 				.sorted(Comparator.comparing(Mine::getDeposit)).collect(Collectors.toList());
-
-		return mines;
 	}
 
 	public Mine findMine(Long id) {

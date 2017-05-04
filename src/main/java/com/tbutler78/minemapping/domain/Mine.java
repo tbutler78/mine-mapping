@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Objects;
 
 
 @Entity
@@ -15,44 +16,133 @@ public class Mine  implements Serializable, Comparable<Mine>{
 	@Id
 	private long id;
 
-
+	/**
+	 * Primary Key for Access: For the main entry for each property, the SequenceNumber is the same as the Property Number.
+	 */
 	private String sequenceNumber;
+
+	/**
+	 * Property Number, including quadrangle abbreviation and sequence number. This field is archaic and now obsolete.
+	 */
 	private String newLoc;
+
+	/**
+	 * The Property Number, without the quadrangle identifier.
+	 */
 	private String mapLoc;
+
+
+	/**
+	 * Name and synonym names for the mine or prospect.
+	 */
 	private String deposit;
 
+	/**
+	 * Latitude in NAD27, as digitized from 1:250,000 base AND see "location_type" field for information about  updated  locations.
+	 */
 	private BigDecimal latitude;
 
+	/**
+	 * Longitude in NAD 27, as digitized from 1:250,000 base AND see "location_type" field for information about  updated  locations.
+	 */
 	private BigDecimal longitude;
+
+
+	/**
+	 * Location information: 3= Locations updated in 2009 using data from mineral property files and verified on 1:24,000 scale quadrangles.
+	 */
 	private String locationType;
+
+	/**
+	 * Degree Minute Second Latitude, as digitized from 1:250,000 base; or as updated from field work (see Updates table)  AND  see "location_type" field for information about  updated  locations.
+	 */
 	private BigDecimal dmsLat;
+
+	/**
+	 * Degree Minute Second Longitude, as digitized from 1:250,000 base; or as updated from field work (see Updates table)  AND  see "location_type" field for information about  updated  locations.
+	 */
 	private BigDecimal dmsLong;
+
+
+	/**
+	 * Name of the USGS 1:24,000 Scale Quad Name.  This was taken from the USGS database for Idaho and referenced against IDWR 1:24,000 Quad index.  Names were changed based on the name of the USGS quad. Some common names were spelled out (ex. Mtn to Mountain).
+	 */
 	@Column(name="twentyfour_k_kquad")
 	private String twentyFourQuad;
+
+
+	/**
+	 * Name of the USGS 1:100,000 Scale Quad name.  This was taken from the USGS database for Idaho and referenced against IDWR 1:100,000 Quad index. Names were changed based on the name of the USGS quad. Some common names were spelled out (ex. Mtn to Mountain).
+	 */
 	@Column(name="hundred_k_quad")
 	private String oneHundredQuad;
 
+	/**
+	 * County Names of Idaho s (Idaho Counties in ALL CAPS).
+	 */
 	private String countyName;
+
 	private String trs;
+	/**
+	 * Surface Management Agency of Idaho; based on IGS mine locations against 2009 INSIDE IDAHO (http://inside.uidaho.edu)
+	 */
 	private String landOwner;
 	private String idahoRegion;
+	/**
+	 * Name of U.S. Forest or Forest Service administrative unit.
+	 */
 	private String fsAgencyName;
+	/**
+	 * Old number associated with IGS "Mines and Prospects Maps" series; last updated in 1992
+	 */
 	private String orangeNum;
 
+	/**
+	 * 1x2 degreeQuadrangle name
+	 */
 	@Column(name="one_by_two_degreeQuadrangle")
 	private String oneByTwoDegreeQuad;
 
+	/**
+	 * Idaho PLSS Township.
+	 */
 	private String township;
+	/**
+	 * Idaho PLSS Range.
+	 */
 	private String range;
+	/**
+	 * Idaho PLSS Section.
+	 */
 	private String section;
 
+	private String qSection;
+
+	/**
+	 * Longitude  in WGS84 datum: as digitized from 1:250,000 base AND see "location_type" field for information about updated  locations.
+	 */
 	@Column(name="lon_WGS84")
 	private BigDecimal longwgs;
+
+	/**
+	 * Latitude  in WGS84 datum:  as digitized from 1:250,000 base AND see "location_type" field for information about updated  locations.
+	 */
 	@Column(name="lat_WGS84")
 	private BigDecimal latwgs;
 	private String mrdsrec;
 
 	private String point;
+
+	/**
+	 * Potential Mining District (see documentation for source and reference data!).
+	 */
+	private String miningDistrict;
+
+	/**
+	 * ZIP attribute for property.
+	 */
+	private Long zipCode;
+
 	@Transient
 	private List<PropertyFileScan> propertyFileScans;
 
@@ -278,6 +368,31 @@ public class Mine  implements Serializable, Comparable<Mine>{
 		this.propertyFileScans.add(propertyFileScan);
 	}
 
+
+	public String getqSection() {
+		return qSection;
+	}
+
+	public void setqSection(String qSection) {
+		this.qSection = qSection;
+	}
+
+	public String getMiningDistrict() {
+		return miningDistrict;
+	}
+
+	public void setMiningDistrict(String miningDistrict) {
+		this.miningDistrict = miningDistrict;
+	}
+
+	public Long getZipCode() {
+		return zipCode;
+	}
+
+	public void setZipCode(Long zipCode) {
+		this.zipCode = zipCode;
+	}
+
 	@Override
 	public int compareTo(Mine other) {
 		if (this.deposit == null){
@@ -286,7 +401,7 @@ public class Mine  implements Serializable, Comparable<Mine>{
 		else if (other.getDeposit() == null){
 			return 1;
 		}
-		else if (this.deposit== (other.getDeposit()))
+		else if (this.deposit.equals(other.getDeposit()))
 			return 0;
 		else if ((this.deposit).compareTo(other.getDeposit()) > 0)
 			return 1;
@@ -294,6 +409,20 @@ public class Mine  implements Serializable, Comparable<Mine>{
 			return -1;
 	}
 
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Mine mine = (Mine) o;
+		return id == mine.id &&
+				Objects.equals(sequenceNumber, mine.sequenceNumber);
+
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id, sequenceNumber, newLoc, mapLoc, deposit, latitude, longitude, locationType, dmsLat, dmsLong, twentyFourQuad, oneHundredQuad, countyName, trs, landOwner, idahoRegion, fsAgencyName, orangeNum, oneByTwoDegreeQuad, township, range, section, qSection, longwgs, latwgs, mrdsrec, point, miningDistrict, zipCode, propertyFileScans);
+	}
 
 	@Override
 	public String toString() {
@@ -325,4 +454,6 @@ public class Mine  implements Serializable, Comparable<Mine>{
 				", point='" + point + '\'' +
 				'}';
 	}
+
+
 }

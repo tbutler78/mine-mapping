@@ -1,8 +1,5 @@
 package com.tbutler78.minemapping.domain;
 
-/**
- * Created by JacksonGenerator on 4/17/17.
- */
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

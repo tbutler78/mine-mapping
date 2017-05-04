@@ -7,14 +7,15 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * Created by butlert on 4/16/17.
- */
 @Service
 public class MrdsService {
 
+    private final MrdsLookupRepository mrdsLookupRepository;
+
     @Autowired
-    MrdsLookupRepository mrdsLookupRepository;
+    public MrdsService(MrdsLookupRepository mrdsLookupRepository) {
+        this.mrdsLookupRepository = mrdsLookupRepository;
+    }
 
     public List<MrdsLookup> getAll(){
         return mrdsLookupRepository.findAll();

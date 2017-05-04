@@ -14,15 +14,18 @@ import java.util.stream.Collectors;
  */
 @Component
 public class ReferenceService {
-    @Autowired
-    ReferenceRepository referenceRepository;
+    final private ReferenceRepository referenceRepository;
+    final private ReferenceRelateService referenceRelateService;
 
     @Autowired
-    ReferenceRelateService referenceRelateService;
+    public ReferenceService(ReferenceRepository referenceRepository, ReferenceRelateService referenceRelateService) {
+        this.referenceRepository = referenceRepository;
+        this.referenceRelateService = referenceRelateService;
+    }
 
-    public List<Reference> getAll(){
+    private List<Reference> getAll(){
         List<Reference> references = new ArrayList<>();
-        referenceRepository.findAll().stream().forEach( c -> {
+        referenceRepository.findAll().forEach(c -> {
             c.setReferenceRelates(referenceRelateService.findByRefId(c.getReferenceId()));
             references.add(c);
         });
@@ -37,7 +40,7 @@ public class ReferenceService {
                 r.getHyperlink() != null && r.getHyperlink().length() > 0).collect(Collectors.toList());
     }
 
-	public List<Reference> findBySequenceNumber(String sequenceNumber) {
+	List<Reference> findBySequenceNumber(String sequenceNumber) {
         String refId = referenceRelateService.findOneBySequenceNumber(sequenceNumber).getRefId();
             return referenceRepository.findByReferenceId(refId);
 	}

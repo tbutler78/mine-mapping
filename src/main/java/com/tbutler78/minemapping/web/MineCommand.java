@@ -13,20 +13,18 @@ public class MineCommand {
 	private BigDecimal rightOuterBound = new BigDecimal(0);
 	private BigDecimal topOuterBound = new BigDecimal(0);
 	private BigDecimal bottomOuterBound = new BigDecimal(0);
-	private SortedSet<BigDecimal> latitudeRange;
-	private SortedSet<BigDecimal> longitudeRange;
 	private BigDecimal middleLat;
 	private BigDecimal middleLong;
 
 	public MineCommand(List<Mine> mines){
 
 		this.mines = mines;
-		this.latitudeRange = new TreeSet<BigDecimal>();
-		this.longitudeRange = new TreeSet<BigDecimal>();
+		SortedSet<BigDecimal> latitudeRange = new TreeSet<>();
+		SortedSet<BigDecimal> longitudeRange = new TreeSet<>();
 		for (Mine m : mines){
 
-			this.latitudeRange.add(m.getLatitude());
-			this.longitudeRange.add(m.getLongitude());
+			latitudeRange.add(m.getLatitude());
+			longitudeRange.add(m.getLongitude());
 		}
 
 
@@ -34,7 +32,10 @@ public class MineCommand {
 		this.rightOuterBound = longitudeRange.last();
 		this.topOuterBound = latitudeRange.first();
 		this.bottomOuterBound = latitudeRange.last();
-		this.middleLat = bottomOuterBound.subtract(topOuterBound).divide(new BigDecimal(2)).add(topOuterBound) ;
+		this.middleLat = bottomOuterBound;
+		this.middleLat.subtract(topOuterBound);
+		this.middleLat.divide(new BigDecimal(2));
+		this.middleLat.add(topOuterBound);
 		this.middleLong = leftOuterBound.subtract(rightOuterBound).divide(new BigDecimal(2)).add(rightOuterBound) ;
 
 

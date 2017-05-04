@@ -1,10 +1,7 @@
 package com.tbutler78.minemapping.web;
 
-import com.tbutler78.minemapping.service.CountyService;
-import com.tbutler78.minemapping.service.MineService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,14 +24,6 @@ import java.util.Locale;
 public class HomeController {
 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-
-	// Constants
-
-	@Autowired
-	private MineService mineService;
-
-	@Autowired
-	private CountyService countyService;
 
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -61,7 +50,7 @@ public class HomeController {
 		responseHeaders.add("Access-Control-Allow-Methods", "GET, OPTIONS, POST");
 		responseHeaders.add("Access-Control-Allow-Headers", "Content-Type");
 		responseHeaders.add("Access-Control-Max-Age", "86400");
-		return new ResponseEntity<T>(item, responseHeaders, HttpStatus.OK);
+		return new ResponseEntity<>(item, responseHeaders, HttpStatus.OK);
 	}
 
 }

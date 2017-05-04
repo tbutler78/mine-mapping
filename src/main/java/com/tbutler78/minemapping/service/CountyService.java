@@ -9,13 +9,14 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Created by butlert on 4/13/17.
- */
 @Component
 public class CountyService {
+    private final CountyRepository countyRepository;
+
     @Autowired
-    CountyRepository countyRepository;
+    public CountyService(CountyRepository countyRepository) {
+        this.countyRepository = countyRepository;
+    }
 
 
     public List<County> getCounties(){

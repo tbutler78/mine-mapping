@@ -5,10 +5,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.StringJoiner;
 
-/**
- * Created by JacksonGenerator on 4/17/17.
- */
-
 @Entity
 @Table(name="reference_relate")
 public class ReferenceRelate {

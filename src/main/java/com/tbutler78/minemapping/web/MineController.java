@@ -20,10 +20,16 @@ import java.util.List;
 @RequestMapping("mines")
 public class MineController {
 
-    @Autowired
-    MineService mineService;
-    @ResponseBody
+    private final MineService mineService;
+
+	@Autowired
+	public MineController(MineService mineService) {
+		this.mineService = mineService;
+	}
+
+	@ResponseBody
     @RequestMapping(value="/county/{county}")
+	@CrossOrigin(origins = "http://localhost:3000")
     public MineCommand getMines(@PathVariable String county){
         return new MineCommand(mineService.findByCounty(county));
     }
@@ -38,7 +44,7 @@ public class MineController {
     @RequestMapping
 	@CrossOrigin(origins = "http://localhost:3000")
     public List<Mine> getAllMines(){
-        return mineService.findAll().subList(0,10);
+        return mineService.findAll().subList(0,50);
     }
 
     @ResponseBody

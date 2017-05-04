@@ -9,15 +9,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
-/**
- * Created by butlert on 4/13/17.
- */
 @Controller
 @RequestMapping("counties")
 public class CountyController {
 
+    private final CountyService countyService;
+
     @Autowired
-    CountyService countyService;
+    public CountyController(CountyService countyService) {
+        this.countyService = countyService;
+    }
 
     @ResponseBody
     @RequestMapping(value="/counties")

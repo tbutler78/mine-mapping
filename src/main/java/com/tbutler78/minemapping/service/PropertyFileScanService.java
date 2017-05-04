@@ -12,7 +12,7 @@ import java.util.List;
  */
 @Component
 public class PropertyFileScanService {
-    private PropertyFileScanRepository propertyFileScanRepository;
+    private final PropertyFileScanRepository propertyFileScanRepository;
 
     @Autowired
     PropertyFileScanService(PropertyFileScanRepository propertyFileScanRepository){

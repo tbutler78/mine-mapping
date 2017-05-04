@@ -7,8 +7,8 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface MineRepository extends JpaRepository<Mine, Long> {
-	public List<Mine> findByCountyNameAndLatitudeIsNotNullAndLongitudeIsNotNull(String county);
+ public interface MineRepository extends JpaRepository<Mine, Long> {
+	List<Mine> findByCountyNameAndLatitudeIsNotNullAndLongitudeIsNotNull(String county);
 
 	List<Mine> findByDepositContaining(String name);
 }

@@ -1,14 +1,13 @@
 package com.tbutler78.minemapping.domain;
 
-import java.io.Serializable;
+import com.vividsolutions.jts.geom.Coordinate;
+import com.vividsolutions.jts.geom.GeometryFactory;
+import com.vividsolutions.jts.geom.Point;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.Point;
+import java.io.Serializable;
 
 
 @Entity
@@ -28,7 +27,7 @@ public class Location  implements Serializable, Comparable<Location>{
 	private String OrangeNumber;
 	private Point point;
 
-	public String getDeposit() {
+	private String getDeposit() {
 		return deposit;
 	}
 
@@ -96,6 +95,7 @@ public class Location  implements Serializable, Comparable<Location>{
 				+ Latitude + ", Longitude=" + Longitude + "]";
 	}
 
+	@Override
 	public int compareTo(Location other) {
 		 	if (this.deposit == null){
 		 		return -1;
@@ -103,7 +103,7 @@ public class Location  implements Serializable, Comparable<Location>{
 		 	else if (other.getDeposit() == null){
 		 		return 1;
 		 	}
-		 	else if (this.deposit== (other.getDeposit()))
+		 	else if (this.deposit.equals(other.getDeposit()))
 	            return 0;
 	        else if ((this.deposit).compareTo(other.getDeposit()) > 0)
 	            return 1;

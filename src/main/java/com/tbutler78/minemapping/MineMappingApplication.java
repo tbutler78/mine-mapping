@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 public class MineMappingApplication {
 
+
   public static void main(String[] args) throws ClassNotFoundException {
     SpringApplication.run(MineMappingApplication.class, args);
 

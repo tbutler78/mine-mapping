@@ -7,7 +7,6 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.boot.context.embedded.EmbeddedServletContainer;
 import org.springframework.boot.context.embedded.EmbeddedServletContainerFactory;
-import org.springframework.boot.web.servlet.ServletContextInitializer;
 
 class ProgressBeanPostProcessor implements BeanPostProcessor {
 
@@ -30,17 +29,14 @@ private static final Logger log = LoggerFactory.getLogger(ProgressBeanPostProces
   }
 
   private EmbeddedServletContainerFactory wrap(EmbeddedServletContainerFactory factory) {
-    return new EmbeddedServletContainerFactory() {
-      @Override
-      public EmbeddedServletContainer getEmbeddedServletContainer(ServletContextInitializer... initializers) {
-        final EmbeddedServletContainer container = factory.getEmbeddedServletContainer(initializers);
-        /*if (factory instanceof TomcatEmbeddedServletContainerFactory) {
-          ((TomcatEmbeddedServletContainerFactory) factory).addContextValves(new ProgressValve());
-        }*/
-        log.info("Eagerly starting {}", container);
-        container.start();
-        return container;
-      }
-    };
+    return initializers -> {
+	  final EmbeddedServletContainer container = factory.getEmbeddedServletContainer(initializers);
+	  /*if (factory instanceof TomcatEmbeddedServletContainerFactory) {
+		((TomcatEmbeddedServletContainerFactory) factory).addContextValves(new ProgressValve());
+	  }*/
+	  log.info("Eagerly starting {}", container);
+	  container.start();
+	  return container;
+	};
   }
 }

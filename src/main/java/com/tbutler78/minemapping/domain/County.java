@@ -1,10 +1,11 @@
 package com.tbutler78.minemapping.domain;
 
-import javax.persistence.*;
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 
-/**
- * Created by butlert on 4/12/17.
- */
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table(name="county")
@@ -48,4 +49,28 @@ public class County {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) { return false; }
+        if (obj == this) { return true; }
+        if (obj.getClass() != getClass()) {
+            return false;
+        }
+        County county = (County) obj;
+        return new EqualsBuilder()
+                .appendSuper(super.equals(obj))
+                .append(name, county.name)
+                .isEquals();
+
+    }
+
+    @Override
+    public int hashCode() {
+
+        return new HashCodeBuilder(17, 37).
+                append(name).
+                append(id).
+                toHashCode();
+    }
 }
+

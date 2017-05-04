@@ -8,29 +8,36 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by butlert on 4/12/17.
- */
+import java.sql.SQLException;
+
 
 @Component
 public class CountyImporter extends Importer {
-    Logger log = LoggerFactory.getLogger(CountyImporter.class);
+    private final Logger log = LoggerFactory.getLogger(CountyImporter.class);
+
+    private final CountyRepository countyRepository;
 
     @Autowired
-    CountyRepository countyRepository;
+    public CountyImporter(CountyRepository countyRepository) {
+        this.countyRepository = countyRepository;
+    }
 
     public void processData(){
-    getData().getRows().stream().forEach( t -> {
-        String countyName = t.get("Countyname");
-        if (countyRepository.findAllByName(countyName).size() == 0){
-            County county = new County(countyName);
-            countyRepository.save(county);
+        try {
+            getData().getRows().forEach(t -> {
+				String countyName = t.get("Countyname");
+				if (countyRepository.findAllByName(countyName).isEmpty()){
+					County county = new County(countyName);
+					countyRepository.save(county);
+				}
+			});
+        } catch (SQLException e) {
+           log.info(e.toString());
         }
-    });
 
     }
 
-    protected AccessTable getData() {
+    private AccessTable getData() throws SQLException {
         return
              accessAdapter.getResultSet("SELECT * FROM County", 1000);
 

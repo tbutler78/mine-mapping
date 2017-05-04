@@ -3,14 +3,17 @@ package com.tbutler78.minemapping.integrations.importer;
 import com.tbutler78.minemapping.integrations.AccessAdapter;
 import org.springframework.beans.factory.annotation.Autowired;
 
-/**
- * Created by butlert on 4/12/17.
- */
-
 public abstract class Importer {
 
+    AccessAdapter accessAdapter;
+
     @Autowired
-    protected AccessAdapter accessAdapter;
+    public Importer(AccessAdapter accessAdapter) {
+        this.accessAdapter = accessAdapter;
+    }
+
+    protected Importer() {
+    }
 
     //abstract public boolean getData();
 }

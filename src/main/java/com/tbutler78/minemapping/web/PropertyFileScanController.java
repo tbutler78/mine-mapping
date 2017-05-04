@@ -18,8 +18,12 @@ import java.util.stream.Collectors;
 @RequestMapping("propertyfilescans")
 public class PropertyFileScanController {
 
+    private final PropertyFileScanService propertyFileScanService;
+
     @Autowired
-    PropertyFileScanService propertyFileScanService;
+    public PropertyFileScanController(PropertyFileScanService propertyFileScanService) {
+        this.propertyFileScanService = propertyFileScanService;
+    }
 
     @ResponseBody
     @RequestMapping
@@ -34,7 +38,7 @@ public class PropertyFileScanController {
         return propertyFileScanService.findAll().stream()
                 .filter(pfs -> pfs.getInfoText() != null)
                 .sorted(Comparator.comparing(PropertyFileScan::getInfoText))
-                .map(pfs -> pfs.getInfoText())
+                .map(PropertyFileScan::getInfoText)
                 .collect(Collectors.toList());
 
     }
