@@ -1,34 +1,23 @@
 package com.tbutler78.minemapping.domain;
 
-import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="county")
 public class County {
     @Id
-    private int id;
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private Long id;
     private String name;
 
-    public County() {
-
-    }
-
-    public County(String name) {
-        this.name = name;
-    }
-
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
 
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -49,28 +38,5 @@ public class County {
                 '}';
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (obj == null) { return false; }
-        if (obj == this) { return true; }
-        if (obj.getClass() != getClass()) {
-            return false;
-        }
-        County county = (County) obj;
-        return new EqualsBuilder()
-                .appendSuper(super.equals(obj))
-                .append(name, county.name)
-                .isEquals();
-
-    }
-
-    @Override
-    public int hashCode() {
-
-        return new HashCodeBuilder(17, 37).
-                append(name).
-                append(id).
-                toHashCode();
-    }
 }
 

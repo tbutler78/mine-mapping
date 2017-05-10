@@ -27,7 +27,8 @@ public class CountyImporter extends Importer {
             getData().getRows().forEach(t -> {
 				String countyName = t.get("Countyname");
 				if (countyRepository.findAllByName(countyName).isEmpty()){
-					County county = new County(countyName);
+					County county = new County();
+					county.setName(countyName);
 					countyRepository.save(county);
 				}
 			});

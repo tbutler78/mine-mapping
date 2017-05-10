@@ -1,19 +1,21 @@
 package com.tbutler78.minemapping.service;
 
+import com.tbutler78.minemapping.domain.County;
 import com.tbutler78.minemapping.domain.County100k;
 import com.tbutler78.minemapping.domain.Location;
 import com.tbutler78.minemapping.integrations.AccessAdapter;
 import com.tbutler78.minemapping.integrations.AccessTable;
 import com.tbutler78.minemapping.repository.County100kRepository;
+import com.tbutler78.minemapping.repository.CountyRepository;
 import com.tbutler78.minemapping.repository.LocationRepository;
-import static java.util.stream.Collectors.toMap;
+import java.sql.SQLException;
+import java.util.*;
+import javax.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.sql.SQLException;
-import java.util.*;
+import static java.util.stream.Collectors.toMap;
 
 
 @Service
@@ -27,11 +29,14 @@ public class LocationService {
 
 	private final AccessAdapter accessAdapter;
 
+	private final CountyRepository countyRepository;
+
 	@Autowired
-	public LocationService(LocationRepository locationRepository, County100kRepository countyHundredKRepository, AccessAdapter accessAdapter) {
+	public LocationService(LocationRepository locationRepository, County100kRepository countyHundredKRepository, AccessAdapter accessAdapter, CountyRepository countyRepository) {
 		this.locationRepository = locationRepository;
 		this.countyHundredKRepository = countyHundredKRepository;
 		this.accessAdapter = accessAdapter;
+		this.countyRepository = countyRepository;
 	}
 
 	public List<Location> findAll() {
@@ -54,6 +59,7 @@ public class LocationService {
 	}
 
 	public List<County100k> updateCounties() {
+		Set<String> counties = new HashSet<>();
 		AccessTable results = null;
 		try {
 			results = accessAdapter.getResultSet("select * from County100k", 500);
@@ -64,13 +70,36 @@ public class LocationService {
 		results.getRows().forEach((HashMap<String, String> s) -> {
 					log.info(Arrays.toString(s.entrySet().toArray()));
 					String quad = Arrays.asList(s.entrySet().toArray()).get(0).toString();
-					String county = Arrays.asList(s.entrySet().toArray()).get(1).toString();
+					String county = Arrays.asList(s.entrySet().toArray()).get(1).toString().split("=")[1];
 					County100k newCounty = new County100k();
+					counties.add(county);
+					log.info(counties.toString());
 
 
-				}
+				});
 
-		);
+				counties.forEach(s -> {
+					County c = countyRepository.findOneByName(s);
+					if (c == null){
+						County newCounty = new County();
+						newCounty.setName(s);
+						saveCounty(newCounty);
+					}
+					log.info(s + ": " + (c != null ? c.toString() : "none"));
+				});
+
+
 		return new ArrayList<>();
 	}
+
+	@Transactional
+	private County saveCounty(County county){
+		try {
+			county = countyRepository.save(county);
+		} catch (Exception e) {
+			log.error(e.toString());
+		}
+		return county;
+	}
+
 }

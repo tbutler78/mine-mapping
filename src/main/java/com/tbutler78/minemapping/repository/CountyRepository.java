@@ -6,11 +6,8 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-/**
- * Created by butlert on 4/12/17.
- */
-
 @Repository
-public interface CountyRepository extends JpaRepository<County, Integer>{
+public interface CountyRepository extends JpaRepository<County, Long>{
     List<County> findAllByName(String name);
+    County findOneByName(String name);
 }

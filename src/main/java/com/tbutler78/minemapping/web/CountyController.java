@@ -21,7 +21,7 @@ public class CountyController {
     }
 
     @ResponseBody
-    @RequestMapping(value="/counties")
+    @RequestMapping
     public List<County> getCounties(){
         return countyService.getCounties();
     }
