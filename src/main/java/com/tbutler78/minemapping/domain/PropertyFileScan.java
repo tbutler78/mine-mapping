@@ -51,9 +51,6 @@ public class PropertyFileScan implements Serializable {
 
     private String entryDate;
 
-    public PropertyFileScan() {
-    }
-
     public int getId() {
         return id;
     }

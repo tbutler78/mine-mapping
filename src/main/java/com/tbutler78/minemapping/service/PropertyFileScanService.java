@@ -15,7 +15,7 @@ public class PropertyFileScanService {
     private final PropertyFileScanRepository propertyFileScanRepository;
 
     @Autowired
-    PropertyFileScanService(PropertyFileScanRepository propertyFileScanRepository){
+    public PropertyFileScanService(PropertyFileScanRepository propertyFileScanRepository){
         this.propertyFileScanRepository = propertyFileScanRepository;
     }
 

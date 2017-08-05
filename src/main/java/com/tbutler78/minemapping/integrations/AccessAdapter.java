@@ -59,13 +59,12 @@ public class AccessAdapter {
 					// log.info(rsmd.getColumnTypeName(i) + " - " + rsmd.getColumnName(i));
 					// log.info((CaseFormat.UPPER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, rsmd.getColumnName(i))));
 				}
-				/*resultSet.toString();
-                System.out.println(resultSet.getInt(1) + "\t" +
-                                           resultSet.getString(2) + "\t" +
-                                           resultSet.getString(3) + "\t" +
-                                           resultSet.getString(4) + "\t" +
-                     resultSet.getString(5));
-*/
+				//resultSet.toString();
+				//System.out.println(resultSet.getInt(1) + "\t" +
+				//resultSet.getString(2) + "\t" +
+				//resultSet.getString(3) + "\t" +
+				//resultSet.getString(4) + "\t" +
+				//resultSet.getString(5));
 				log.info(result.toString());
 				accessTable.addRow(result);
 

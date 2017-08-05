@@ -16,15 +16,18 @@ public class MineResponse {
     private String deposit;
     private BigDecimal latitude;
     private BigDecimal longitude;
+    private String county;
 
 
 
     private List<PropertyFileScan> propertyFileScan;
 
-    public MineResponse(String deposit, BigDecimal latitude, BigDecimal longitude) {
+
+    public MineResponse(String deposit, BigDecimal latitude, BigDecimal longitude, String county) {
         this.deposit = deposit;
         this.latitude = latitude;
         this.longitude = longitude;
+        this.county = county;
     }
 
     public static long getSerialVersionUID() {
@@ -57,6 +60,14 @@ public class MineResponse {
 
     public List<PropertyFileScan> getPropertyFileScan() {
         return propertyFileScan;
+    }
+
+    public String getCounty() {
+        return county;
+    }
+
+    public void setCounty(String county) {
+        this.county = county;
     }
 
     public void setPropertyFileScan(List<PropertyFileScan> propertyFileScan) {

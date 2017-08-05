@@ -16,7 +16,7 @@ class Listener implements ApplicationListener<ContextRefreshedEvent> {
     return promise;
   }
 
-  public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+  public Object postProcessBeforeInitialization(Object bean) throws BeansException {
     return bean;
   }
 

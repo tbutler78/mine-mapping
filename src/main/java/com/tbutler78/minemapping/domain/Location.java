@@ -4,6 +4,7 @@ import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.GeometryFactory;
 import com.vividsolutions.jts.geom.Point;
 
+import java.util.Objects;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -111,4 +112,16 @@ public class Location  implements Serializable, Comparable<Location>{
 	            return -1;
 	    }
 
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Location location = (Location) o;
+		return id == location.id;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
 }

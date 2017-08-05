@@ -1,22 +1,22 @@
 package com.tbutler78.minemapping.integrations;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class AccessTable {
 
-    private final List<HashMap<String, String>>  rows;
+    private final List<Map<String, String>>  rows;
 
-    AccessTable (){
+    public AccessTable (){
         rows= new ArrayList<>();
     }
 
-    public void addRow(HashMap<String, String> value ){
+    public void addRow(Map<String, String> value ){
         rows.add(value);
     }
 
-    public List<HashMap<String, String>> getRows() {
+    public List<Map<String, String>> getRows() {
         return rows;
     }
 

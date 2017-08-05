@@ -8,7 +8,6 @@ import com.tbutler78.minemapping.integrations.AccessTable;
 import com.tbutler78.minemapping.repository.County100kRepository;
 import com.tbutler78.minemapping.repository.CountyRepository;
 import com.tbutler78.minemapping.repository.LocationRepository;
-import java.sql.SQLException;
 import java.util.*;
 import javax.transaction.Transactional;
 import org.slf4j.Logger;
@@ -60,25 +59,20 @@ public class LocationService {
 
 	public List<County100k> updateCounties() {
 		Set<String> counties = new HashSet<>();
-		AccessTable results = null;
+		AccessTable results;
 		try {
 			results = accessAdapter.getResultSet("select * from County100k", 500);
-		} catch (SQLException e) {
-			log.error(e.toString());
-		}
-
-		results.getRows().forEach((HashMap<String, String> s) -> {
-					log.info(Arrays.toString(s.entrySet().toArray()));
-					String quad = Arrays.asList(s.entrySet().toArray()).get(0).toString();
-					String county = Arrays.asList(s.entrySet().toArray()).get(1).toString().split("=")[1];
-					County100k newCounty = new County100k();
-					counties.add(county);
-					log.info(counties.toString());
 
 
-				});
+			for (Map<String, String> stringStringHashMap : results.getRows()) {
+				String county = Arrays.asList(stringStringHashMap.entrySet().toArray()).get(1).toString().split("=")[1];
+				counties.add(county);
+				//log.info(Arrays.toString(stringStringHashMap.entrySet().toArray()));
+				//String quad = Arrays.asList(stringStringHashMap.entrySet().toArray()).get(0).toString();
+				//log.info(counties.toString());
+			}
 
-				counties.forEach(s -> {
+			counties.forEach(s -> {
 					County c = countyRepository.findOneByName(s);
 					if (c == null){
 						County newCounty = new County();
@@ -88,18 +82,16 @@ public class LocationService {
 					log.info(s + ": " + (c != null ? c.toString() : "none"));
 				});
 
+		} catch (Exception e) {
+			log.error("error:{}", e);
+		}
 
 		return new ArrayList<>();
 	}
 
 	@Transactional
 	private County saveCounty(County county){
-		try {
-			county = countyRepository.save(county);
-		} catch (Exception e) {
-			log.error(e.toString());
-		}
-		return county;
+		return countyRepository.save(county);
 	}
 
 }

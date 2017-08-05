@@ -22,7 +22,7 @@ public class MineService {
 	private final ReferenceService referenceService;
 
 	@Autowired
-	MineService(MineRepository mineRepository, PropertyFileScanService propertyFileScanService, ReferenceService referenceService) {
+	public MineService(MineRepository mineRepository, PropertyFileScanService propertyFileScanService, ReferenceService referenceService) {
 		this.mineRepository = mineRepository;
 		this.propertyFileScanService = propertyFileScanService;
 		this.referenceService = referenceService;
@@ -35,7 +35,7 @@ public class MineService {
 	public List<MineResponse> findAllMineSummaries() {
 		List<MineResponse> summaries = new ArrayList<>();
 		mineRepository.findAll().forEach(m ->
-				summaries.add(new MineResponse(m.getDeposit(), m.getLatitude(), m.getLongitude()))
+				summaries.add(new MineResponse(m.getDeposit(), m.getLatitude(), m.getLongitude(), m.getCountyName()))
 		);
 		return summaries;
 	}
@@ -44,7 +44,7 @@ public class MineService {
 
 		List<MineResponse> summaries = new ArrayList<>();
 		mineRepository.findByCountyNameAndLatitudeIsNotNullAndLongitudeIsNotNull(county).stream()
-				.sorted(Comparator.comparing(Mine::getDeposit)).forEach(m -> summaries.add(new MineResponse(m.getDeposit(), m.getLatitude(), m.getLongitude())));
+				.sorted(Comparator.comparing(Mine::getDeposit)).forEach(m -> summaries.add(new MineResponse(m.getDeposit(), m.getLatitude(), m.getLongitude(), m.getCountyName())));
 		return summaries;
 	}
 

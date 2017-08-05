@@ -24,16 +24,18 @@ public class CountyImporter extends Importer {
 
     public void processData(){
         try {
-            getData().getRows().forEach(t -> {
-				String countyName = t.get("Countyname");
-				if (countyRepository.findAllByName(countyName).isEmpty()){
-					County county = new County();
-					county.setName(countyName);
-					countyRepository.save(county);
-				}
-			});
+        	if (getData().getRows().size() > 0) {
+		        getData().getRows().forEach(t -> {
+			        String countyName = t.get("Countyname");
+			        if (countyRepository.findAllByName(countyName).isEmpty()) {
+				        County county = new County();
+				        county.setName(countyName);
+				        countyRepository.save(county);
+			        }
+		        });
+	        }
         } catch (SQLException e) {
-           log.info(e.toString());
+           log.info("error{}", e);
         }
 
     }

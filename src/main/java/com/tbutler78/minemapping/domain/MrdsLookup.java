@@ -193,25 +193,8 @@ public class MrdsLookup {
 
 		MrdsLookup that = (MrdsLookup) o;
 
-		return Objects.equals(this.commodity, that.commodity) &&
-				Objects.equals(this.county, that.county) &&
-				Objects.equals(this.county2, that.county2) &&
-				Objects.equals(this.district, that.district) &&
-				Objects.equals(this.id, that.id) &&
-				Objects.equals(this.lat, that.lat) &&
-				Objects.equals(this.lon, that.lon) &&
-				Objects.equals(this.mrdsLookupKey, that.mrdsLookupKey) &&
-				Objects.equals(this.mrdsRec, that.mrdsRec) &&
-				Objects.equals(this.range, that.range) &&
-				Objects.equals(this.secQuad, that.secQuad) &&
-				Objects.equals(this.secQuads, that.secQuads) &&
-				Objects.equals(this.section, that.section) &&
-				Objects.equals(this.sequenceNumber, that.sequenceNumber) &&
-				Objects.equals(this.siteName, that.siteName) &&
-				Objects.equals(this.town, that.town) &&
-				Objects.equals(this.utmEast, that.utmEast) &&
-				Objects.equals(this.utmNorth, that.utmNorth) &&
-				Objects.equals(this.utmZone, that.utmZone);
+		return
+				Objects.equals(this.id, that.id);
 	}
 
 	@Override

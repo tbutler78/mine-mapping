@@ -1,13 +1,11 @@
 package com.tbutler78.minemapping.domain.serializer;
 
 import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.databind.SerializerProvider;
 import com.tbutler78.minemapping.domain.Reference;
-import org.springframework.boot.jackson.JsonComponent;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.boot.jackson.JsonComponent;
 
 @JsonComponent
 public class ReferenceSerializer {
@@ -17,8 +15,7 @@ public class ReferenceSerializer {
         //extends JsonSerializer<Reference> {
 
    // @Override
-    public void serialize(Reference reference, JsonGenerator jsonGenerator,
-                          SerializerProvider serializerProvider) throws IOException {
+    public void serialize(Reference reference, JsonGenerator jsonGenerator) throws IOException {
 
         jsonGenerator.writeStartObject();
         jsonGenerator.writeStringField("title", reference.getTitle());
@@ -37,6 +34,6 @@ public class ReferenceSerializer {
        summary.add(reference.getHyperlink());
        summary.add(reference.getYearDate());
         // return String.format("#%02x%02x%02x", r, g, b);
-        return (String[]) summary.toArray();
+        return summary.toArray(new String[0]);
     }
 }}

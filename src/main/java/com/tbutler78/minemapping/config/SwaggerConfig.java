@@ -29,8 +29,7 @@ public class SwaggerConfig implements ServletContextAware {
 	}
 
 	private PathProvider pathProvider() {
-		RelativePathProvider relativePathProvider = new RelativePathProvider(servletContext);
-		return relativePathProvider;
+		return new RelativePathProvider(servletContext);
 	}
 
 	@Bean

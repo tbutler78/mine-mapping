@@ -2,20 +2,17 @@ package com.tbutler78.minemapping.service;
 
 import com.tbutler78.minemapping.domain.Reference;
 import com.tbutler78.minemapping.repository.ReferenceRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-/**
- * Created by butlert on 4/17/17.
- */
-@Component
+
+@Service
 public class ReferenceService {
-    final private ReferenceRepository referenceRepository;
-    final private ReferenceRelateService referenceRelateService;
+    private final ReferenceRepository referenceRepository;
+    private final ReferenceRelateService referenceRelateService;
 
     @Autowired
     public ReferenceService(ReferenceRepository referenceRepository, ReferenceRelateService referenceRelateService) {
