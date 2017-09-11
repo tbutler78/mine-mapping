@@ -1,0 +1,12 @@
+"ObjectID","UUID","OrigItemTypeID","DestItemTypeID","Name","ForwardLabel","BackwardLabel","IsContainment"
+1,,,,"DatasetOfSyncDataset","Replicated Dataset","Dataset Of Sync Dataset",0
+2,,,,"RepresentationOfFeatureClass","Feature Class Representation","Represented Feature Class",0
+3,,,,"FeatureClassInNetworkDataset","Spatially Manages Feature Class","Participates In Network Dataset",0
+4,,,,"DatasetInFolder","Contains Dataset","Contained in Dataset",1
+5,,,,"DomainInDataset","Contains Domain","Contained in Dataset",0
+6,,,,"TableInParcelFabric","Manages Table","Participates In Parcel Fabric",0
+7,,,,"DatasetInFeatureDataset","Contains Dataset","Contained In FeatureDataset",1
+8,,,,"DatasetsRelatedThrough","Origin Of","Destination Of",0
+9,,,,"FeatureClassInTopology","Spatially Manages Feature Class","Participates In Topology",0
+
+The free trial of MDB ACCDB Viewer exports only half of the records in each table.

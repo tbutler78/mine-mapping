@@ -1,0 +1,703 @@
+Sequence Number	Deposit	Latitude	Longitude	MILSREF	MRDSREC	Orange Number
+HM   2	Blackdome Occurrence	46.9775	-115.8208	160790013	W013032	1
+HM   3	Gray Eagle Mine	46.9611	-115.86	160790203	N/A	2
+HM   5	Stocking Meadows	46.9389	-115.8739	160790181	N/A	3
+HM   6	Cedar Creek	46.9392	-115.8653	160790001	N/A	4
+HM  14	Elk Prairie Prospect	46.9894	-115.4886	160790530	W013129	10
+HM  17	Clearwater Gold and Copper Prospect (Clearwater Mine and Placer; N and F Placer)	46.9715	-115.1529	160790091	W013124	12
+HM  19	Chamberlain Meadows Copper Prospect	46.9414	-115.2197	160790531	W013037	14
+HM  20	Vanderbilt Gulch Placer	46.9378	-115.1703	160790092	W013062	15
+HM  21	Dill Creek Placer	46.9408	-115.1017	160790093	W013041	17
+SP  37	Rock City Mine	47.86	-116.1422	160790419	N/A	28
+SP  75	Edwards Prospect (Cinnabar Prospect)	47.6483	-116.0656	160790207	N/A	53
+SP  76	Fortunate Mining Co.	47.6436	-116.1933	N/A	N/A	298
+SP  77	North Fork Mine (North Fork Development Co.)	47.6425	-116.1286	N/A	N/A	384
+SP  79	Coal Creek Group	47.6367	-116.1317	N/A	N/A	409
+SP  81	Paperul & Graham (Graham Mountain; P.&G.M. Min. Co.; Papurel Graham Mountain; Papurel Mine; Papurel Graham Mt.)	47.6317	-116.1325	N/A	N/A	387
+SP  87	Empire Copper Mine (Linfor Copper; Horst-Powell Mine; Horse Powell Mine)	47.6278	-116.3219	160790016	W019471	81
+SP  88	Juno Mine (June Mine)	47.6175	-116.2686	N/A	D006587	304
+SP 101	McGillivray Prospect	47.6036	-116.2803	160790242	N/A	82
+SP 112	Coeur d'Alene West Fork Mining Co. (C.D.A. West Fork)	47.5764	-116.0431	N/A	N/A	357
+SP 115	Maine-Standard	47.5731	-116.0175	N/A	N/A	379
+SP 117	Washington-Idaho Mine (Cavanaugh Group; Crescent Group; Hetzel Group; Annie Laurie)	47.5678	-116.0394	160790214	D006576	85
+SP 118	Coeur d'Alene Eagle Lead-Silver Mining Co., Ltd.	47.5681	-116.1294	N/A	N/A	356
+SP 119	Dickens Consolidated (Dickens; Charles Dickens Mine; Old Charles Dickens; Silver Crescent, Inc.)	47.5644	-116.0175	N/A	N/A	359
+SP 121	Silver Crescent Mine (Charles Dickens)	47.5617	-116.0214	160790039	W019374	88
+SP 122	Black Rock	47.5589	-116.1222	N/A	N/A	352
+SP 123	Cogdill Prospect	47.5581	-116.0344	160790297	W019389	84
+SP 124	Lombardy Property	47.5556	-116.1167	160790532	W019366	83
+SP 125	Royal Mine (Calabria)	47.5528	-116.0364	160790365	N/A	87
+SP 126	Index	47.5519	-116.135	N/A	N/A	373
+SP 127	Moon Creek Group	47.5486	-116.0408	N/A	N/A	382
+SP 128	Oasis Group	47.5497	-116.1992	N/A	N/A	385
+SP 129	Hayes Company	47.5444	-116.2072	N/A	N/A	368
+SP 130	Gibbonsville Mining and Exploration Co. (Brown Placers; Hayes Company; Coeur d'Alene River Tailings)	47.5431	-116.1408	160790201	N/A	257
+SP 131	Alma Ray	47.5422	-116.1036	N/A	N/A	345
+SP 133	Terror Prospect	47.5431	-116.0042	160790383	W019544	89
+SP 135	Blue Star Prospect (Pinehurst Silver)	47.5406	-116.2161	160790544	W019559	213
+SP 136	McGregor Mine	47.54	-116.3147	160790275	N/A	101
+SP 137	O. K. Prospect	47.5392	-116.1731	160790545	W019368	219
+SP 139	Eldorado (El Dorado; Eldrado; Silver Bar Mining Co.)	47.5375	-116.0978	N/A	N/A	363
+SP 140	Wisconsin	47.5372	-116.0539	N/A	N/A	403
+SP 141	Teddy Prospect	47.5364	-116.0739	160790382	W019421	246
+SP 142	Liberty Bell Group (Liberty Gem; Weigle Group; North Side Mining Co.)	47.5356	-116.08	160790217	N/A	247
+SP 144	Fourth of July Sourdough Mine (Coeur d'Alene and Pine Creek Mine; Antimony Mining Company; Coeur d'Alene Antimony; Idaho Antimony)	47.5342	-116.2475	160790018	W019549	187
+SP 145	Kellogg Tunnel (Bunker Hill; Bunker Hill and Sullivan)	47.5339	-116.1381	160790032	W019388	228
+SP 146	Spokane Mining & Milling Co. (Sullivan Mining Co.)	47.5333	-116.17	N/A	N/A	396
+SP 147	St. Joe No. 1-2 (Royal Mines Corp.; Capparelli Group)	47.5417	-116.0039	160790198	N/A	375
+SP 148	Silver Bow Prospect (Senator Stewart Mine; Stewart; Fir Tunnel; Silver Bowl)	47.5311	-116.1528	160790371	W019394	226
+SP 150	Quaker Prospect (Silver Bowl; Bunker Hill)	47.5303	-116.1614	160790360	W019417	220
+SP 152	Keating Prospect	47.53	-116.1506	160790333	W019413	227
+SP 153	Enterprise Prospect	47.5297	-116.0631	160790307	W019390	248
+SP 154	Rhode Island Prospect	47.5408	-116.0072	160790244	W019406	90
+SP 155	Enterprise Extension Prospect	47.5281	-116.0631	160790308	W019410	249
+SP 158	Ontario Mine	47.5267	-116.1556	160790355	W019396	229
+SP 159	Crown Point Mine	47.5264	-116.1744	160790031	W019538	221
+SP 160	Syndicate Mining & Exploration Co., Ltd.	47.5264	-116.0353	N/A	N/A	399
+SP 161	Ranger Mine	47.5261	-116.1853	160790362	N/A	217
+SP 162	North Bunker Hill	47.5261	-116.1381	N/A	N/A	383
+SP 163	New Jersey Mine (Gold Run Gulch Mining Co.; Du Bois Mining Co.; Coleman Group)	47.5258	-116.0736	160790556	W019367	255
+SP 164	Page Mine (Corrigan Mine; Tony Ore Body; Great Western; East Page)	47.5256	-116.2006	160790019	W019542	214
+SP 165	Cravenka Placer	47.5256	-116.0983	N/A	N/A	406
+SP 166	Black Hawk Mine (Blackhawk)	47.5253	-116.1883	160790406	W019540	216
+SP 167	Caledonia Mine (Nordic Silver)	47.5247	-116.1658	160790550	W019397	225
+SP 168	Wyoming Mine	47.5244	-116.1797	160790546	W019539	218
+SP 169	Sandow Prospect (Bunker Hill; Yreka United)	47.5244	-116.1428	160790370	W019419	231
+SP 171	Arizona Tunnel	47.5239	-116.1578	N/A	N/A	386
+SP 172	O'Conner Prospect (Bunker Hill)	47.5239	-116.1494	160790353	W019415	230
+SP 173	Lead Blossom (Iron Blossom)	47.5239	-116.1214	N/A	N/A	374
+SP 174	Silver King Mine	47.5236	-116.1719	160790547	W019400	222
+SP 175	Hartford Group (Streamline Silver; Mike Alesko; Streamline Mine)	47.5236	-116.0561	N/A	N/A	367
+SP 177	Big Eight Prospect (New General Mines Company; General Mine)	47.5222	-116.2225	160790056	W019497	189
+SP 178	Corby Mine	47.5219	-116.2381	160790301	N/A	188
+SP 179	Pioneer Mines, Inc. Property	47.5219	-116.0767	160790557	W019369	256
+SP 180	Silverstone	47.5214	-116.2439	N/A	N/A	395
+SP 181	High Grade Group	47.5214	-116.1119	N/A	N/A	369
+SP 182	Viola Prospect (Bunker Hill)	47.5211	-116.1583	160790389	W019422	235
+SP 183	Shoshone	47.5211	-116.1417	160790255	N/A	259
+SP 184	East Caledonia	47.5208	-116.1289	N/A	N/A	360
+SP 185	Hill Mine	47.5208	-116.1222	N/A	N/A	370
+SP 186	Glamorgan Group (Big Creek Group; Glomorgon Group)	47.5208	-116.0525	N/A	N/A	348
+SP 187	Government Gulch Group	47.5206	-116.1783	N/A	N/A	346
+SP 188	Nellie Mine (Bunker Hill)	47.5206	-116.1542	N/A	W019408	234
+SP 189	Con Biederman Group	47.5194	-116.1828	N/A	N/A	347
+SP 190	Ramona Property (Silver Ramona)	47.5194	-116.0044	160790555	W019370	254
+SP 192	Tyler Mine	47.5189	-116.1481	160790386	N/A	236
+SP 193	Sierra Nevada Mine	47.5186	-116.1653	160790549	W019398	224
+SP 194	Bunker Chance Mine	47.5186	-116.1328	160790205	W019533	232
+SP 195	New Hilarity Property	47.5183	-116.1056	160790551	W019534	243
+SP 196	Gold Eagle Mining Co. (Brown Group)	47.5169	-116.2369	N/A	N/A	365
+SP 197	Sweeney Mine	47.5169	-116.1433	160790381	N/A	237
+SP 198	Slavonian Group	47.5169	-116.1381	N/A	N/A	355
+SP 199	Silver Seal (Silver Surprize)	47.5164	-116.0664	N/A	N/A	358
+SP 200	Last Chance Mine (Wardner Mine; Arizona Tunnel; Sweeney)	47.5161	-116.1481	160790054	W019519	233
+SP 201	Yreka United Group Mine (Altura; Mohawk; Paramount; Hill; Wolverine; High Grade; Higrade; Kellogg Galena; O.K.)	47.5156	-116.1075	160790229	W019378	244
+SP 202	Evolution Mine (Coeur d'Alene Crescent)	47.5156	-116.0261	160790554	W019361	253
+SP 203	Bobby Anderson Mine (New Era Property; Signal)	47.5147	-116.2375	160790055	W019500	191
+SP 204	Northern Light Mine (Beeler)	47.5144	-116.2442	160790408	W019499	190
+SP 205	Bonanza Gold Prospect (Prospect Gulch)	47.5144	-116.0017	160790552	W019560	251
+SP 206	Roanoke	47.5142	-116.0947	N/A	N/A	389
+SP 207	United Mines Prospect (Elgin and Ogden Group)	47.5139	-116.0661	160790558	W019376	260
+SP 208	Wolverine	47.5136	-116.0892	N/A	N/A	404
+SP 209	Stem Winder Mine (Bunker Hill; Stemwinder)	47.5128	-116.1408	160790377	W019420	238
+SP 210	Alhambra Mine	47.5128	-116.1086	160790053	W019409	245
+SP 211	Florence Prospect (Dallaire Group; Aberdeen; Aberdeen-Idaho)	47.5128	-116.0992	160790311	W019411	258
+SP 212	Reed Mine (Bunker Hill)	47.5125	-116.1408	160790363	W019418	239
+SP 213	Silverado Mine (Lincoln Mining Co.; Silverado Lincoln; Silver Chieftain)	47.5117	-116.0417	160790553	W019402	252
+SP 214	Phil Sheridan Prospect (Bunker Hill)	47.5114	-116.1453	160790359	W019416	240
+SP 215	Bluebird	47.5108	-116.1489	160790026	N/A	241
+SP 216	Sullivan Mine (Bunker Hill; Bunker Hill and Sullivan)	47.5108	-116.1408	160790379	W019387	242
+SP 217	Silver Dollar	47.5106	-116.0339	N/A	N/A	397
+SP 218	North American	47.5103	-116.0733	N/A	N/A	371
+SP 219	Silver Syndicate (Rambo Area)	47.5103	-116.0675	160790559	W019535	261
+SP 221	Good Hope Area Mine (Chester Vein; Sunshine Vein)	47.5094	-116.05	160790560	W019382	262
+SP 222	Mineral Mountain Mine	47.5094	-116.0456	160790038	N/A	349
+SP 223	Hypotheek Mine	47.5086	-116.2778	160790017	W019498	102
+SP 224	Amy-Matchless Mine	47.5086	-116.2397	160790057	W019501	192
+SP 225	X and Y Areas of Sunshine Mine (Sunshine Mine)	47.5081	-116.0647	N/A	W019380	263
+SP 226	Silver State Group (Mac D'Palm)	47.5075	-116.0603	N/A	N/A	378
+SP 228	Yankee Boy Mine (Sunshine)	47.5061	-116.0625	N/A	W019556	265
+SP 229	Crescent Mine (Hooper Tunnel)	47.5056	-116.0761	160790009	W019536	268
+SP 230	Polaris Group (Chester Group)	47.5047	-116.0542	160790035	W019537	266
+SP 231	Big Creek Apex Mine (Crane; Snowstorm; Big Creek Mine)	47.5033	-116.0786	160790076	W019557	264
+SP 232	Chester Mine	47.5033	-116.0422	160790561	W019359	267
+SP 233	Carbonate (Epic Silver; New Era)	47.5025	-116.2381	160790538	W019502	193
+SP 235	Silver Summit (Polaris East Explor. Project; Coeur d'Alene Jumbo Mine; Jumbo Mine)	47.5019	-116.0436	160790037	W000720	283
+SP 236	Sunshine Consolidated Mine (Yankee Girl; Perhaps; Ida; Gullickson; Unit Area of Sunshine Mine)	47.5017	-116.0728	160790011	W019383	270
+SP 237	Silver Dollar Mine (Hayden; Chester Vein; Stratton Silver Summit; St. Germaine)	47.5014	-116.0483	160790036	W019395	282
+SP 238	Gullickson Mine	47.5011	-116.0781	160790321	N/A	269
+SP 239	Rotbart Area (Sunshine Mine)	47.5011	-116.0586	N/A	W019381	281
+SP 240	Consolidated Silver Mine (Silver Chieftain; Con-Sil; Silver Summit Mine)	47.5008	-116.0386	160790420	W019373	284
+SP 241	Plainview Property (Con Silver Project; Camp Project)	47.5006	-116.0175	160790563	W019561	286
+SP 242	Sunset Mine (Epic Silver; Clark; Liberal Creek Mine; Liberal King)	47.4986	-116.2375	160790218	W019503	195
+SP 243	Purim Group (Hayden Hill Consolidated Mining Co.)	47.4986	-116.0481	N/A	N/A	350
+SP 244	Merger Mine (McFarren Gulch; Camp Project; Plain View; Silver Standard; Aetna Group)	47.4983	-116.0214	160790077	W019529	288
+SP 245	Yankee Girl Mine (Sunshine Mine)	47.4981	-116.0717	160790401	W019407	272
+SP 246	King Mine (Polyastics Corp.; New Jersey Consolidated; East Hypotheek; King of Pine Creek)	47.4978	-116.2425	160790200	W019365	194
+SP 247	Yakima-Shoshone Mine (Nellie Mine)	47.4978	-116.0331	160790052	W019377	285
+SP 248	Tiberius Prospect	47.4967	-116.2778	160790534	W019518	104
+SP 249	Shetland Mining Co. (Nabob Silver-Lead Co.)	47.4967	-116.2144	N/A	N/A	392
+SP 250	Coeur d'Alene Mines (Silver Standard; Camp Project)	47.4967	-116.0183	160790295	W019384	287
+SP 252	Rockford Group (Sunshine Consolidated, Inc.)	47.4944	-116.11	N/A	N/A	390
+SP 253	Idaho Prospect (Little Giant Gold Mining Co.; Proctor Knott Mining Co.)	47.4942	-116.2075	160790540	W019514	199
+SP 254	Globe Mine (Silver Surprise; Yankee Girl Vein)	47.4936	-116.0731	160790074	W019412	273
+SP 255	The Great Helena (Great Helena; Helena Group)	47.4931	-116.2189	N/A	N/A	366
+SP 256	American Silver Prospect	47.4928	-116.0244	160790283	W019385	289
+SP 257	V Claim (Lynch-Pine Creek; Lynch Group; Custer Gulch Mines Co., Inc.)	47.4925	-116.2081	160790337	W019523	198
+SP 258	Great Dunkard Mine (Pearson; Great Dunker)	47.4919	-116.27	160790025	W019517	103
+SP 259	Lookout Mountain Mine (Epic Silver, Inc.)	47.4919	-116.2319	160790199	W019547	196
+SP 260	Metropolitan Mine (Destroyer Prospect; Western Star; Wolfson)	47.4911	-116.065	160790075	W019391	274
+SP 261	Denver Mine (Nabob Adit)	47.4908	-116.1956	160790541	W019505	200
+SP 262	Lucky Stone	47.4906	-116.0361	N/A	N/A	377
+SP 263	Sterling Silver (Sterling Silver Mountain Mining Co., Ltd.)	47.4903	-116.0553	N/A	N/A	398
+SP 264	Sidney Mine	47.49	-116.1928	160790022	W019506	201
+SP 265	Coeur d'Alene Central (Spokane Central Group)	47.4892	-116.1131	N/A	N/A	393
+SP 266	Lynch Pine Creek Mine No. 2 (Lynch Group; Mineral Hill)	47.4883	-116.2289	N/A	N/A	305
+SP 267	Nabob Mine (Nabob 600 Level)	47.4881	-116.2058	160790021	W019504	202
+SP 269	Western Star Mine	47.4875	-116.0667	160790398	N/A	278
+SP 270	Bluebird Prospect (Hannibal)	47.4872	-116.2694	N/A	W019522	105
+SP 271	Bismarck Mine (Bismark Prospect)	47.4858	-116.08	160790232	W019386	276
+SP 272	Sidney (Red Cloud Adit)	47.4861	-116.1819	N/A	N/A	343
+SP 273	Eclipse (Marie Mining Co.; Grey Copper Mining Co.; Lead King Mining Co.; Fort Wayne)	47.4858	-116.0222	N/A	N/A	361
+SP 274	Wolfson Mine	47.4858	-116.0636	160790399	N/A	277
+SP 275	Little Pittsburg Mine (Mascot Silver Lead)	47.4847	-116.1989	160790024	W019515	203
+SP 276	Blue Bell	47.4847	-116.0619	N/A	N/A	353
+SP 277	Silver Dale and Big Hill Mine (Silver Dale Group; Big Hill Group; Silver Belt Prospect)	47.4825	-116.1039	N/A	N/A	394
+SP 278	Nevada Stewart Prospect (Nevada Stuart; Stewart Mine)	47.4831	-116.1706	160790223	W019508	204
+SP 279	Bristol Group (Bristol-Blaine Group; Jim Blaine)	47.4794	-116.2278	N/A	N/A	354
+SP 280	Nabob Mine (Nabob 1300 Level)	47.4786	-116.2133	160790021	N/A	318
+SP 281	K. C. Prospect	47.4758	-116.2733	160790535	W019520	106
+SP 282	Highland Surprise Mine (Highland Chief; Surprise)	47.4758	-116.1667	160790023	W019509	205
+SP 283	New Hilarity Group (Signal Silver; Epic Silver; Hilarity Group)	47.475	-116.2031	160790219	W019507	210
+SP 284	Fahey Group (Gahey Group)	47.4725	-116.0231	160790566	W019362	294
+SP 285	Spokane Prospect	47.4717	-116.2542	160790539	W019496	206
+SP 286	National Mine (First National; National Silver; Liston Group)	47.4703	-116.0611	160790310	W019392	292
+SP 287	Idaho Leadville Mines Co. Prospect	47.4683	-116.0239	160790565	W019364	293
+SP 288	Star Antimony Mine (Silver Hill; Shrine; Commercial Traveler)	47.4703	-116.1886	160790028	W019553	211
+SP 289	Big It Mine	47.4686	-116.2181	160790004	W019550	209
+SP 290	International Prospect	47.4667	-116.2589	160790331	W019521	207
+SP 291	Powhatan (Powhattan; Powhatton; Pawhaton Mining Co., Ltd.)	47.4656	-116.0175	N/A	N/A	388
+SP 293	Blue Eagle Prospect (Niagara Prospect)	47.4642	-116.1628	160790237	W019558	212
+SP 294	Maybird	47.4639	-116.2533	N/A	N/A	381
+SP 295	San Francisco	47.4639	-116.1983	N/A	N/A	391
+SP 296	Lucky Boy Prospect (Silver Seal)	47.4639	-116.0694	160790567	W019414	295
+SP 297	Royal Apex	47.4639	-116.0411	160790246	N/A	120
+SP 298	Trapper Creek Silver	47.4619	-116.2072	N/A	N/A	401
+SP 299	Patricia No. 1Prospect (Neglected Group; Sherman Prospect)	47.4611	-116.2608	160790543	W019513	208
+SP 301	Douglas Mine (East Mine)	47.4536	-116.1775	160790029	W019510	117
+SP 302	Trapper Mining & Smelting Co., Ltd. (Trapper Creek Group)	47.4514	-116.2078	N/A	N/A	372
+SP 303	L & J Prospect (Hunter-Continental; J & L Group)	47.4508	-116.2231	160790209	N/A	116
+SP 304	Lon Chaney Group	47.4461	-116.1425	N/A	N/A	376
+SP 306	Silver Bowl Group Property (Silver Pirate; Allied Silver; Coeur d'Alene; Coeur d'Alene Silver Giant; Giant; Lucky Boy)	47.4453	-116.0544	160790536	W019372	119
+SP 307	Constitution Mine (Spokane-Idaho; Westchester Mine; Old Constitution Mine)	47.4425	-116.1703	160790030	W019511	118
+SP 308	Westchester Mine (South Constitution Group)	47.4372	-116.17	N/A	N/A	402
+SP 311	Coeur d'Alene Premier	47.43	-116.2278	160790243	N/A	115
+SP 314	Western King Prospect	47.4233	-116.2986	160790061	D006588	111
+SP 316	Edna May Mining Co.	47.4189	-116.1064	N/A	N/A	362
+SP 318	Equitable Property	47.4144	-116.2803	160790276	W019480	112
+SP 319	Colusa Prospect (Leuschel; Leuschel N. P. Lease)	47.4131	-116.2525	160790114	W019482	114
+SP 321	Black Diamond Prospect (Patricia)	47.41	-116.3061	160790277	W019481	110
+SP 322	West Pine Creek Deposit	47.4097	-116.2906	N/A	N/A	412
+SP 331	Manhattan	47.38	-116.3194	N/A	N/A	380
+SP 337	Keystone Mining Co.	47.35	-116.3094	N/A	N/A	364
+SP 343	Darrar Prospect (Lester E. Darrar)	47.29	-116.2586	160790431	D006586	144
+SP 344	Red Chief Group	47.2831	-116.2333	N/A	N/A	405
+SP 345	Big Eddy Mine	47.2806	-116.1792	160790414	N/A	325
+SP 346	Copper Prince Prospect (Black Prince)	47.2683	-116.0578	160790278	W019485	145
+SP 347	St. Joe Pegmatite	47.2631	-116.0214	160790191	N/A	146
+SP 349	Kelly Brothers Prospect (Kelly)	47.2483	-116.0139	160790033	W019486	149
+SP 354	Tri-State Cedar Corp. Prospect	47.2314	-116.0247	160790180	W019548	150
+SP 358	Marble Creek Pegmatite	47.2083	-116.0439	160790193	N/A	299
+SP 362	Marble Mountain Pegmatite Occurrence (Homestead Claims)	47.1394	-116.0181	160790428	W019375	170
+SP 368	Papesh Property (O.K.; Knox Property)	47.1011	-116.1933	160790208	N/A	169
+SP 383	Brussel Creek Quartzite (Bussel Creek Quartzite)	47.0189	-116.1728	160790240	N/A	184
+SP 393	Gold Center Prospect	47.0025	-116.1622	160790064	W012943	186
+SP 395	Titley Prospect	47.0019	-116.1964	160790034	W012948	183
+WL   1	Eagle Creek Mine	47.7236	-115.8211	160790528	N/A	451
+WL   2	Kelly Prospect (Frontier Silver)	47.7053	-115.7964	160790475	W026721	172
+WL   3	Mountain Queen Group	47.7047	-115.8653	N/A	N/A	527
+WL   4	Crystal Lead Mine (Lead Crystals Mining Co.)	47.7058	-115.8108	160790096	W026578	171
+WL   8	Stratiform Prospect	47.6942	-115.9431	N/A	N/A	396
+WL  11	Juno Group	47.6878	-115.9367	N/A	N/A	511
+WL  13	Gold Rock	47.6847	-115.8747	160790527	N/A	450
+WL  14	Get There	47.6828	-115.7933	N/A	N/A	571
+WL  16	deleted	47.6764	-115.7431	N/A	N/A	419
+WL  17	Flagstaff (Eagle Creek)	47.6758	-115.8597	160790572	N/A	455
+WL  18	Consolidated Silver-Lead Mine, Elk Creek Adits (United States Silver-Lead; Elk Group; U.S. Silver-Lead Mine)	47.6761	-115.7553	N/A	N/A	551
+WL  19	Old Times Group (Old Timer; Pioneer Gold Mining & Development Co.)	47.6725	-115.7603	160790235	N/A	181
+WL  21	Consolidated Silver-Lead, Bear Creek Adits (United States Silver-Lead Mine; Elk Group; U.S. Silver-Lead Mine)	47.6708	-115.7425	160790100	N/A	177
+WL  25	Porphyry Group (Shadow; Toboggan; Independence Group; Champion Lead-Zinc Prospect)	47.6689	-115.7839	160790220	D004016	180
+WL  26	Miller Placer	47.6681	-115.8158	N/A	N/A	573
+WL  27	Progress Gold Mining Co.	47.6647	-115.8764	160790104	N/A	169
+WL  28	Jack Waite Mine	47.6642	-115.7425	160790119	N/A	183
+WL  29	Currency (Old Grey Eagle; Grey Eagle; Gray Eagle Prospect)	47.6578	-115.8561	160790476	W026579	179
+WL  31	Teffi Group Manganese Claims (Cummings; Murray)	47.6544	-115.9456	160790421	N/A	164
+WL  32	Golden Eagle	47.6544	-115.8883	N/A	N/A	572
+WL  33	Black Bear	47.6522	-115.9547	N/A	N/A	566
+WL  34	Golden Dream Claims	47.6519	-115.7419	160790570	N/A	397
+WL  35	Toggan Creek	47.6494	-115.8036	160790575	N/A	457
+WL  36	Eagle Placer (Eagle Creek)	47.6492	-115.9058	N/A	N/A	570
+WL  37	New Chicago	47.6489	-115.9725	N/A	N/A	374
+WL  40	North Hercules (Idaho Northern)	47.6442	-115.7817	160790107	N/A	194
+WL  43	Daisey Creek (Grove & Walker; Daisy Gulch)	47.6433	-115.9011	N/A	N/A	562
+WL  44	Buckskin Gold and Silver Prospect (Anchor Group; Golden Reward)	47.6386	-115.8497	160790111	W026581	189
+WL  45	Daisy-Volunteer	47.635	-115.8628	160790110	D004195	186
+WL  46	Terrible Edith (Midland; Pontiac; Edith Murray; Johnson Property)	47.6344	-115.8261	160790126	W026582	193
+WL  47	Shoshone River (Black Prince)	47.635	-115.9161	160790008	N/A	167
+WL  48	Buckeye Boy Mine (Buckeye)	47.6358	-115.8739	160790108	W026580	188
+WL  51	Liberty	47.6336	-115.8347	160790477	N/A	192
+WL  52	Penn-Idaho	47.6325	-115.8008	N/A	N/A	535
+WL  53	Nugget Gulch (Cora)	47.6319	-115.8547	N/A	N/A	569
+WL  54	Butte Placer	47.6317	-115.7836	N/A	N/A	575
+WL  55	Syndicate-Hiland	47.6314	-115.895	N/A	N/A	567
+WL  56	Badger	47.6306	-115.8589	N/A	N/A	568
+WL  57	Gilbert Placer	47.6306	-115.8764	N/A	N/A	558
+WL  58	Pilot Mine	47.6286	-115.8461	160790129	W026588	3
+WL  59	Hawkins	47.6256	-115.8581	N/A	N/A	563
+WL  60	Golden Condor	47.6281	-115.8614	160790250	D004085	187
+WL  62	Prichard Creek Placer	47.6272	-115.8719	160790573	N/A	456
+WL  63	Caliente Placer	47.6261	-115.9011	N/A	N/A	479
+WL  64	Gold Back Prospect	47.6244	-115.8453	160790128	W026587	4
+WL  65	King Mine	47.6258	-115.8947	160790120	W026584	202
+WL  66	Beehive Placer (Upper Beehive Placer; Yukon Gold Co. Dredge; Tiger Bar)	47.625	-115.8656	160790437	W026627	1
+WL  68	Mountain Lion Mine (Golden Circle; Gold Circle; Kings Pass Gold Co., Inc.; Three Queens Mining Corp.; Schamel Mine; Lion)	47.6242	-115.8772	160790127	W026586	2
+WL  69	Peck Placer	47.6231	-115.9481	N/A	N/A	564
+WL  70	Chester Consolidated Mine (Dew Drop)	47.6233	-115.8367	160790113	W026585	5
+WL  71	Silver Scott Mine (Lost Cabin Mine)	47.6264	-115.7531	160790439	N/A	9
+WL  72	Four Square Mine (Golden Winnie; Crown Point; Flagstaff; Lucky Winnie; Friday; Achievement)	47.6258	-115.9	160790005	W026628	201
+WL  73	Lower Beehive Placer	47.6225	-115.8914	N/A	W026626	203
+WL  74	Lucky Strike and Lake Creek Property (Lucky Strike "A"; King's Pass Nos. 1-5)	47.6214	-115.9244	160790215	D003192	288
+WL  75	Golden Chest (Golden Chest-Keenan Property; Paymaster; Katie Burnett; Dora; Katie-Dora; Idaho; Klondike)	47.6169	-115.8314	160790007	D003186	7
+WL  77	Halpin Placer	47.6211	-115.8303	N/A	N/A	574
+WL  78	Idaho Silver-Lead	47.6211	-115.7631	160790122	N/A	10
+WL  81	Whistler Tunnel	47.6194	-115.8897	160790190	N/A	445
+WL  82	Wibberding-Golden Slipper Mines, Inc.	47.6192	-115.8372	N/A	N/A	395
+WL  84	Atlantic Mine	47.6181	-115.9544	N/A	N/A	467
+WL  85	Orofino Mine (Silver Crystal Mine; Oro-Fino)	47.6192	-115.7444	160790134	N/A	263
+WL  86	Christopherson (Bedroom Gold Mine)	47.6169	-115.8603	160790248	N/A	14
+WL  87	Big Four Placer	47.6167	-115.9325	N/A	N/A	560
+WL  88	Jenkins Prospect (A and M)	47.6167	-115.8986	160790482	W026625	204
+WL  89	Mother Lode Mine (Yosemite; Daddy; Treasure Box; Occident; Patricia; Meade; Treasure)	47.6181	-115.8386	160790006	W026623	6
+WL  90	Tiger Prospect (Aulbach Group)	47.6242	-115.8617	160790438	W026636	13
+WL  91	Silver Challis Group	47.6161	-115.9481	160790480	N/A	199
+WL  92	Silver Crystal Mine (Ione; Pirate Chief Claims)	47.6158	-115.7436	160790252	W026591	264
+WL  93	Bear Top Mine (Keibler Vein)	47.6158	-115.7394	160790133	D004002	265
+WL  94	California Gulch Prospect (California Gulch Placer)	47.6164	-115.945	N/A	N/A	480
+WL  95	Myrtle Claim (Thiard Group)	47.615	-115.9153	N/A	N/A	557
+WL  96	Rockford (Joe Dandy; Joe Gandy; Gearon; Coeur d'Alene Placer Co.)	47.6147	-115.8317	N/A	N/A	565
+WL  97	Gold Coin Mine (Fannie Group)	47.6142	-115.9003	160790484	W026624	206
+WL  98	Rooster Goose Mine (Clear Grit and Rooster Goose Mine; R-G Mining Co. Group; Silver Bar Vein; R.G. Mine; Lucky No. 12)	47.6161	-115.9583	160790221	W026664	197
+WL 100	Ione Mine (Silver Crystal Mine)	47.615	-115.7417	160790136	D003190	266
+WL 101	Trail Gulch	47.6119	-115.9217	N/A	N/A	522
+WL 102	Wakeup Jim Mine (Union)	47.6117	-115.8803	160790485	W026629	207
+WL 104	Royal Apex Silver (Royal; Apex Silver; St. Joe)	47.61	-115.9736	160790478	W026645	196
+WL 105	Black Hill Placer Co. (Trail Creek Dredge)	47.6094	-115.9289	N/A	N/A	411
+WL 106	Placer Gulch Placer	47.6083	-115.9108	160790481	W026638	200
+WL 108	Paragon Mine (Upper Paragon)	47.6053	-115.7358	160790132	N/A	267
+WL 109	Accident Claim	47.6078	-115.9175	160790529	N/A	452
+WL 110	Boulder Bed (Delta Gold Mining Co.)	47.6069	-115.9375	N/A	N/A	561
+WL 111	Gold Cliff	47.6056	-115.8283	N/A	N/A	495
+WL 113	Hoodoo	47.6053	-115.9461	N/A	N/A	559
+WL 114	Murray Hill Mine (Black Horse; Senator)	47.6003	-115.7439	160790135	W026593	269
+WL 115	Silver Horizon	47.6025	-115.9539	160790479	N/A	198
+WL 116	Potosi Placer (Midnight; Blue Eagle)	47.6025	-115.9239	160790486	W026637	410
+WL 117	Jewell Prospect (General; Idaho-General)	47.6006	-115.7622	160790441	W026688	19
+WL 118	Potosi	47.5992	-115.8956	160790231	N/A	208
+WL 119	Raven Group (Midnight Group)	47.6028	-115.8083	N/A	N/A	538
+WL 120	Chicago-London Mine (Paragon Consolidated; Lower Paragon)	47.5972	-115.7514	160790442	W026590	20
+WL 121	Coeur d'Alene Mining Co.	47.5953	-115.7386	160790137	N/A	270
+WL 122	Lucky Four	47.5908	-115.8075	N/A	N/A	521
+WL 123	Monarch	47.5922	-115.7697	N/A	N/A	409
+WL 124	Vendetta Chief Mine (Vendetta)	47.59	-115.8117	160790443	W026634	22
+WL 125	Pony Gulch (Pony Lease; Pony Creek Lease; Kennam Property; Kennan; Roberts; Fay Templeton; Old Fay Templeton)	47.5889	-115.8908	160790003	D003203	209
+WL 126	Giant Ledge Mine	47.5861	-115.7958	160790444	W026682	23
+WL 127	Phoenix Property	47.5847	-115.8147	160790228	D004184	21
+WL 128	Monarch Mine (Coeur d'Alene; North Fork; Barton; Silverado; Coeur d'Alene North Fork)	47.5847	-115.7742	N/A	W026589	24
+WL 129	Lily Prospect	47.5806	-115.7942	160790446	N/A	25
+WL 130	Silver Circle	47.5778	-115.8014	N/A	N/A	541
+WL 131	Senora	47.5767	-115.8569	160790452	N/A	31
+WL 133	Buckeye (Tilling Group; Beaver Creek Mine)	47.5756	-115.8617	160790450	N/A	29
+WL 134	Dewey (Silver Treasure Group; Tacoma; Seattle)	47.575	-115.8672	160790447	W026691	26
+WL 135	Seattle (Silver Treasure Group)	47.575	-115.8547	N/A	N/A	32
+WL 136	Tacoma (Silver Treasure Group)	47.575	-115.8517	N/A	N/A	403
+WL 137	Silver Strike Mine (Rako; Cedar Creek Mine)	47.5761	-115.7981	160790204	W026683	44
+WL 138	Alfaretta (Sunset Banner; Sunshine Mining Co., Ltd.; Carbon Center)	47.5744	-115.8644	160790449	N/A	28
+WL 139	Hill	47.5739	-115.8594	160790451	N/A	30
+WL 140	Friend	47.5736	-115.8569	160790453	N/A	33
+WL 141	Beaver Creek	47.5728	-115.8692	160790448	N/A	27
+WL 142	Bessie (Tilling Group; Beaver Creek Mine)	47.5728	-115.8622	160790455	N/A	35
+WL 143	Belmont-Banner Mining Co.	47.5733	-115.9461	N/A	N/A	471
+WL 144	Lookout	47.5722	-115.8647	160790454	N/A	34
+WL 145	Highlands Aurora Property (Aurora Group; Highland-Aurora; Deer Creek Group)	47.5736	-115.9597	160790487	W026670	210
+WL 146	C A Group (United Metals Development, Inc.)	47.5714	-115.8733	N/A	N/A	550
+WL 147	Toughnut Mine (Tough Nut)	47.5708	-115.8614	160790456	W026675	36
+WL 148	Tuscumbia	47.57	-115.8544	160790457	W026676	38
+WL 150	Four Timbers	47.5697	-115.8736	160790460	N/A	45
+WL 151	Royal Silver Prospect (Rob Roy)	47.5675	-115.8347	160790459	W026685	41
+WL 152	Sitting Bull (Portland Group)	47.5669	-115.845	160790458	N/A	40
+WL 154	Idora Mine	47.5661	-115.8586	160790405	W026674	37
+WL 155	Parrott Mine (Portland Group)	47.5656	-115.8531	160790249	W026642	39
+WL 156	Silver Tip (Silvertip; Portland Group)	47.5653	-115.8414	160790080	D004196	42
+WL 157	Sabina	47.5653	-115.8122	N/A	N/A	540
+WL 159	Carlisle Mine (Ray Jefferson Mine; Ray-Jefferson; Monitor Mine)	47.5625	-115.8808	160790048	W026640	213
+WL 160	Virginia	47.5628	-115.8753	160790461	N/A	46
+WL 161	Amazon Mine (Manhattan; Amazon-Manhattan)	47.5625	-115.8675	160790049	W026641	47
+WL 162	Dudley Group (Lead Mountain Mines Corp.)	47.56	-115.9233	N/A	N/A	385
+WL 163	Blue Grouse Mine (Alpine Silver, Inc.)	47.5614	-115.8656	160790050	W026704	48
+WL 164	Sunrise Prospect (Admiral Consolidated; Sun Rise)	47.5614	-115.8217	160790211	N/A	55
+WL 165	Nipsic Mine (Nepric Mine; Nepsic Mine; Nipsie)	47.5608	-115.8478	160790256	W026643	52
+WL 166	Mountain Goat Mine (Monitor)	47.5597	-115.8642	160790047	W026681	49
+WL 167	St. James Prospect (Admiral Consolidated; National Uranium)	47.5586	-115.8225	160790378	W026766	54
+WL 168	Chloride Queen (Silver State Mining Co.)	47.5589	-115.8514	160790462	N/A	51
+WL 170	Sunset Mine (Sunset Mining Company; Rudy Group; Sunset Peaks)	47.5583	-115.8433	N/A	N/A	463
+WL 171	C and R Mine (C and R Mine Nos. 2 and 3)	47.5575	-115.8197	160790290	D004105	56
+WL 172	Pioneer Group (Pioneer Mining Co., Ltd.)	47.5575	-115.9192	N/A	N/A	386
+WL 173	Callahan Mine	47.5564	-115.8611	160790291	D004175	50
+WL 174	Sunset Mine (Little Sunset; Clark Property; Long Wait Mining Co.)	47.5561	-115.8361	160790079	W026705	53
+WL 175	Pioneer Lead	47.5558	-115.9314	N/A	N/A	384
+WL 176	Capitol Silver-Lead No. 1 (Capital Silver-Lead No. 1)	47.5569	-115.9719	160790292	W026708	212
+WL 179	Red Monarch Mine (Delaware Mines Corp.) [see Rex Mine, WL-218, for production figures]	47.5539	-115.8839	160790410	W026763	214
+WL 180	Washington Mining Co. Prospect (Admiral Consolidated)	47.5539	-115.7994	160790393	W026775	62
+WL 180a	Washington	47.57	-115.8114	160790210	N/A	43
+WL 181	Interstate	47.5525	-115.8547	160790051	N/A	405
+WL 182	Flag Staff Mining Co., Ltd. (Flagstaff)	47.5525	-115.9292	N/A	N/A	425
+WL 183	Capitol Silver-Lead No. 2	47.5519	-115.9761	160790293	N/A	438
+WL 184	Guelph Prospect	47.5517	-115.8247	160790320	W026829	60
+WL 185	Zanetti	47.5503	-115.8617	160790257	N/A	57
+WL 186	Ambergris Mine	47.5494	-115.8219	160790081	W026699	64
+WL 188	Happy Day Group	47.5486	-115.8036	N/A	N/A	465
+WL 189	Majestic Mine	47.5483	-115.7819	N/A	N/A	466
+WL 191	Monitor Mine (Interstate-Callahan; Callahan; Gray Rock; Interstate No. 4)	47.5464	-115.8506	160790051	W026680	59
+WL 192	Humbolt	47.5461	-115.7744	N/A	N/A	501
+WL 193	Honolulu Prospect	47.5447	-115.81	160790326	W026803	65
+WL 196	Laclede Prospect	47.5442	-115.8353	160790334	W026806	63
+WL 197	Blue Sky (Silver Star)	47.5442	-115.8881	160790287	D004096	215
+WL 198	Hercules Mine	47.5431	-115.8172	160790069	W026644	66
+WL 200	Dickens East	47.5414	-115.9864	N/A	N/A	377
+WL 201	Hercules No. 3	47.5411	-115.8117	N/A	N/A	435
+WL 202	St. Joe Quartz Prospect (St. Joe Nos. 1-2; Royal Mines Corp.; Capparelli Group)	47.5411	-115.9964	160790198	N/A	216
+WL 203	Dobson Pass Prospect (North Idaho Mining Co.)	47.5417	-115.8872	N/A	W026667	388
+WL 204	Silver Mint Group	47.5378	-115.9517	N/A	N/A	542
+WL 205	Central Mng. Co. Claims	47.5386	-115.8003	160790236	D004033	58
+WL 206	Best Chance	47.54	-115.9522	N/A	N/A	473
+WL 207	Puritan Group (Tamarack and Custer)	47.5378	-115.8542	N/A	N/A	537
+WL 208	International (International Mines, Ltd.)	47.5378	-115.7797	N/A	N/A	508
+WL 209	Patuxent Group	47.5372	-115.8689	N/A	N/A	534
+WL 211	Log Cabin Group	47.5369	-115.9061	N/A	N/A	387
+WL 212	Ajax No. 2	47.5367	-115.8081	N/A	N/A	436
+WL 213	Belmont Mine (Empress Group; Sanwood Group; Sanwood-Empress; Silver Basin Consolidated Mining Co.; Silver Mint Mining Co., Ltd.)	47.5361	-115.9497	N/A	N/A	472
+WL 214	Oom Paul Mine (Oom Paul No. 2)	47.5361	-115.7883	160790356	W026726	70
+WL 215	Tamarack Mine (Nelson; Monroe; Murphy; Thomas; Tamarack and Custer; Watson)	47.5358	-115.8469	160790464	W026647	69
+WL 216	Idaho & Eastern	47.5358	-115.8186	N/A	N/A	504
+WL 218	Rex Mine (North; Sixteen-to-One Mine; Delaware Mines Corp.; 16 to 1)	47.5353	-115.8708	160790067	W026646	67
+WL 219	Custer Mine (Tamarack and Custer)	47.535	-115.8425	160790068	N/A	68
+WL 220	Burke	47.53	-115.7644	160790571	N/A	454
+WL 221	Capital Silver-Lead No. 2 (Wallace-Idaho Lead Mines, Inc.; Eastern Star Group)	47.5342	-115.9697	160790293	N/A	219
+WL 222	Hercules No. 4	47.5336	-115.8108	N/A	N/A	437
+WL 223	New Hope Group	47.5322	-115.9803	N/A	N/A	529
+WL 224	Idaho Chief (Mingo Chief)	47.5333	-115.8917	N/A	N/A	502
+WL 225	Smuggler-Virgina (Smuggler Consolidated)	47.5331	-115.8022	N/A	N/A	544
+WL 226	Hardscrabble Group	47.5308	-115.9767	160790489	W026669	218
+WL 227	Echo Group	47.5328	-115.7914	N/A	N/A	492
+WL 229	Boss Zinc Mining Co.	47.5322	-115.9617	N/A	N/A	476
+WL 230	Oom Paul No. 1	47.5319	-115.7839	N/A	N/A	428
+WL 231	Treasure Vault Mine	47.5311	-115.8883	160790412	W026772	221
+WL 232	Bell of the West (Belle of the West; Sultana Mining Co., Ltd.)	47.5311	-115.8756	160790206	D004186	73
+WL 233	American Prospect	47.5303	-115.8786	160790281	W026700	71
+WL 234	Trade Dollar Prospect	47.5292	-115.8083	160790385	W026771	80
+WL 235	Ajax Mine (Ajax No. 3)	47.5292	-115.7972	160790082	W026693	83
+WL 236	Silver Rock Prospect	47.5269	-115.9833	160790490	W026690	220
+WL 237	Mayflower Prospect (Wallace Silver-Lead Mines Co.)	47.5281	-115.8894	160790340	W026751	222
+WL 238	Mammoth Prospect (Jumbo Group)	47.5294	-115.7592	160790338	W026631	89
+WL 239	Benton Mine (Silver Dollar Mining Co.)	47.5278	-115.8067	160790227	W026703	84
+WL 240	Homestake Silver-Lead Prospect	47.5289	-115.7775	160790325	W026833	85
+WL 241	Success Mine (Granite Mine)	47.5275	-115.8706	160790014	W026622	72
+WL 242	Stanley Mine	47.5275	-115.8094	160790411	W026651	79
+WL 244	Fairview-Wide West Mine (Wide West)	47.5269	-115.8139	160790413	W026713	81
+WL 245	Neversweat Mine (Inland Empire Mining & Milling Co.)	47.5269	-115.8022	160790467	N/A	96
+WL 246	Sherman 1500 Level	47.5261	-115.8269	N/A	N/A	434
+WL 247	Sherman Mine (Leary; Tamarack-Sherman; *** delete Hidden Treasure; not synonym***)	47.5261	-115.8203	160790213	W026648	78
+WL 248	Mountain View-Hummingbird Mine (Hummingbird Mine)	47.5261	-115.8169	160790407	W026723	90
+WL 249	Alameda Prospect (South Gem Stock Prospect)	47.5258	-115.8789	160790491	W026809	224
+WL 250	Excelsior	47.5258	-115.7733	N/A	N/A	494
+WL 251	Hercules No. 5	47.5253	-115.8111	N/A	N/A	432
+WL 252	West Mammoth Prospect	47.525	-115.765	160790396	W026777	88
+WL 253	Union Mine	47.5247	-115.8189	160790465	W026737	77
+WL 254	Standard-Mammoth Mine (Greenhill-Cleveland; Mace Group; Standard-Mammoth Nos. 1-2; Mace and Burke Group)	47.5244	-115.8364	160790072	W026657	76
+WL 255	Oreano Adit (Sherman 1000)	47.5244	-115.8294	N/A	N/A	433
+WL 256	West Hecla Group (Diamond Hitch Vein; Midvale Mining Co.)	47.5242	-115.8225	160790233	N/A	420
+WL 257	Hidden Treasure Mine	47.5242	-115.8144	160790466	W026831	86
+WL 258	Eastern Star Group	47.5336	-115.7075	N/A	N/A	514
+WL 259	Headlight Prospect (Big Divide; West Mammoth Group; Head Light; Hundred Fold)	47.5239	-115.8489	160790323	W026830	74
+WL 260	Tiger-Poorman Mine	47.5239	-115.8119	160790071	W026650	82
+WL 261	Revett Mine (Great Western)	47.5239	-115.7597	160790230	D004031	87
+WL 262	Little Butte Group	47.5236	-115.7331	N/A	N/A	513
+WL 263	May Claim Prospect (Silver Hill Mines; Mae Group)	47.525	-115.98	160790493	W026695	232
+WL 264	Standard-Mammoth Nos. 3-5	47.5233	-115.8311	N/A	N/A	431
+WL 265	Mayflower No. 3	47.5225	-115.895	N/A	N/A	439
+WL 266	Anchor Group (Midvale Mining Co.; Diamond Hitch Vein; West Helca; Hecla Extension)	47.5222	-115.8236	160790233	W026701	92
+WL 267	Gertie Mine	47.5222	-115.8014	160790315	W026826	94
+WL 268	Imperial Mine	47.5222	-115.7917	160790329	W026804	100
+WL 269	Nine-Mile Mining Co. (Log Cabin Mining & Milling Co., Ltd.; West Nine Mile Mining Co.)	47.5217	-115.8994	160790348	N/A	229
+WL 270	Moonlight Prospect	47.5214	-115.8519	160790347	W026755	75
+WL 271	Campbell Adit (Standard-Mammoth Mine)	47.5214	-115.8328	N/A	N/A	430
+WL 272	Sonora Prospect	47.5214	-115.7783	160790375	W026769	102
+WL 273	Big Divide (North Side Group; Markwell North Side)	47.5211	-115.8614	N/A	N/A	474
+WL 274	Alcides Prospect	47.5208	-115.7903	160790468	W026810	101
+WL 275	Tamarack No. 7 (Tamarack 1200 Level)	47.5206	-115.8489	N/A	N/A	429
+WL 276	Marsh Mine (Cooney Group)	47.5206	-115.8056	160790078	W026652	97
+WL 277	Burke Property Prospect (Eastern Star; Blue Ribbon; Little Butte; CDA Temple; Arlington; Half Moon)	47.5217	-115.7153	160790322	W026706	271
+WL 278	East Alameda	47.5197	-115.8561	N/A	N/A	489
+WL 279	Hecla Mine	47.5186	-115.8164	160790070	W026649	93
+WL 281	Galena No. 2	47.5181	-115.9022	160790313	N/A	230
+WL 282	Champion Gold and Silver Mine (Silver Champion; Silver Treasure; Lucky Strike Silver; Coeur d'Alene Champion; Lucky)	47.5167	-115.7539	160790296	W026709	103
+WL 283	East Standard (Big Three)	47.5172	-115.8233	N/A	N/A	475
+WL 284	East Hecla Prospect	47.5167	-115.8028	160790306	W026823	98
+WL 285	Elma Silver Mine	47.5164	-115.94	160790212	N/A	226
+WL 286	Great Eastern Prospect	47.5164	-115.8442	160790318	W026827	112
+WL 287	Russell Claim (Rusell Claim)	47.5164	-115.7992	160790368	W026764	99
+WL 288	Silver Moon Prospect	47.5158	-115.8558	160790372	W026767	110
+WL 289	Flynn Mine (Senator Mining Co.; Coeur d'Alene Syndicate)	47.5158	-115.8497	160790312	W026714	111
+WL 290	Omaha Prospect	47.5158	-115.8269	160790354	W026822	113
+WL 291	Joe Matt Prospect	47.5158	-115.8244	160790332	W026805	95
+WL 292	Silverore-Inspiration (Inspiration-Silverore)	47.5161	-115.9614	160790373	W026733	225
+WL 293	Duluth Prospect	47.5136	-115.8294	160790469	N/A	114
+WL 294	Lansing Mine (Albion)	47.5131	-115.8856	N/A	N/A	478
+WL 295	Black Bear Fraction Mine	47.5131	-115.8519	160790083	W026658	109
+WL 296	Military Mine (Captain and Lieutenant)	47.5128	-115.7461	160790185	D004190	104
+WL 297	Idaho Galena Prospect (Plymouth No. 2 Group)	47.5125	-115.9206	160790492	W026673	228
+WL 298	Duluth Prospect (East Standard; Omaha Area)	47.5117	-115.9133	160790305	W026821	236
+WL 299	Dayrock Mine (Hornet Vein; Ohio Vein; Stratton; McPhilips; Stratten; Option; Panhandle; Galena No. 2; Banner Group; Coeur d'Alene; Grayrock)	47.5117	-115.9022	160790045	W026653	237
+WL 300	Monarch Mine (Red Monarch)	47.5114	-115.91	160790130	W026754	227
+WL 301	Midway Summit Prospect	47.5114	-115.8272	160790343	W026753	115
+WL 302	Blackcloud Mine (Pittsburg Lead; Blackcloud No. 3)	47.5106	-115.9078	160790494	W026814	238
+WL 303	Black Bear Mine	47.5106	-115.8497	N/A	N/A	401
+WL 304	Blue Ribbon Group (Full Moon)	47.5128	-115.7317	N/A	N/A	515
+WL 305	Ruth Prospect	47.5103	-115.9131	160790369	W026765	235
+WL 306	Wilbur Mine	47.51	-115.9503	N/A	N/A	554
+WL 307	McDonald Prospect	47.51	-115.9106	160790342	W026752	242
+WL 308	Option	47.51	-115.9036	160790357	N/A	418
+WL 309	Frisco Mine (Gem of the Mtns; Black Bear; San Francisco; Helena-Frisco)	47.5097	-115.8603	160790073	W026656	106
+WL 310	Gem Mine	47.5094	-115.8639	N/A	N/A	402
+WL 311	Merry Widow (Revenue Creek)	47.5092	-115.9269	N/A	N/A	523
+WL 312	Marshal Prospect (Marshal No. 1)	47.5086	-115.9097	160790339	W026749	241
+WL 313	Panhandle Mine (Stratton; Dayrock Mine)	47.5086	-115.8964	160790409	W026761	261
+WL 314	Albany Lead Mining Company	47.5086	-115.8214	N/A	N/A	458
+WL 315	Thomas Consolidated Prospect (Thomas Group)	47.5083	-115.905	160790384	W026816	246
+WL 316	California Mine (Tamarack and Chesapeake; Tamarack and Custer; California No. 4; California Consolidated)	47.5075	-115.9081	160790044	W026707	247
+WL 317	Western Union Mine-upper adit (H.E.M. Mining Co.)	47.5069	-115.9544	160790043	N/A	440
+WL 318	Copper King Mine-upper workings (King Group)	47.5092	-115.7683	160790065	N/A	443
+WL 319	Roberta Mining & Milling Co.	47.5067	-115.8756	N/A	N/A	539
+WL 320	Betty Lou Mine	47.5061	-115.8639	160790196	W026813	107
+WL 321	Cunningham Prospect	47.5061	-115.8278	160790304	W026820	116
+WL 322	Wallace Mining Co.	47.5058	-115.8594	N/A	N/A	552
+WL 323	Idaho Montana Mining Co. (Orlando Consolidated Mining Co.; Idaho-Montana and Orlando)	47.5056	-115.7036	160790179	N/A	272
+WL 324	Aurora-Sampson	47.5044	-115.9442	N/A	N/A	468
+WL 325	West Bell Prospect	47.5039	-115.8725	160790395	W026776	105
+WL 326	Silverton Prospect-upper adit (Climax Group; Happy Jack; Revenue Creek; Revenue Gulch)	47.5033	-115.9306	160790225	N/A	441
+WL 328	Osburn Tailings	47.5025	-115.9931	N/A	N/A	556
+WL 329	West Star Prospect (Bell Mine; South Side Group; West End Mine; Western Pacific Mining Co.; Goodenough Mining Co.; Mutual Mines Development Co.; Pacific;	47.5025	-115.8614	160790059	W026778	108
+WL 330	Silver Star Mine (North Star Mining and Dev. Co.)	47.5011	-115.9067	160790496	W026654	250
+WL 331	Goodenough Group (South Side Group; West Star Group; Markwell South Side Group)	47.5008	-115.85	N/A	N/A	549
+WL 332	Western Union Mine-lower adit (H.E.M. Mining Co.)	47.5006	-115.95	160790043	W026742	234
+WL 333	East Hecla Group	47.5006	-115.7658	N/A	N/A	491
+WL 335	Silverton Prospect-lower adit (Paradise; Revenue Creek)	47.5003	-115.9331	160790225	W026734	240
+WL 336	Missoula Copper Prospect (Slide Group; National Copper Mine)	47.4994	-115.7503	160790345	W026722	130
+WL 337	St. Elmo Prospect	47.4981	-115.9981	160790251	W026731	233
+WL 338	Canyon Creek Milling Co.	47.4978	-115.8842	N/A	N/A	481
+WL 339	Western Pacific (South Gem; Maggie M; Pacific; South Side Group; West End; West Star Group; Markwell South Side Group; West Gem Group)	47.4978	-115.8631	N/A	N/A	547
+WL 340	Bell	47.4978	-115.8561	N/A	N/A	548
+WL 341	Silver Eagle Group	47.4975	-115.915	N/A	N/A	493
+WL 342	Daybreak Prospect	47.4972	-115.97	N/A	N/A	517
+WL 343	Verde May Prospect (Silver Verde May; Verda May)	47.4972	-115.8786	160790388	W026738	244
+WL 344	Cuba	47.4969	-115.9108	N/A	N/A	488
+WL 345	Copper King Mine-lower workings (King Group)	47.4961	-115.7681	160790065	W026711	129
+WL 346	Canyon Silver Mine (Formosa Mine; Silver Key; Blue Wing; Mutual Mines Development Co.; Zanetti)	47.4956	-115.8789	160790247	W026655	245
+WL 347	North Franklin	47.4947	-115.8031	160790349	W026758	123
+WL 348	Daybreak Prospect	47.4944	-115.9225	N/A	W026712	414
+WL 349	Northside Prospect (Eureka Group; Far West Gold-Silver Mining Co.; North Side)	47.4939	-115.9047	160790352	W026759	248
+WL 350	Mullan Group (Mullan Mining Co.)	47.4936	-115.7714	N/A	N/A	528
+WL 351	Wall Street Prospect (Owatonna Group)	47.4925	-115.795	160790222	W026740	125
+WL 352	Grouse Prospect	47.4922	-115.8236	160790319	W026828	121
+WL 353	Morning Nos. 3-4 (Midnight Mine)	47.4922	-115.8092	N/A	N/A	442
+WL 354	Morning Mine No. 5 (Star-Morning Mine Unit; Sheridan Lease)	47.4919	-115.8028	160790062	N/A	124
+WL 355	Pilot Prospect (Abot Mining Co.)	47.4919	-115.7711	160790416	W026762	128
+WL 356	Lucky Calumet Prospect (King Group; Independent-Calument; Independent)	47.4894	-115.7428	160790089	W026748	274
+WL 357	Ivanhoe Mine (Ivanhoe-Star Mine; Star 1200 Level)	47.4911	-115.8278	160790470	N/A	119
+WL 358	Lewis & Clark Group	47.4922	-115.7053	N/A	N/A	392
+WL 359	Iron King	47.4906	-115.9456	N/A	N/A	509
+WL 360	Comstock Group (Metals Mining Co.)	47.4906	-115.9258	N/A	N/A	524
+WL 361	Snowstorm Apex Mine (Zenith Silver Mines Corp.)	47.4908	-115.7236	N/A	N/A	555
+WL 362	Coeur Mine (Rainbow Mine; Mineral Point; Coeur d'Alene Mines)	47.4903	-115.9886	160790040	W026665	251
+WL 363	National Lead Mining Co.	47.4903	-115.8347	N/A	N/A	486
+WL 364	Cincinnati Prospect	47.4903	-115.7903	160790294	W026817	126
+WL 365	Osburn Silver-Lead	47.49	-115.9761	N/A	N/A	533
+WL 366	Star Mine (Star Unit Area)	47.49	-115.8261	N/A	N/A	459
+WL 367	National Mine (United Copper Property)	47.5031	-115.7483	160790066	W026725	131
+WL 368	Copper Plate Prospect	47.4897	-115.7725	160790298	W026818	127
+WL 369	Vulcan Mine (Callahan)	47.4894	-115.9722	160790390	W026774	252
+WL 370	We Like Mine (Star-Morning Mine Unit; Morning Mine)	47.4894	-115.8236	160790394	W026659	120
+WL 371	Rainbow Mine (Silver Rock)	47.4892	-115.9933	160790361	N/A	223
+WL 372	You Like Mine (Star-Morning Mine Unit; Morning Mine)	47.4892	-115.8117	160790402	N/A	122
+WL 373	Wonder Prospect (Deep Wonder; Mutual Mines Development Co.)	47.4886	-115.8514	160790400	W026779	117
+WL 374	Snowshoe Mine	47.4881	-115.74	160790502	W026635	275
+WL 375	Sisters Mine (Sierra Silver Lead; Sister Mine)	47.4878	-115.9019	160790254	W026735	243
+WL 377	Fanny Gremm (Little Sunshine; Elk)	47.4875	-115.8081	160790309	W026824	137
+WL 378	Snowstorm No. 1-2	47.4869	-115.7261	N/A	N/A	448
+WL 379	Columbia Copper (Golden Marguerite)	47.4867	-115.7567	N/A	N/A	485
+WL 380	Mountain Con Group	47.4864	-115.8789	N/A	N/A	526
+WL 381	Sunshine Premier (Elk; Premier Star)	47.4856	-115.8067	160790380	W026677	138
+WL 382	Alma Prospect (Patrie; Abot Mining Co.)	47.4856	-115.7683	160790280	W026811	147
+WL 383	Argentine Mine (Callahan)	47.485	-115.9761	160790041	W026661	254
+WL 384	Youlande Prospect (Yolande)	47.4842	-115.7919	160790403	W026780	140
+WL 385	Square Deal Mine (Alice Consolidated; Square)	47.4839	-115.855	160790376	W026736	118
+WL 386	Independence Lead Mine (Sunshine Premier)	47.4839	-115.7994	160790330	N/A	139
+WL 387	Silver Reef Prospect (Abot Mining Co.; Silver Hunter)	47.4836	-115.7794	160790374	W026768	142
+WL 388	West Hunter Group	47.4831	-115.8025	N/A	N/A	553
+WL 389	Lucky Boy Prospect (Little Jim; Silver Star Mining Co.)	47.4831	-115.7483	160790504	W026747	279
+WL 390	Gold Hunter Mine No. 5 (Hunter Creek Ranch Property)	47.4825	-115.7819	160790063	W026716	143
+WL 391	Northwest Mining & Milling Co.	47.4819	-115.9136	N/A	N/A	532
+WL 392	West Federal Group (Plymouth No. 1 Group)	47.4819	-115.8503	N/A	N/A	460
+WL 393	American Commander Prospect	47.4819	-115.7933	160790282	W026812	141
+WL 394	Lottie L. Prospect (Hibernia)	47.4819	-115.7664	160790472	W026808	145
+WL 395	Granada Mine	47.4808	-115.8822	160790317	W026717	249
+WL 396	Snowstorm Mine (Snowstorm No. 3; Hunter-Snowstorm Lode)	47.4817	-115.7278	160790088	US16010	281
+WL 397	Galena Mine (Chicago-Boston; Kill Buck)	47.4797	-115.9628	160790010	W026630	256
+WL 398	Mayflower Mine	47.4789	-115.8608	160790341	W026750	132
+WL 399	Homestake Prospect (Abot Mining Co.; King)	47.4789	-115.7703	160790324	W026832	146
+WL 400	Snowstorm No. 4	47.4792	-115.735	N/A	N/A	447
+WL 401	United Lead Zinc Prospect (Alice Consolidated)	47.4783	-115.855	160790387	W026773	134
+WL 402	Butte and Coeur d'Alene	47.4772	-115.7525	160790415	N/A	150
+WL 403	Tucker Group	47.4764	-115.6714	N/A	N/A	546
+WL 405	Hunter Creek Prospect	47.4761	-115.7692	160790327	W026718	148
+WL 406	Pandora Prospect (Silver Mountain Lead)	47.4758	-115.7086	160790358	W026760	282
+WL 407	Abbatour Claim (Superior Silver Mines, Inc.)	47.4756	-115.9717	160790498	W026660	255
+WL 408	Alice Consolidated Mine (Mullan Silver Lead Co.; Alice Silver)	47.4753	-115.8472	160790058	W026724	135
+WL 409	Coughlin Prospect	47.4753	-115.7567	160790302	W026819	151
+WL 410	Silver Buckle Prospect	47.475	-115.9333	160790500	W026694	259
+WL 411	Golconda Mine (Hector Mining Co.)	47.475	-115.8733	160790085	W026715	133
+WL 412	Plymouth No. 4 Group (Donovan)	47.475	-115.7794	N/A	N/A	461
+WL 413	Caladay Mine (Fausett Shaft)	47.4747	-115.9425	160790245	D004082	373
+WL 414	Jupiter	47.4742	-115.8678	N/A	N/A	512
+WL 415	Idaho Silver Prospect (Daisy; Fairview; Silver Mountain Lead)	47.4717	-115.7439	160790328	W026720	280
+WL 416	Vindicator Silver Lead Prospect (Silver Buckle)	47.4739	-115.7608	160790216	W026739	149
+WL 418	Hultner Ranch Prospect (Sundance Mining Co.)	47.4733	-115.8561	160790473	W026672	153
+WL 419	Gold Hunter Mine No. 6 (Hunter Ranch Property; Silver Shaft)	47.4728	-115.7861	160790063	D003185	161
+WL 420	Sterling Prospect (Columbia and Providence Claims)	47.4725	-115.9744	160790564	W026633	400
+WL 421	Lucky Friday Mine (Hecla)	47.4725	-115.7783	160790012	W026639	162
+WL 422	Western Silver Lead Prospect	47.4711	-115.875	160790397	W026741	152
+WL 423	Mineral Farm Group (Mullan Silver Group)	47.4711	-115.8164	N/A	N/A	525
+WL 424	Allied Prospect	47.4711	-115.7953	160790471	W026697	136
+WL 425	Morning No. 6 (Star-Morning Mine Unit; Star Mine No. 1 Main Vein)	47.4692	-115.8139	160790474	N/A	160
+WL 426	Horse Shoe Mine	47.4675	-115.7814	N/A	N/A	500
+WL 427	Wallace Tunnel (Vulcan Extension Prospect)	47.4672	-115.9356	160790391	D004180	258
+WL 428	Rock Creek Prospect (Rock Creek Silver-Lead Mining Co.)	47.4661	-115.8569	160790364	W026730	154
+WL 429	Atlas Mine (Carney Copper; Boulder Creek Vein; Central Vein; Carbonate Hill)	47.4658	-115.7764	160790418	W026663	163
+WL 431	Gem State Mine	47.4644	-115.8464	160790314	W026825	156
+WL 432	Silver Range	47.4639	-115.9517	N/A	N/A	543
+WL 433	Beacon Light Mine (Silver Cliff Prospect)	47.4611	-115.69	160790238	W026702	283
+WL 434	Butcher Mine	47.4636	-115.8281	160790289	D004134	157
+WL 435	Mullen Metals Prospect (Mullan Metals)	47.4636	-115.8222	160790351	W026756	158
+WL 436	New Road Group	47.4628	-115.7622	N/A	N/A	530
+WL 438	Gold Creek Mines Prospect (Moe Property; Troy Group)	47.4603	-115.8211	160790346	W026698	159
+WL 439	Princeton-Magna (Magna Mining Co.; Princeton Group)	47.4694	-115.6806	160790506	N/A	285
+WL 440	Blue Jay Prospect	47.4589	-115.8567	160790286	W026815	155
+WL 441	Midnite Mine (Lookout Group)	47.4572	-115.6925	160790507	W026679	286
+WL 442	New York Prospect (Bitter Root Prospect; Lookout)	47.4567	-115.8072	160790350	W026757	292
+WL 443	Plymouth No. 3 Group (Lead King; Snowslide Group)	47.455	-115.7536	N/A	N/A	462
+WL 444	Banner Mine (Banner-Idaho)	47.4522	-115.7994	160790285	W026746	293
+WL 445	Central Prospect (Boulder Creek Mng. & Mllg. Co.; Atlas Mining Company)	47.4514	-115.7953	N/A	N/A	446
+WL 446	Little Giant Prospect (Giant Mine; Upper Giant; Lower Giant; Atlas)	47.4514	-115.7797	160790316	N/A	295
+WL 451	Silver Crown Group	47.4444	-115.9958	160790495	N/A	239
+WL 452	Willow Creek	47.4503	-115.7642	N/A	N/A	507
+WL 453	Pioneer Mines, Inc. Prospect	47.4503	-115.97	160790497	W026727	253
+WL 455	Hornsilver Mine (Horn Silver; Castle Rock; Smart Aleck)	47.4472	-115.9394	N/A	W026671	422
+WL 456	Idaho Copper	47.4464	-115.7686	N/A	N/A	503
+WL 459	Argenta Mine	47.4433	-115.7714	N/A	N/A	464
+WL 460	Reindeer Queen (Reindeer; Copper Queen)	47.4475	-115.7633	160790087	W026729	297
+WL 461	Helvetia	47.4428	-115.9697	N/A	N/A	498
+WL 462	Peerless Mine (War Eagle; Day Mines)	47.4419	-115.9514	160790392	W026684	262
+WL 463	Smart Aleck	47.4414	-115.9353	N/A	N/A	421
+WL 464	Castle Rock Prospect	47.4411	-115.9281	160790183	N/A	289
+WL 465	Nonpareil Group	47.4403	-115.7825	N/A	N/A	531
+WL 466	Spokane Tunnel	47.4378	-115.9078	N/A	N/A	545
+WL 467	Copper Queen (Silver Crest Group; Stephens Peak Prospect)	47.4394	-115.7558	160790300	N/A	299
+WL 468	Tilicum Prospect	47.4322	-115.9161	N/A	D004050	290
+WL 469	Placer Creek Prospect (Silver Plate; Silver Nest; Horn; Just Right; Mark)	47.4319	-115.8939	160790508	W026728	287
+WL 470	Placer Creek	47.4286	-115.8767	N/A	N/A	536
+WL 471	Vienna-International Prospect (Vienna; Osakis)			160790574	W026744	291
+WL 472	deleted	47.4242	-115.8744	N/A	N/A	398
+WL 473	Flojodo Mine	47.4236	-115.8414	160790515	N/A	305
+WL 475	Champion Prospect	47.4194	-115.7761	160790142	W026596	308
+WL 476	Signal Silver-Gold Group	47.4175	-115.9144	160790513	N/A	303
+WL 477	Utah-Idaho Consolidated Uranium Prospect	47.4167	-115.8961	160790514	N/A	304
+WL 478	Park Copper Prospect	47.4175	-115.7889	160790141	W026595	309
+WL 479	Shoshone Silver Mine	47.4133	-115.7714	160790509	W026732	310
+WL 480	Taylor Copper Mine	47.4128	-115.7053	160790187	D004189	324
+WL 481	Springfield Prospect	47.4125	-115.805	160790143	W026597	306
+WL 482	Iron Spar	47.4069	-115.6953	N/A	N/A	510
+WL 483	Comet	47.4108	-115.7594	N/A	N/A	487
+WL 484	Wonderful Mine (Wonderful Creek Prospect)	47.4106	-115.7308	160790147	W026599	318
+WL 486	Copper Chief	47.4075	-115.7044	160790148	D004127	319
+WL 487	Peacock Copper	47.4067	-115.7328	160790145	D004129	317
+WL 488	Eagle Prospect	47.4108	-115.7258	160790146	W026598	320
+WL 489	Bullion Mine	47.4017	-115.7	160790149	W026600	323
+WL 490	Silver Shadow Group	47.3992	-115.7986	160790517	N/A	313
+WL 492	Oregon-Idaho Silver-Gold	47.3917	-115.8714	160790516	N/A	312
+WL 493	Fourth of July Silver Prospect	47.3836	-115.7444	160790518	W026668	322
+WL 497	Pearson Mine (Silica Gold and Copper Prospect; Lucky Swede Mining Company)	47.3767	-115.7428	160790144	N/A	321
+WL 498	Horst-Powell	47.3758	-115.7789	N/A	N/A	520
+WL 500	Alpina Prospect (Bald Mountain Ledge; Alpena)	47.3744	-115.6103	160790150	W026601	334
+WL 501	Alice Prospect	47.3711	-115.6094	160790520	W026743	335
+WL 502	North Star Prospect (Old North Star Mine; East Fork)	47.3603	-115.695	160790262	W026745	332
+WL 503	Big Elk Mine	47.3575	-115.6333	160790156	W026606	333
+WL 504	Richmond Mine (Adair Group)	47.3517	-115.5747	160790160	W026607	339
+WL 505	Macedonia	47.3558	-115.9614	160790140	N/A	316
+WL 506	Silver Spray Prospect (Enchanted Hill; Silver Lode; Slate Creek Prospect)	47.3408	-115.9078	160790152	W026603	328
+WL 507	Monitor Mine (Montana-Idaho)	47.3439	-115.6014	160790158	W026609	338
+WL 508	Gold Coin	47.3478	-115.5867	N/A	N/A	496
+WL 509	Copper Edge Property (Copper Age Property)	47.3464	-115.5522	160790521	D003813	340
+WL 511	Leroy (Le Roy)	47.3425	-115.5994	160790159	N/A	337
+WL 512	Silver Spray, Tunnel B (Slate Creek Prospect)	47.3411	-115.9081	160790519	W026696	329
+WL 513	Wampum Prospect	47.3411	-115.5786	160790161	W026608	341
+WL 514	Sailor Boy Prospect	47.3408	-115.9	160790153	W026604	330
+WL 515	Mastodon Prospect (Rochester Group)	47.3425	-115.9694	160790151	W026602	327
+WL 516	Hansy Mine (Hansey Mine)	47.3228	-115.5867	160790184	D004137	342
+WL 517	Idaho Star Mine	47.3197	-115.5975	N/A	N/A	506
+WL 518	Buffalo	47.3097	-115.5303	160790163	D004132	343
+WL 519	Franklin Prospect (Stanley Boys Mine; Helmer Silver Mines Co.; Copper Bell)	47.3025	-115.9289	160790154	W000719	331
+WL 520	Blue Bird Claim	47.2933	-115.6311	160790169	W026613	350
+WL 521	Hopkins Mine	47.2694	-115.8806	N/A	N/A	519
+WL 523	Setser Prospect (Nelson Peak Prospect)	47.2711	-115.7144	160790168	W026612	349
+WL 524	deleted	47.2653	-115.7567	N/A	N/A	518
+WL 526	Ward Prospect (Gold Mountain Prospect)	47.2631	-115.3797	160790173	W026616	355
+WL 527	Eagle Creek Area	47.2572	-115.5436	160790432	N/A	353
+WL 528	Cougar Prospect (Theriault)	47.2517	-115.9922	160790165	W026610	345
+WL 530	Shirley Jean (Wonderful)	47.2467	-115.5731	160790170	D004131	352
+WL 531	Alice Prospect	47.2375	-115.6278	160790171	W026614	351
+WL 532	Kelley Creek Prospect (Fishhook Mine)	47.2286	-115.8108	160790523	W026807	348
+WL 533	Fishhook Creek	47.2269	-115.8417	160790167	W026611	347
+WL 535	Eureka Prospect	47.1878	-115.4864	160790175	W026618	361
+WL 536	St. Joe Quartz Prospect	47.1906	-115.4953	160790176	W026619	360
+WL 537	Bluff Creek	47.1844	-115.7556	160790174	N/A	444
+WL 538	Black Bear Claim	47.1883	-115.4892	N/A	N/A	449
+WL 540	Bluff Creek Copper Claim (Lintz and Stafford Prospect)	47.1808	-115.4933	160790430	W026617	359
+WL 541	Conrad's Crossing Prospect	47.1586	-115.4147	160790177	W026620	363
+WL 542	Whitetail Mine	47.1561	-115.4178	160790568	N/A	453
+WL 543	Fishhook Peak Prospect (Slide Rock Mountain)	47.14	-115.9564	160790524	W026689	356
+WL 544	Golden Valley (Heller Creek)	47.0806	-115.2111	N/A	N/A	497
+WL 545	Grizzly Placer	47.0769	-115.1886	N/A	N/A	576
+WL 546	Rutherford Placer	47.0697	-115.1836	N/A	N/A	577
+WL 547	Kismet Prospect	47.0675	-115.185	160790425	N/A	371
+WL 549	Crater Peak Prospect	47.0444	-115.9967	160790525	N/A	365
+WL 550	Gold Bug Placer (Brandon Gold Fields)	47.0411	-115.2008	N/A	N/A	477
+WL 551	Floodwood Creek Prospect	47.0389	-115.9444	160790178	W026621	367
+WL 552	Bear Placer (Wisdom Creek)	47.0381	-115.1025	N/A	N/A	470
+WL 553	Medicine Creek Placer	47.0317	-115.1386	N/A	N/A	578
+WL 554	Coeur d'Alene Gold Crag Mining Co., Ltd.	47.0308	-115.0803	N/A	N/A	483
+WL 555	Crater Lake Pegmatite	47.0297	-115.9767	160790192	N/A	366
+WL 556	Monumental Ridge Kyanite Deposit	47.0256	-115.8067	160790013	W027151	368
+WL 557	Ruby Prospects	47.0233	-115.3725	160790426	N/A	370
+WL 558	Granite Peak Prospects (Tilicum Prospect; GP Group; Elk Prairie Copper Prospect; Abe Group)	47.0161	-115.4469	160790427	N/A	369
+WL 559	Bean Creek Placer	47.0028	-115.2825	N/A	N/A	469
+WL 560	Riley Group	47.0028	-115.1478	160790526	N/A	394

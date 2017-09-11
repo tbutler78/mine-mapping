@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" id='ng-app' ng-app="myApp">
+<head>
+    <script src="http://maps.googleapis.com/maps/api/js??key=AIzaSyBniLvnDpx7QTe0qcUsAw00YpiJosm2Uao&sensor=false&language=en&v=3.14"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.js"></script>
+    <script src="http://underscorejs.org/underscore.js" type="text/javascript"></script>
+    <script src="js/angular-google-maps.js"></script>
+
+
+    <script src="js/app.js"></script>
+
+    <style type="text/css">
+        html {
+            height: 100%
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0
+        }
+
+        .angular-google-map-container { height: 400px; }
+    </style>
+
+
+</head>
+<body ng-controller="AppListCtrl">
+
+
+<ng-include src="view">
+
+</ng-include>
+
+
+
+
+
+
+<script src="js/controllers.js"></script>
+
+</body>
+</html>
+
+
+

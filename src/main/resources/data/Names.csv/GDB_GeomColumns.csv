@@ -1,0 +1,5 @@
+"TableName","FieldName","ShapeType","ExtentLeft","ExtentBottom","ExtentRight","ExtentTop","IdxOriginX","IdxOriginY","IdxGridSize","SRID","HasZ","HasM","ZLow","ZHigh","MLow","MHigh"
+"GDB_Items","Shape",4,-117.213629,42.00657100000001,-111.050112,48.993424,-180,-90,3.725290300196639e-07,1,FALSE,FALSE,nan,nan,nan,nan
+"Mines_WGS84","Shape",1,-117.213629451,42.00657091200003,-111.05011229,48.99342409500008,-400,-400,3.725290300196639e-07,2,FALSE,FALSE,nan,nan,nan,nan
+
+The free trial of MDB ACCDB Viewer exports only half of the records in each table.

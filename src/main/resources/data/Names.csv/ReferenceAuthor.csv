@@ -1,0 +1,192 @@
+"ID","Reference_ID","Metric","AuthorType","LastName","Initials","FirstName","Suffix","in"
+1,,,,,,,,FALSE
+2,92,1,1,"Brackebusch","F.W.",,,FALSE
+3,93,1,1,"Breckenridge","R.M.",,,FALSE
+4,94,1,1,"Breger","C.L.",,,FALSE
+5,95,1,1,"Brill","K.G.",,"Jr.",FALSE
+6,97,1,1,"Bruce","W.R.",,,FALSE
+7,98,1,1,"Buehler","A.R.",,,FALSE
+8,99,1,1,"Buehler","A.R.",,,FALSE
+9,100,1,1,"Buehler","A.R.",,,FALSE
+10,102,1,1,"Calkins","F.C.",,,FALSE
+11,103,1,1,"Calkins","F.C.",,,FALSE
+12,104,1,1,"Callahan",,"Eugene",,FALSE
+13,106,1,1,"Campbell","A.B.",,,FALSE
+14,130,1,1,"Capps","S.R.",,,FALSE
+15,131,1,1,"Capps","S.R.",,,FALSE
+16,132,1,1,"Capstick","D.O.",,,FALSE
+17,133,1,1,"Capstick","D.O.",,,FALSE
+18,134,1,1,"Capstick","D.O.",,,FALSE
+19,135,1,1,"Carr","H.C.",,,FALSE
+20,1711,1,1,"Carter","G.J.",,,FALSE
+21,137,1,1,"Carter","W.D.",,,FALSE
+22,140,1,1,"Carter","F.W.",,,FALSE
+23,141,1,1,"Carter","F.W.",,,FALSE
+24,142,1,1,"Cather","E.E.",,,FALSE
+25,143,1,1,"Causey","J.D.",,,FALSE
+26,144,1,1,"Causey","J.D.",,,FALSE
+27,146,1,5,"Chesson","S.A.",,,FALSE
+28,147,1,1,"Choate","R.",,,FALSE
+29,148,1,1,"Choate","R.",,,FALSE
+30,149,1,1,"Choate","R.",,,FALSE
+31,151,1,1,"Close","T.J.",,,FALSE
+32,152,1,1,"Close","T.J.",,,FALSE
+33,153,1,1,"Close","T.J.",,,FALSE
+34,154,1,1,"Close","T.J.",,,FALSE
+35,155,1,1,"Close","T.J.",,,FALSE
+36,157,1,1,"Collier","A.J.",,,FALSE
+37,159,1,1,"Cook","E.F.",,,FALSE
+38,160,1,1,"Cook","E.F.",,,FALSE
+39,161,1,1,"Cook","E.F.",,,FALSE
+40,162,1,1,"Cooper","J.R.",,,FALSE
+41,166,1,1,"Cox","D.C.",,,FALSE
+42,167,1,1,"Currier","L.W.",,,FALSE
+43,169,1,1,"Darling","R.S.",,,FALSE
+44,170,1,1,"DeLong","R.F.",,,FALSE
+45,171,1,1,"Denton","D.K. Jr.",,,FALSE
+46,407,1,1,"Gillerman","V.S.",,,FALSE
+47,408,1,1,"Erdman","J.A.",,,FALSE
+48,409,1,1,"Erdman",,"Ted",,FALSE
+49,410,1,1,"Erdman",,"Ted",,FALSE
+50,411,1,1,"Erdman",,"Ted",,FALSE
+51,412,1,1,"Erdman",,"Ted",,FALSE
+52,414,1,1,"Erdman",,"Ted",,FALSE
+53,418,1,1,"Eversmeyer",,"Bruce",,FALSE
+54,433,1,1,"Fryklund",,,,FALSE
+55,445,1,1,"Gere",,,,FALSE
+56,449,1,1,"Gillerman and Griggs",,,,FALSE
+57,450,1,1,"Gillerman and Griggs",,,,FALSE
+58,451,1,1,"Gillerman and Griggs",,,,FALSE
+59,452,1,1,"Gillerman and Griggs",,,,FALSE
+60,453,1,1,"Gillerman and Griggs",,,,FALSE
+61,454,1,1,"Gillerman and others",,,,FALSE
+62,455,1,1,"Gillerman and others",,,,FALSE
+63,456,1,1,"Gillerman and Schiappa",,,,FALSE
+64,457,1,1,"Gillerman",,,,FALSE
+65,458,1,1,"Gillerman",,,,FALSE
+66,470,1,1,"Griffitts",,,,FALSE
+67,491,1,1,"Hobbs",,,,FALSE
+68,498,1,1,"Hosterman",,,,FALSE
+69,501,1,1,"Hubbard",,,,FALSE
+70,503,1,1,"Hubbard",,,,FALSE
+71,504,1,1,"Hubbard",,,,FALSE
+72,506,1,1,"Hubbard",,,,FALSE
+73,526,1,1,"Kauffman and others",,,,FALSE
+74,528,1,1,"Kauffman and others",,,,FALSE
+75,529,1,1,"Kauffman and others",,,,FALSE
+76,530,1,1,"Kauffman and others",,,,FALSE
+77,531,1,1,"Kauffman and others",,,,FALSE
+78,532,1,1,"Kauffman and others",,,,FALSE
+79,533,1,1,"Kauffman and others",,,,FALSE
+80,534,1,1,"Kauffman and others",,,,FALSE
+81,535,1,1,"Kauffman and others",,,,FALSE
+82,536,1,1,"Kauffman and others",,,,FALSE
+83,537,1,1,"Kauffman and others",,,,FALSE
+84,538,1,1,"Kauffman and others",,,,FALSE
+85,539,1,1,"Kauffman and others",,,,FALSE
+86,540,1,1,"Kauffman and others",,,,FALSE
+87,541,1,1,"Kauffman and others",,,,FALSE
+88,542,1,1,"Kauffman and others",,,,FALSE
+89,543,1,1,"Kauffman and others",,,,FALSE
+90,550,1,1,"Kiiilsgaard",,,,FALSE
+91,554,1,1,"Kiilsgaard and others",,,,FALSE
+92,557,1,1,"Kiiisgaard",,,,FALSE
+93,558,1,1,"Kiiisgaard",,,,FALSE
+94,559,1,1,"Kiiisgaard",,,,FALSE
+95,561,1,1,"Kiiisgaard",,,,FALSE
+96,563,1,1,"King",,,,FALSE
+97,569,1,1,"Kirkham and Ellis",,,,FALSE
+98,577,1,1,"Kun",,,,FALSE
+99,581,1,1,"Le Moine",,,,FALSE
+100,586,1,1,"Leppert and Gillerman",,,,FALSE
+101,587,1,1,"Leppert and Gillerman",,,,FALSE
+102,588,1,1,"Leppert and others",,,,FALSE
+103,589,1,1,"Lesure",,,,FALSE
+104,599,1,1,"Livingston and Laney",,,,FALSE
+105,601,1,1,"Livingston",,,,FALSE
+106,623,1,1,"Mayerle","R.T.",,,FALSE
+107,627,1,1,"McDivitt",,,,FALSE
+108,665,1,1,"Mitchell and Bennett",,,,FALSE
+109,666,1,1,"Mitchell and Gillerman",,,,FALSE
+110,667,1,1,"Mitchell and Gillerman",,,,FALSE
+111,668,1,1,"Mitchell and Gillerman",,,,FALSE
+112,669,1,1,"Mitchell",,,,FALSE
+113,670,1,1,"Mitchell",,,,FALSE
+114,671,1,1,"Mitchell",,,,FALSE
+115,672,1,1,"Mitchell",,,,FALSE
+116,673,1,1,"Mitchell",,,,FALSE
+117,674,1,1,"Mitchell",,,,FALSE
+118,675,1,1,"Mitchell",,,,FALSE
+119,676,1,1,"Mitchell",,,,FALSE
+120,677,1,1,"Mitchell",,,,FALSE
+121,678,1,1,"Mitchell",,,,FALSE
+122,679,1,1,"Mitchell",,,,FALSE
+123,680,1,1,"Mitchell",,,,FALSE
+124,681,1,1,"Mitchell",,,,FALSE
+125,682,1,1,"Mitchell",,,,FALSE
+126,683,1,1,"Mitchell",,,,FALSE
+127,684,1,1,"Mitchell",,,,FALSE
+128,685,1,1,"Mitchell",,,,FALSE
+129,686,1,1,"Mitchell",,,,FALSE
+130,687,1,1,"Mitchell",,,,FALSE
+131,688,1,1,"Mitchell",,,,FALSE
+132,689,1,1,"Mitchell",,,,FALSE
+133,690,1,1,"Mitchell",,,,FALSE
+134,691,1,1,"Mitchell",,,,FALSE
+135,692,1,1,"Mitchell",,,,FALSE
+136,693,1,1,"Mitchell",,,,FALSE
+137,694,1,1,"Mitchell",,,,FALSE
+138,695,1,1,"Mitchell",,,,FALSE
+139,696,1,1,"Mitchell",,,,FALSE
+140,697,1,1,"Mitchell",,,,FALSE
+141,698,1,1,"Mitchell",,,,FALSE
+142,699,1,1,"Mitchell",,,,FALSE
+143,700,1,1,"Mitchell",,,,FALSE
+144,701,1,1,"Mitchell",,,,FALSE
+145,702,1,1,"Mitchell",,,,FALSE
+146,703,1,1,"Mitchell",,,,FALSE
+147,704,1,1,"Mitchell",,,,FALSE
+148,705,1,1,"Mitchell",,,,FALSE
+149,706,1,1,"Mitchell",,,,FALSE
+150,707,1,1,"Mitchell",,,,FALSE
+151,708,1,1,"Mitchell",,,,FALSE
+152,709,1,1,"Mitchell",,,,FALSE
+153,710,1,1,"Mitchell",,,,FALSE
+154,711,1,1,"Mitchell",,,,FALSE
+155,712,1,1,"Mitchell",,,,FALSE
+156,713,1,1,"Mitchell",,,,FALSE
+157,841,1,1,"Piper and Laney",,,,FALSE
+158,846,1,1,"Powers",,,,FALSE
+159,850,1,1,"Prater",,,,FALSE
+160,857,1,1,"Reed",,,,FALSE
+161,858,1,1,"Reed",,,,FALSE
+162,859,1,1,"Reed",,,,FALSE
+163,863,1,1,"Reid",,,,FALSE
+164,865,1,1,"Reid",,,,FALSE
+165,874,1,1,"Ross",,,,FALSE
+166,875,1,1,"Ross",,,,FALSE
+167,876,1,1,"Ross",,,,FALSE
+168,879,1,1,"Ross",,,,FALSE
+169,890,1,1,"Sampson","E.",,,FALSE
+170,892,1,1,"Savage",,,,FALSE
+171,893,1,1,"Savage",,,,FALSE
+172,894,1,1,"Savage",,,,FALSE
+173,1,1,1,"Abbott","A.T.",,,FALSE
+174,2,1,1,"Ach","J.A.",,,FALSE
+175,3,1,1,"Adams","J.",,,FALSE
+176,5,1,1,"Albee","H.F.",,,FALSE
+177,6,1,1,"Allen","R.M.",,"Jr.",FALSE
+178,7,1,1,"Allen","R.M.",,,FALSE
+179,10,1,1,"Anderson","A.L.",,,FALSE
+180,11,1,1,"Anderson","A.L.",,,FALSE
+181,12,1,1,"Anderson","A.L.",,,FALSE
+182,13,1,1,"Anderson","A.L.",,,FALSE
+183,14,1,1,"Anderson","A.L.",,,FALSE
+184,15,1,1,"Anderson","A.L.",,,FALSE
+185,16,1,1,"Anderson","A.L.",,,FALSE
+186,17,1,1,"Anderson","A.L.",,,FALSE
+187,18,1,1,"Anderson","A.L.",,,FALSE
+188,19,1,1,"Anderson","A.L.",,,FALSE
+189,20,1,1,"Anderson","A.L.",,,FALSE
+
+The free trial of MDB ACCDB Viewer exports only half of the records in each table.

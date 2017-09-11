@@ -1,0 +1,4 @@
+Sequence Number	Deposit	Latitude	Longitude	MILSREF	MRDSREC	Orange Number
+PO   1	Condel Cinder Pit	42.845	-113.9589	160630011	W013154	1
+PO   2	Cinder Pit	42.8686	-113.715	N/A	N/A	2
+TF  65	Cinder Pit	42.9483	-114.2214	N/A	N/A	39

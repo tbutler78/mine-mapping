@@ -1,0 +1,6 @@
+"TableName","FieldName","columnFlags"
+"GDB_Items","UUID",1
+"GDB_Items","Definition",2
+"GDB_Items","Documentation",2
+
+The free trial of MDB ACCDB Viewer exports only half of the records in each table.
