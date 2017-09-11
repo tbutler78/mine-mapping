@@ -1,4 +1,0 @@
-Sequence Number	Deposit	Latitude	Longitude	MILSREF	MRDSREC	Orange Number
-PO 247	Hess Claims (Oneida Perlite Corp. Pit; Malad Pit)	42.4425	-112.3183	160710021	W013152	154
-PO 251	Wright's Creek Mine	42.4131	-112.3814	160710002	N/A	158
-PO 252	M. J. Hess Construction Co. Pit	42.3983	-112.4003	160710035	W013164	159
