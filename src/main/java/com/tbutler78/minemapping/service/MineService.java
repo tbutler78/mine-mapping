@@ -58,7 +58,7 @@ public class MineService {
 	}
 
 	public Mine findMine(Long id) {
-		return mineRepository.findOne(id);
+		return mineRepository.getOne(id);
 	}
 
 	public List<Mine> findMineByName(String name) {

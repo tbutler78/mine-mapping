@@ -47,7 +47,7 @@ public class LocationTest extends MineMappingApplicationTest {
 	}
 
 
-	@Test
+	//@Test
 	public void testMines(){
 
 

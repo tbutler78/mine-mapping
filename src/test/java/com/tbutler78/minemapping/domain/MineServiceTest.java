@@ -1,51 +1,86 @@
 package com.tbutler78.minemapping.domain;
 
 import com.tbutler78.minemapping.MineMappingApplicationTest;
+import com.tbutler78.minemapping.repository.MineRepository;
 import com.tbutler78.minemapping.service.MineService;
 import com.tbutler78.minemapping.service.ReferenceRelateService;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.mock;
 
-public class MineServiceTest extends MineMappingApplicationTest{
 
-	private static Logger log = LoggerFactory.getLogger(MineServiceTest.class);
-	@Autowired
-	MineService mineService;
+public class MineServiceTest {
 
-	@Autowired
-	ReferenceRelateService referenceRelateService;
+    private static Logger log = LoggerFactory.getLogger(MineServiceTest.class);
 
-	@Test
-	public void testFindAll() {
-		Assert.assertTrue(mineService.findAll().size() > 0);
-	}
 
-	@Test
-	public void testSeqNumber(){
-		mineService.findAll().subList(0,30).stream().forEach(m -> {
+    @Mock
+    ReferenceRelateService referenceRelateService;
 
-				log.info(m.getDeposit());
-			referenceRelateService.findBySequenceNumber(m.getSequenceNumber()).stream().forEach(r ->
-					log.info(r.getReference())
-			);
-				});
-	}
+    @Mock
+    MineRepository mineRepository;
 
-	@Test
-	public void testFindByCounty() {
-		Assert.assertTrue(mineService.findByCounty("GEM").size() > 0);
-	}
+    @InjectMocks
+    MineService mineService;
 
-	@Test
-	public void testFindMineByName() {
-		List<Mine> mines = mineService.findMineByName("Cumberland");
-		log.info(mines.toString());
-	}
+    Mine mine;
+    List<Mine> mineList = new ArrayList<>();
+
+
+    @Before
+    public void setup() {
+        MockitoAnnotations.initMocks(this);
+        mine = new Mine();
+        mine.setDeposit("Cumberland");
+        mineList.add(mine);
+
+    }
+
+    @Test
+    public void testFindAll() {
+        Mockito.when(mineRepository.findAll()).thenReturn(mineList);
+        Assert.assertTrue(mineService.findAll().size() > 0);
+    }
+
+    @Test
+    public void testSeqNumber() {
+
+        Mockito.when(mineService.findAll()).thenReturn(mineList);
+        List<Mine> results = mineService.findAll();
+        assertEquals(results.size(), 1L);
+    }
+
+    @Test
+    public void testFindByCounty() {
+        Mockito.when(mineRepository.findByCountyNameAndLatitudeIsNotNullAndLongitudeIsNotNull("GEM")).thenReturn(mineList);
+        List<Mine> results = mineService.findByCounty("GEM");
+        log.info(results.toString());
+        assertEquals(results.size(), 1L);
+        results = mineService.findByCounty("Owyhee");
+        assertEquals(results.size(), 0L);
+    }
+
+    @Test
+    public void testFindMineByName() {
+        Mockito.when(mineRepository.findByDepositContaining("Cumberland")).thenReturn(mineList);
+        List<Mine> mines = mineService.findMineByName("Cumberland");
+        assertEquals(mines.size(), 1L);
+        mines = mineService.findMineByName("Blackjack");
+        assertEquals(mines.size(), 0L);
+    }
 
 }

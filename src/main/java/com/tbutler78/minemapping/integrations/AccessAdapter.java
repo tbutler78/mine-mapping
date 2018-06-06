@@ -18,9 +18,9 @@ public class AccessAdapter {
     String MS_ACC_DB = "src/main/resources/batch/MinesAndProspects_1.2015.1.mdb";
 
     String DB_URL = "jdbc:ucanaccess://" + MS_ACC_DB;
-    Connection connection;
-    Statement statement;
-    ResultSet resultSet;
+    private Connection connection;
+    private Statement statement;
+    private ResultSet resultSet;
 
 
 // "SELECT * FROM PLAYER"
