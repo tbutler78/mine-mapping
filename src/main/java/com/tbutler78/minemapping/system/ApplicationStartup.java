@@ -29,7 +29,7 @@ public class ApplicationStartup
     public void onApplicationEvent(final ApplicationReadyEvent event) {
     nameImporter.processData();
        countyImporter.processData();
-      minesImporter.processData();
+      //minesImporter.processData();
 
         return;
     }

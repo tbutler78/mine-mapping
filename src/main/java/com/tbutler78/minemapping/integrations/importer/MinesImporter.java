@@ -39,9 +39,11 @@ public class MinesImporter extends Importer {
                     mineRepository.save(mine);
 
                 } else {
+                    /*
                     mine = buildMine(mine, t);
                     log.info("updating: " + mine.toString());
                     mineRepository.save(mine);
+                    */
                 }
             } catch (Exception e){
                 log.error("Error Processing Mine");
