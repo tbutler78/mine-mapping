@@ -35,7 +35,7 @@ public class AccessAdapter {
         }
         catch(ClassNotFoundException cnfex) {
 
-            System.out.println("Problem in loading or "
+            log.error("Problem in loading or "
                                        + "registering MS Access JDBC driver");
             cnfex.printStackTrace();
         }
@@ -50,8 +50,7 @@ public class AccessAdapter {
 
             int counter = 0;
 
-            System.out.println("ID\tName\t\t\tAge\tMatches");
-            System.out.println("==\t================\t===\t=======");
+
             HashMap<String, String> result;
             // processing returned data and printing into console
 
@@ -72,12 +71,12 @@ public class AccessAdapter {
                      resultSet.getString(5));
 */
                 accessTable.addRow(result);
-log.info(result.toString());
+//log.info(result.toString());
             }
 
         }
         catch(SQLException sqlex){
-            sqlex.printStackTrace();
+            log.error(sqlex.toString());
         }
         finally {
 
@@ -97,7 +96,7 @@ log.info(result.toString());
                 }
             }
             catch (SQLException sqlex) {
-                sqlex.printStackTrace();
+               log.error(sqlex.toString());
             }
         }
         return accessTable;

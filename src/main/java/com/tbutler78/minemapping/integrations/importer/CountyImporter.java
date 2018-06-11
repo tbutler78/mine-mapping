@@ -22,17 +22,15 @@ public class CountyImporter extends Importer {
     public void processData(){
     getData().getRows().stream().forEach( t -> {
         String countyName = t.get("Countyname");
-        if (countyRepository.findAllByName(countyName).size() < 1){
+        if (countyRepository.findAllByName(countyName).size() < 1) {
             County county = new County(countyName);
-            try {
-            countyRepository.save(county);
 
-        } catch(Exception e) {
-                log.info(countyName);
-                log.info(countyRepository.findAllByName(countyName).toString());
-                log.info(e.toString());
-            }
-            }
+            countyRepository.save(county);
+            log.info(county.toString());
+        } else {
+            log.info("updating county");
+            // TODO
+        }
 
     });
 

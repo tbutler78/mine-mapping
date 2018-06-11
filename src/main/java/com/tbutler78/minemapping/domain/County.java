@@ -10,6 +10,7 @@ import javax.persistence.*;
 @Table(name="county")
 public class County {
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
     private String name;
 

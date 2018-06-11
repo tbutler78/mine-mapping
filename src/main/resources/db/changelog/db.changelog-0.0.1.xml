@@ -1,0 +1,853 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no" ?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="butlert (generated)" id="1492115221635-1">
+        <createTable tableName="0READ_ME_20160907">
+            <column name="ID" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="REMEMBER" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-2">
+        <createTable tableName="0_A_Last_Update">
+            <column name="ID" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="UpdateDate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="Type" type="TEXT"/>
+            <column name="Database_DateStamp" type="TEXT"/>
+            <column name="Notes" type="TEXT"/>
+            <column name="Initials" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-3">
+        <createTable tableName="0_Names">
+            <column name="SequenceNumber" type="TEXT"/>
+            <column name="SeparatedNames_Deposit_FieldName" type="TEXT"/>
+            <column name="NameKey" type="TEXT"/>
+            <column name="R_Index2_Deposit_FieldName" type="TEXT"/>
+            <column name="Metric" type="INT"/>
+            <column name="AutoNumber" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="Initials" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-4">
+        <createTable tableName="0_Z_updates">
+            <column name="KeyField" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="RecordID" type="TEXT"/>
+            <column name="MapLoc" type="TEXT"/>
+            <column name="Property Name" type="TEXT"/>
+            <column name="LastUpdated" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="Action taken" type="TEXT"/>
+            <column name="Notes" type="TEXT"/>
+            <column name="Notes2" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-5">
+        <createTable tableName="100k24k">
+            <column name="24kQuad" type="TEXT"/>
+            <column name="100kQuad" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-6">
+        <createTable tableName="100quad">
+            <column name="100kQuad" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-7">
+        <createTable tableName="1to24kMaps">
+            <column name="24kQuad" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-8">
+        <createTable tableName="Commodities">
+            <column name="SequenceNumber" type="TEXT"/>
+            <column name="Commodity" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-9">
+        <createTable tableName="CommodityIndex">
+            <column name="Commod" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="Commodity" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CommodityName" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-10">
+        <createTable tableName="County">
+            <column name="Countyname" type="TEXT">
+                <constraints nullable="true"/>
+            </column>
+            <column autoIncrement="true" name="id" type="SERIAL">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-11">
+        <createTable tableName="County100k">
+            <column name="Countyname" type="TEXT"/>
+            <column name="100kQuad" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-12">
+        <createTable tableName="DataDictionary">
+            <column name="TableName" type="TEXT"/>
+            <column name="FieldName" type="TEXT"/>
+            <column name="FieldType" type="TEXT"/>
+            <column name="FieldLength" type="FLOAT8"/>
+            <column name="FieldDescription" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-13">
+        <createTable tableName="ForestServiceAgency">
+            <column name="FSAgencyName" type="TEXT"/>
+            <column name="ID" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-14">
+        <createTable tableName="GDB_ColumnInfo">
+            <column name="TableName" type="TEXT"/>
+            <column name="FieldName" type="TEXT"/>
+            <column name="columnFlags" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-15">
+        <createTable tableName="GDB_GeomColumns">
+            <column name="TableName" type="TEXT"/>
+            <column name="FieldName" type="TEXT"/>
+            <column name="ShapeType" type="INT"/>
+            <column name="ExtentLeft" type="FLOAT8"/>
+            <column name="ExtentBottom" type="FLOAT8"/>
+            <column name="ExtentRight" type="FLOAT8"/>
+            <column name="ExtentTop" type="FLOAT8"/>
+            <column name="IdxOriginX" type="FLOAT8"/>
+            <column name="IdxOriginY" type="FLOAT8"/>
+            <column name="IdxGridSize" type="FLOAT8"/>
+            <column name="SRID" type="INT"/>
+            <column name="HasZ" type="BOOLEAN"/>
+            <column name="HasM" type="BOOLEAN"/>
+            <column name="ZLow" type="FLOAT8"/>
+            <column name="ZHigh" type="FLOAT8"/>
+            <column name="MLow" type="FLOAT8"/>
+            <column name="MHigh" type="FLOAT8"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-16">
+        <createTable tableName="GDB_ItemRelationshipTypes">
+            <column name="ObjectID" type="INT"/>
+            <column name="UUID" type="TEXT"/>
+            <column name="OrigItemTypeID" type="TEXT"/>
+            <column name="DestItemTypeID" type="TEXT"/>
+            <column name="Name" type="TEXT"/>
+            <column name="ForwardLabel" type="TEXT"/>
+            <column name="BackwardLabel" type="TEXT"/>
+            <column name="IsContainment" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-17">
+        <createTable tableName="GDB_ItemRelationships">
+            <column name="ObjectID" type="INT"/>
+            <column name="UUID" type="TEXT"/>
+            <column name="OriginID" type="TEXT"/>
+            <column name="DestID" type="TEXT"/>
+            <column name="Type" type="TEXT"/>
+            <column name="Attributes" type="TEXT"/>
+            <column name="Properties" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-18">
+        <createTable tableName="GDB_ItemTypes">
+            <column name="ObjectID" type="INT"/>
+            <column name="UUID" type="TEXT"/>
+            <column name="ParentTypeID" type="TEXT"/>
+            <column name="Name" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-19">
+        <createTable tableName="GDB_Items">
+            <column name="ObjectID" type="INT"/>
+            <column name="UUID" type="TEXT"/>
+            <column name="Type" type="TEXT"/>
+            <column name="Name" type="TEXT"/>
+            <column name="PhysicalName" type="TEXT"/>
+            <column name="Path" type="TEXT"/>
+            <column name="DatasetSubtype1" type="INT"/>
+            <column name="DatasetSubtype2" type="INT"/>
+            <column name="DatasetInfo1" type="TEXT"/>
+            <column name="DatasetInfo2" type="TEXT"/>
+            <column name="URL" type="TEXT"/>
+            <column name="Definition" type="TEXT"/>
+            <column name="Documentation" type="TEXT"/>
+            <column name="ItemInfo" type="TEXT"/>
+            <column name="Properties" type="INT"/>
+            <column name="Defaults" type="BYTEA"/>
+            <column name="Shape" type="BYTEA"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-20">
+        <createTable tableName="GDB_Items_Shape_Index">
+            <column name="IndexedObjectId" type="INT"/>
+            <column name="MinGX" type="INT"/>
+            <column name="MinGY" type="INT"/>
+            <column name="MaxGX" type="INT"/>
+            <column name="MaxGY" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-21">
+        <createTable tableName="GDB_ReplicaLog">
+            <column name="ID" type="INT"/>
+            <column name="ReplicaID" type="INT"/>
+            <column name="Event" type="INT"/>
+            <column name="ErrorCode" type="INT"/>
+            <column name="LogDate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="SourceBeginGen" type="INT"/>
+            <column name="SourceEndGen" type="INT"/>
+            <column name="TargetGen" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-22">
+        <createTable tableName="GDB_SpatialRefs">
+            <column name="SRID" type="INT"/>
+            <column name="SRTEXT" type="TEXT"/>
+            <column name="FalseX" type="FLOAT8"/>
+            <column name="FalseY" type="FLOAT8"/>
+            <column name="XYUnits" type="FLOAT8"/>
+            <column name="FalseZ" type="FLOAT8"/>
+            <column name="ZUnits" type="FLOAT8"/>
+            <column name="FalseM" type="FLOAT8"/>
+            <column name="MUnits" type="FLOAT8"/>
+            <column name="IsHighPrecision" type="INT"/>
+            <column name="XYTolerance" type="FLOAT8"/>
+            <column name="ZTolerance" type="FLOAT8"/>
+            <column name="MTolerance" type="FLOAT8"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-23">
+        <createTable tableName="Location_explain">
+            <column name="sort_ID" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="Location_type" type="TEXT"/>
+            <column name="Location_explanation" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-24">
+        <createTable tableName="MRDSLookup">
+            <column name="SequenceNumber" type="TEXT"/>
+            <column name="MRDSREC" type="TEXT"/>
+            <column name="SITENAME" type="TEXT"/>
+            <column name="DISTRICT" type="TEXT"/>
+            <column name="COUNTY" type="TEXT"/>
+            <column name="COUNTY2" type="TEXT"/>
+            <column name="SECQUAD" type="TEXT"/>
+            <column name="SECQUADSCL" type="TEXT"/>
+            <column name="UTMNORTH" type="TEXT"/>
+            <column name="UTMEAST" type="TEXT"/>
+            <column name="UTMZONE" type="TEXT"/>
+            <column name="COMMODIT" type="TEXT"/>
+            <column name="LAT" type="TEXT"/>
+            <column name="LON" type="TEXT"/>
+            <column name="TOWN" type="TEXT"/>
+            <column name="SECTION" type="TEXT"/>
+            <column name="RANGE" type="TEXT"/>
+            <column name="MrdsLookupKey" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-25">
+        <createTable tableName="MineIndex">
+            <column name="SequenceNumber" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="HARDFILE" type="TEXT"/>
+            <column name="1x2degreequad" type="TEXT"/>
+            <column name="HardFile_Boolean" type="BOOLEAN"/>
+            <column name="LocationUpdated" type="BOOLEAN"/>
+            <column name="ProductionValue" type="BOOLEAN"/>
+            <column name="CommoditiesValue" type="BOOLEAN"/>
+            <column name="Ore" type="BOOLEAN"/>
+            <column name="PeriodProduction" type="BOOLEAN"/>
+            <column name="MLA" type="BOOLEAN"/>
+            <column name="OrangeNum" type="BOOLEAN"/>
+            <column name="OrangeNum2" type="BOOLEAN"/>
+            <column name="Updated" type="BOOLEAN"/>
+            <column name="Annotation" type="BOOLEAN"/>
+            <column name="Lode" type="BOOLEAN"/>
+            <column name="Placer" type="BOOLEAN"/>
+            <column name="FieldChecked" type="BOOLEAN"/>
+            <column name="Scanned" type="BOOLEAN"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-26">
+        <createTable tableName="MinesExport">
+            <column name="SequenceNumber" type="TEXT"/>
+            <column name="Location_type" type="INT"/>
+            <column name="lon_WGS84" type="FLOAT8"/>
+            <column name="lat_WGS84" type="FLOAT8"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-27">
+        <createTable tableName="Mines_WGS84">
+            <column name="Problem" type="TEXT"/>
+            <column name="DateModified" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="Initials" type="TEXT"/>
+            <column name="SequenceNumber" type="TEXT"/>
+            <column name="NEWLOC" type="TEXT"/>
+            <column name="MAPLOC" type="TEXT"/>
+            <column name="DEPOSIT" type="TEXT"/>
+            <column name="Latitude" type="FLOAT8"/>
+            <column name="Longitude" type="FLOAT8"/>
+            <column name="Location_type" type="INT"/>
+            <column name="DMSLAT" type="FLOAT8"/>
+            <column name="DMSLONG" type="FLOAT8"/>
+            <column name="F24kquad" type="TEXT"/>
+            <column name="F100kQuad" type="TEXT"/>
+            <column name="CountyName" type="TEXT"/>
+            <column name="LandOwner" type="TEXT"/>
+            <column name="FSAgencyName" type="TEXT"/>
+            <column name="OrangeNum" type="TEXT"/>
+            <column name="F1x2degreeQuadrangle" type="TEXT"/>
+            <column name="lon_WGS84" type="FLOAT8"/>
+            <column name="lat_WGS84" type="FLOAT8"/>
+            <column name="TOWNSHIP" type="TEXT"/>
+            <column name="RANGE" type="TEXT"/>
+            <column name="SECTION_" type="INT"/>
+            <column name="QSECTION" type="TEXT"/>
+            <column name="OBJECTID" type="INT"/>
+            <column name="ZIP_CODE" type="INT"/>
+            <column name="Mining_District" type="TEXT"/>
+            <column name="Shape" type="BYTEA"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-28">
+        <createTable tableName="Mines_WGS84_Shape_Index">
+            <column name="IndexedObjectId" type="INT"/>
+            <column name="MinGX" type="INT"/>
+            <column name="MinGY" type="INT"/>
+            <column name="MaxGX" type="INT"/>
+            <column name="MaxGY" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-29">
+        <createTable tableName="Mines_WGS84_Web_Mercator_Aux_Sphere">
+            <column name="Problem" type="TEXT"/>
+            <column name="DateModified" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="Initials" type="TEXT"/>
+            <column name="SequenceNumber" type="TEXT"/>
+            <column name="NEWLOC" type="TEXT"/>
+            <column name="MAPLOC" type="TEXT"/>
+            <column name="DEPOSIT" type="TEXT"/>
+            <column name="Latitude" type="FLOAT8"/>
+            <column name="Longitude" type="FLOAT8"/>
+            <column name="Location_type" type="INT"/>
+            <column name="DMSLAT" type="FLOAT8"/>
+            <column name="DMSLONG" type="FLOAT8"/>
+            <column name="F24kquad" type="TEXT"/>
+            <column name="F100kQuad" type="TEXT"/>
+            <column name="CountyName" type="TEXT"/>
+            <column name="LandOwner" type="TEXT"/>
+            <column name="FSAgencyName" type="TEXT"/>
+            <column name="OrangeNum" type="TEXT"/>
+            <column name="F1x2degreeQuadrangle" type="TEXT"/>
+            <column name="lon_WGS84" type="FLOAT8"/>
+            <column name="lat_WGS84" type="FLOAT8"/>
+            <column name="TOWNSHIP" type="TEXT"/>
+            <column name="RANGE" type="TEXT"/>
+            <column name="SECTION_" type="INT"/>
+            <column name="QSECTION" type="TEXT"/>
+            <column name="OBJECTID" type="INT"/>
+            <column name="ZIP_CODE" type="INT"/>
+            <column name="Mining_District" type="TEXT"/>
+            <column name="Shape" type="BYTEA"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-30">
+        <createTable tableName="Mines_WGS84_Web_Mercator_Aux_Sphere_Shape_Index">
+            <column name="IndexedObjectId" type="INT"/>
+            <column name="MinGX" type="INT"/>
+            <column name="MinGY" type="INT"/>
+            <column name="MaxGX" type="INT"/>
+            <column name="MaxGY" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-31">
+        <createTable tableName="Names">
+
+            <column name="id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="auto_number" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="metric" type="BIGINT" />
+            <column name="name_key" type="VARCHAR(255)"/>
+            <column name="r_index2_deposit_field_name" type="VARCHAR(255)"/>
+            <column name="separated_names_deposit_field_name" type="VARCHAR(255)"/>
+            <column name="sequence_number" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-32">
+        <createTable tableName="OrangeNum">
+            <column name="SequenceNumber" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="1x2 Degree Quad" type="TEXT"/>
+            <column name="ORANGENUM" type="INT"/>
+            <column name="2ndEdition" type="INT"/>
+            <column name="Auto" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-33">
+        <createTable tableName="Ore">
+            <column name="SequenceNumber" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="RawAmount" type="TEXT"/>
+            <column name="RawMeasure" type="TEXT"/>
+            <column name="TailingsAmount" type="TEXT"/>
+            <column name="TailingsMeasure" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-34">
+        <createTable tableName="OrphanEntries">
+            <column name="ID" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PropertyScanName" type="TEXT"/>
+            <column name="OriginalFileName" type="TEXT"/>
+            <column name="FileSize" type="INT"/>
+            <column name="FileName" type="TEXT"/>
+            <column name="ItemType" type="TEXT"/>
+            <column name="InfoText" type="TEXT"/>
+            <column name="Author" type="TEXT"/>
+            <column name="Comments" type="TEXT"/>
+            <column name="FolderName" type="TEXT"/>
+            <column name="Dates" type="TEXT"/>
+            <column name="MapsToReview" type="TEXT"/>
+            <column name="Re-scan file" type="BOOLEAN"/>
+            <column name="Cross-Ref Properties Comments" type="TEXT"/>
+            <column name="Year" type="TEXT"/>
+            <column name="Company" type="TEXT"/>
+            <column name="Initials" type="TEXT"/>
+            <column name="EntryDate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-35">
+        <createTable tableName="PeriodProduction">
+            <column name="SequenceNumber" type="TEXT"/>
+            <column name="PeriodProduction" type="TEXT"/>
+            <column name="LowProdPeriod1" type="TEXT"/>
+            <column name="HighProdPeriod1" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-36">
+        <createTable tableName="PortPropDesc">
+            <column name="Portfolio_ID" type="TEXT"/>
+            <column name="PortfolioScanName" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="FileSize" type="FLOAT8"/>
+            <column name="FileName" type="TEXT"/>
+            <column name="ItemType" type="TEXT"/>
+            <column name="InfoText" type="TEXT"/>
+            <column name="Maps" type="INT"/>
+            <column name="Author" type="TEXT"/>
+            <column name="Comments" type="TEXT"/>
+            <column name="Dates" type="TEXT"/>
+            <column name="Year" type="FLOAT8"/>
+            <column name="Company" type="TEXT"/>
+            <column name="Initials" type="TEXT"/>
+            <column name="EntryDate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-37">
+        <createTable tableName="Port_LUT">
+            <column name="Portfolio_ID" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="Portfolio_Desc" type="TEXT"/>
+            <column name="Portfolio_Pages" type="INT"/>
+            <column name="Portfolio_Size" type="INT"/>
+            <column name="Portfolio_File_Name" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-38">
+        <createTable tableName="PortfolioCross">
+            <column name="ID" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PortfolioScanName" type="TEXT"/>
+            <column name="CrossRefProp" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-39">
+        <createTable tableName="ProductionCodes">
+            <column name="Alpha_Abreviation" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="Numerical_Conversion" type="TEXT"/>
+            <column name="LowRange" type="TEXT"/>
+            <column name="HighRange" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-40">
+        <createTable tableName="ProductionValues">
+            <column name="Sequence Number" type="TEXT"/>
+            <column name="Commodity" type="TEXT"/>
+            <column name="ProductionValue" type="TEXT"/>
+            <column name="ProductionType" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-41">
+        <createTable tableName="PropertyFileScans">
+            <column name="ID" type="INT"/>
+            <column name="PropertyNumber" type="TEXT"/>
+            <column name="PropertyScanName" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="OriginalFileName" type="TEXT"/>
+            <column name="FileSize" type="INT"/>
+            <column name="FileName" type="TEXT"/>
+            <column name="ItemType" type="TEXT"/>
+            <column name="InfoText" type="TEXT"/>
+            <column name="Maps" type="INT"/>
+            <column name="Author" type="TEXT"/>
+            <column name="Comments" type="TEXT"/>
+            <column name="FolderName" type="TEXT"/>
+            <column name="Dates" type="TEXT"/>
+            <column name="MapsToReview" type="TEXT"/>
+            <column name="Rescan_file" type="BOOLEAN"/>
+            <column name="xRef_Prop_Comments" type="TEXT"/>
+            <column name="Year" type="INT"/>
+            <column name="Company" type="TEXT"/>
+            <column name="Initials" type="TEXT"/>
+            <column name="EntryDate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-42">
+        <createTable tableName="PropertyFileScans_OrphanEntries">
+            <column name="ID" type="INT"/>
+            <column name="PropertyNumber" type="TEXT"/>
+            <column name="PropertyScanName" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="OriginalFileName" type="TEXT"/>
+            <column name="FileSize" type="INT"/>
+            <column name="FileName" type="TEXT"/>
+            <column name="ItemType" type="TEXT"/>
+            <column name="InfoText" type="TEXT"/>
+            <column name="Author" type="TEXT"/>
+            <column name="Comments" type="TEXT"/>
+            <column name="FolderName" type="TEXT"/>
+            <column name="Dates" type="TEXT"/>
+            <column name="MapsToReview" type="TEXT"/>
+            <column name="Re-scan file" type="BOOLEAN"/>
+            <column name="Cross-Ref Properties Comments" type="TEXT"/>
+            <column name="Year" type="INT"/>
+            <column name="Company" type="TEXT"/>
+            <column name="Initials" type="TEXT"/>
+            <column name="EntryDate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-43">
+        <createTable tableName="Quadrangle">
+            <column name="1x2_Quad" type="TEXT"/>
+            <column name="Quad_Abbreviation" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="Key" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-44">
+        <createTable tableName="Reference">
+            <column name="Reference_ID" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="Title" type="TEXT"/>
+            <column name="YearDate" type="TEXT"/>
+            <column name="In" type="BOOLEAN"/>
+            <column name="SecondTitle" type="TEXT"/>
+            <column name="SecondTitleDate" type="TEXT"/>
+            <column name="abstract" type="BOOLEAN"/>
+            <column name="Publisher" type="TEXT"/>
+            <column name="nd" type="BOOLEAN"/>
+            <column name="publisherAbbv" type="TEXT"/>
+            <column name="pubCity" type="TEXT"/>
+            <column name="pubState" type="TEXT"/>
+            <column name="volume" type="TEXT"/>
+            <column name="number" type="TEXT"/>
+            <column name="edition" type="TEXT"/>
+            <column name="Institution" type="TEXT"/>
+            <column name="Series_Type" type="TEXT"/>
+            <column name="PubNumber" type="TEXT"/>
+            <column name="PageCount" type="INT"/>
+            <column name="PlateCount" type="INT"/>
+            <column name="SheetCount" type="INT"/>
+            <column name="Scale" type="TEXT"/>
+            <column name="Pages" type="TEXT"/>
+            <column name="Hyperlink" type="TEXT"/>
+            <column name="YearHyperlink" type="INT"/>
+            <column name="Anno" type="TEXT"/>
+            <column name="EnterDate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="EditDate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="Initials" type="TEXT"/>
+            <column name="Notes" type="TEXT"/>
+            <column name="OldReference" type="TEXT"/>
+            <column name="Pub_ID" type="TEXT"/>
+            <column name="Origin" type="TEXT"/>
+            <column name="URL_INTRA" type="TEXT"/>
+            <column name="Folder" type="TEXT"/>
+            <column name="FileName" type="TEXT"/>
+            <column name="URL" type="TEXT"/>
+            <column name="URL_Year" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-45">
+        <createTable tableName="ReferenceAuthor">
+            <column name="ID" type="INT"/>
+            <column name="Reference_ID" type="INT"/>
+            <column name="Metric" type="INT"/>
+            <column name="AuthorType" type="INT"/>
+            <column name="LastName" type="TEXT"/>
+            <column name="Initials" type="TEXT"/>
+            <column name="FirstName" type="TEXT"/>
+            <column name="Suffix" type="TEXT"/>
+            <column name="in" type="BOOLEAN"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-46">
+        <createTable tableName="ReferenceAuthorType_LUT">
+            <column name="AuthorType" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="AuthorTypeText" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-47">
+        <createTable tableName="ReferenceAuthor_Temp">
+            <column name="ID" type="INT"/>
+            <column name="Reference_ID" type="INT"/>
+            <column name="Metric" type="INT"/>
+            <column name="AuthorType" type="INT"/>
+            <column name="LastName" type="TEXT"/>
+            <column name="Initials" type="TEXT"/>
+            <column name="FirstName" type="TEXT"/>
+            <column name="Suffix" type="TEXT"/>
+            <column name="in" type="BOOLEAN"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-48">
+        <createTable tableName="Reference_Origin_LUT">
+            <column name="ID" type="INT"/>
+            <column name="OriginType" type="TEXT"/>
+            <column name="FilePathNote" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-49">
+        <createTable tableName="ScanCrossRef">
+            <column name="CrossRef_ID" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PropertyScanName" type="TEXT"/>
+            <column name="CrossRefProp" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-50">
+        <createTable tableName="SelectedObjects">
+            <column name="SelectionID" type="INT"/>
+            <column name="ObjectID" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-51">
+        <createTable tableName="Selections">
+            <column name="SelectionID" type="INT"/>
+            <column name="TargetName" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-52">
+        <createTable tableName="SurficialManagement">
+            <column name="LandOwner" type="TEXT"/>
+            <column name="Key" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-53">
+        <createTable tableName="TrackChange">
+            <column name="ID" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SequenceNumber" type="TEXT"/>
+            <column name="NEWLOC" type="TEXT"/>
+            <column name="DEPOSIT" type="TEXT"/>
+            <column name="REFNAME" type="TEXT"/>
+            <column name="DESC_CHANGE" type="TEXT"/>
+            <column name="DATE_CHANGE" type="TEXT"/>
+            <column name="BASIS_CHANGE" type="TEXT"/>
+            <column name="RESEARCHER" type="TEXT"/>
+            <column name="ADD_NOTES" type="TEXT"/>
+            <column name="CLEANUP_Y_" type="TEXT"/>
+            <column name="Query_or_Sort" type="TEXT"/>
+            <column name="PreviousDatabseName" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-54">
+        <createTable tableName="Z_annotations">
+            <column name="KeyField" type="INT"/>
+            <column name="RecordID" type="TEXT"/>
+            <column name="MapLoc" type="TEXT"/>
+            <column name="Property Name" type="TEXT"/>
+            <column name="DateOf Note" type="TEXT"/>
+            <column name="DatabaseField" type="TEXT"/>
+            <column name="Notes" type="TEXT"/>
+            <column name="Notes2" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-55">
+        <createTable tableName="Z_updates">
+            <column name="KeyField" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="RecordID" type="TEXT"/>
+            <column name="MapLoc" type="TEXT"/>
+            <column name="PropertyName" type="TEXT"/>
+            <column name="LastUpdated" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="Action_taken" type="TEXT"/>
+            <column name="Notes" type="TEXT"/>
+            <column name="Notes2" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-56">
+        <createTable tableName="county24k">
+            <column name="county_name" type="VARCHAR(255)"/>
+            <column name="24kQuad" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-57">
+        <createTable tableName="locations">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="latitude" type="FLOAT8"/>
+            <column name="longitude" type="FLOAT8"/>
+            <column name="mrdsrec" type="VARCHAR(255)"/>
+            <column name="milsref" type="VARCHAR(255)"/>
+            <column name="orange_number" type="VARCHAR(255)"/>
+            <column name="deposit" type="VARCHAR(255)"/>
+            <column name="point" type="BYTEA"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-58">
+        <createTable tableName="mils_lookup">
+            <column name="Sequencenumber" type="TEXT"/>
+            <column name="MILSREF" type="INT"/>
+            <column name="NAME" type="TEXT"/>
+            <column name="SEC" type="TEXT"/>
+            <column name="SUBSEC" type="TEXT"/>
+            <column name="TWN" type="TEXT"/>
+            <column name="RNG" type="TEXT"/>
+            <column name="DDMMSS" type="TEXT"/>
+            <column name="DDDMMSS" type="TEXT"/>
+            <column name="OPTYP" type="TEXT"/>
+            <column name="STATUS" type="TEXT"/>
+            <column name="COMMO1" type="TEXT"/>
+            <column name="COMMO2" type="TEXT"/>
+            <column name="COMMO3" type="TEXT"/>
+            <column name="COMMO4" type="TEXT"/>
+            <column name="COMMO5" type="TEXT"/>
+            <column name="MAPNAME" type="TEXT"/>
+            <column name="QUAD" type="TEXT"/>
+            <column name="POP" type="TEXT"/>
+            <column name="TOE" type="TEXT"/>
+            <column name="YFC" type="TEXT"/>
+            <column name="MPF" type="TEXT"/>
+            <column name="Mils_Lookup_Key" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-59">
+        <createTable tableName="mines">
+            <column name="Problem" type="TEXT"/>
+            <column name="DateModified" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="Initials" type="TEXT"/>
+            <column name="sequence_number" type="TEXT"/>
+            <column name="new_loc" type="VARCHAR(255)"/>
+            <column name="map_loc" type="VARCHAR(255)"/>
+            <column name="deposit" type="VARCHAR(255)"/>
+            <column name="latitude" type="FLOAT8"/>
+            <column name="longitude" type="FLOAT8"/>
+            <column name="location_type" type="INT"/>
+            <column name="dms_lat" type="numeric(19, 2)"/>
+            <column name="dms_long" type="numeric(19, 2)"/>
+            <column name="twentyfour_k_kquad" type="VARCHAR(255)"/>
+            <column name="hundred_k_quad" type="VARCHAR(255)"/>
+            <column name="county_name" type="VARCHAR(255)"/>
+            <column name="land_owner" type="VARCHAR(255)"/>
+            <column name="fs_agency_name" type="VARCHAR(255)"/>
+            <column name="orange_num" type="VARCHAR(255)"/>
+            <column name="one_by_two_degree_quadrangle" type="VARCHAR(255)"/>
+            <column name="lon_wgs84" type="numeric(19, 2)"/>
+            <column name="lat_wgs84" type="numeric(19, 2)"/>
+            <column name="township" type="VARCHAR(255)"/>
+            <column name="range" type="VARCHAR(255)"/>
+            <column name="section" type="VARCHAR(255)"/>
+            <column name="QSECTION" type="TEXT"/>
+            <column name="OBJECTID" type="INT"/>
+            <column name="ZIP_CODE" type="INT"/>
+            <column name="mining_district" type="VARCHAR(255)"/>
+            <column name="Hard_File" type="TEXT"/>
+            <column autoIncrement="true" name="id" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="mines_pkey"/>
+            </column>
+            <column name="idaho_region" type="VARCHAR(255)"/>
+            <column name="mrdsrec" type="VARCHAR(255)"/>
+            <column name="point" type="VARCHAR(255)"/>
+            <column name="trs" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-60">
+        <createTable tableName="mines_mdb_tracking_mdat">
+            <column name="OBJECTID" type="INT"/>
+            <column name="version" type="TEXT"/>
+            <column name="proc_step" type="TEXT"/>
+            <column name="proc_date" type="TEXT"/>
+            <column name="database_name" type="TEXT"/>
+            <column name="user" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-61">
+        <createTable tableName="reference_relate">
+            <column name="SequenceNumber" type="TEXT"/>
+            <column name="Ref_id" type="INT"/>
+            <column name="PageNumbers" type="TEXT"/>
+            <column name="Reference" type="TEXT"/>
+            <column name="NotesForReferenceUpdate2015" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-62">
+        <addPrimaryKey columnNames="ID" constraintName="0READ_ME_20160907_pkey" tableName="0READ_ME_20160907"/>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-63">
+        <addPrimaryKey columnNames="ID" constraintName="0_A_Last_Update_pkey" tableName="0_A_Last_Update"/>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-64">
+        <addPrimaryKey columnNames="AutoNumber" constraintName="0_Names_pkey" tableName="0_Names"/>
+    </changeSet>
+    <changeSet author="butlert (generated)" id="1492115221635-65">
+        <addPrimaryKey columnNames="KeyField" constraintName="0_Z_updates_pkey" tableName="0_Z_updates"/>
+    </changeSet>
+
+
+</databaseChangeLog>

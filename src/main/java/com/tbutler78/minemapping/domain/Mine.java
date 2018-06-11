@@ -13,6 +13,7 @@ public class Mine  implements Serializable, Comparable<Mine>{
 	private static final long serialVersionUID = -5708387226479386241L;
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
 
 
@@ -299,6 +300,7 @@ public class Mine  implements Serializable, Comparable<Mine>{
 	public String toString() {
 		return "Mine{" +
 				"id=" + id +
+				", sequenceNumber='" + sequenceNumber + '\'' +
 				", newLoc='" + newLoc + '\'' +
 				", mapLoc='" + mapLoc + '\'' +
 				", deposit='" + deposit + '\'' +
@@ -323,6 +325,7 @@ public class Mine  implements Serializable, Comparable<Mine>{
 				", latwgs=" + latwgs +
 				", mrdsrec='" + mrdsrec + '\'' +
 				", point='" + point + '\'' +
+				", propertyFileScans=" + propertyFileScans +
 				'}';
 	}
 }

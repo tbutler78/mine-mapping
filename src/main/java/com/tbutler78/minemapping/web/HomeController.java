@@ -22,7 +22,7 @@ import java.util.Locale;
 /**
  * Handles requests for the application home page.
  */
-@CrossOrigin(origins = "http://localhost:3000")
+
 @Controller
 public class HomeController {
 
