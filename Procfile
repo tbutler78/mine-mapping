@@ -1,1 +1,1 @@
-web: java -jar target/mine-mapping.jar
+web: java -jar -Dspring.profiles.active=staging target/mine-mapping.jar
