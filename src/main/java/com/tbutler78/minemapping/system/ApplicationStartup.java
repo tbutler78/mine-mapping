@@ -27,9 +27,9 @@ public class ApplicationStartup
      */
     @Override
     public void onApplicationEvent(final ApplicationReadyEvent event) {
-    nameImporter.processData();
+    //nameImporter.processData();
        countyImporter.processData();
-      //minesImporter.processData();
+      minesImporter.processData();
 
         return;
     }
