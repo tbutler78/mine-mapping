@@ -85,7 +85,7 @@
         </createTable>
     </changeSet>
     <changeSet author="butlert (generated)" id="1492115221635-10">
-        <createTable tableName="County">
+        <createTable tableName="county">
             <column name="Countyname" type="TEXT">
                 <constraints nullable="true"/>
             </column>

@@ -25,7 +25,7 @@ public class Mine  implements Serializable, Comparable<Mine>{
 	private BigDecimal latitude;
 
 	private BigDecimal longitude;
-	private String locationType;
+	private Integer locationType;
 	private BigDecimal dmsLat;
 	private BigDecimal dmsLong;
 	@Column(name="twentyfour_k_kquad")
@@ -114,11 +114,11 @@ public class Mine  implements Serializable, Comparable<Mine>{
 		this.longitude = longitude;
 	}
 
-	public String getLocationType() {
+	public Integer getLocationType() {
 		return locationType;
 	}
 
-	public void setLocationType(String locationType) {
+	public void setLocationType(Integer locationType) {
 		this.locationType = locationType;
 	}
 

@@ -7,7 +7,7 @@ import javax.persistence.*;
  */
 
 @Entity
-@Table(name="COUNTY")
+@Table(name="county")
 public class County {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)

@@ -52,7 +52,7 @@ public class MinesImporter extends Importer {
             }}
 
         );
-
+    log.info("Mines import complete");
     }
 
     private Mine buildMine(Mine mine, HashMap<String, String> props){
@@ -65,7 +65,7 @@ public class MinesImporter extends Importer {
         mine.setLatwgs(new BigDecimal(props.get("lat_WGS84")));
         mine.setNewLoc(props.get("NEWLOC"));
         mine.setMapLoc(props.get("MAPLOC").trim());
-        mine.setLocationType(props.get("Location_type"));
+        mine.setLocationType(Integer.valueOf(props.get("Location_type")));
         mine.setDmsLat(new BigDecimal(props.get("DMSLAT")));
         mine.setDmsLong(new BigDecimal(props.get("DMSLONG")));
         mine.setTwentyFourQuad(props.get("twentyFourKQuad"));
@@ -84,6 +84,6 @@ public class MinesImporter extends Importer {
 
     protected AccessTable getData() {
         return
-                accessAdapter.getResultSet("SELECT * FROM Mines", 10000);
+                accessAdapter.getResultSet("SELECT * FROM Mines", 100);
 
     }}
