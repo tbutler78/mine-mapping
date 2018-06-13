@@ -786,8 +786,8 @@
             <column name="new_loc" type="VARCHAR(255)"/>
             <column name="map_loc" type="VARCHAR(255)"/>
             <column name="deposit" type="VARCHAR(255)"/>
-            <column name="latitude" type="FLOAT8"/>
-            <column name="longitude" type="FLOAT8"/>
+            <column name="latitude" type="numeric(19, 2)"/>
+            <column name="longitude" type="numeric(19, 2)"/>
             <column name="location_type" type="INT"/>
             <column name="dms_lat" type="numeric(19, 2)"/>
             <column name="dms_long" type="numeric(19, 2)"/>
