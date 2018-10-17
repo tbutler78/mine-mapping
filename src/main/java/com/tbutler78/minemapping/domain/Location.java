@@ -1,6 +1,7 @@
 package com.tbutler78.minemapping.domain;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -100,10 +101,7 @@ public class Location  implements Serializable, Comparable<Location>{
 		 	if (this.deposit == null){
 		 		return -1;
 		 	}
-		 	else if (other.getDeposit() == null){
-		 		return 1;
-		 	}
-		 	else if (this.deposit== (other.getDeposit()))
+		 	else if (this.deposit.equals(other.getDeposit()))
 	            return 0;
 	        else if ((this.deposit).compareTo(other.getDeposit()) > 0)
 	            return 1;
@@ -111,4 +109,18 @@ public class Location  implements Serializable, Comparable<Location>{
 	            return -1;
 	    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Location location = (Location) o;
+        return id == location.id &&
+                Objects.equals(MRDSREC, location.MRDSREC);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(id, MRDSREC);
+    }
 }

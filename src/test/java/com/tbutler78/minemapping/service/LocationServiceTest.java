@@ -37,6 +37,12 @@ public class LocationServiceTest {
         MockitoAnnotations.initMocks(this);
     }
 
+    @Test
+    public void testRepository() {
+        Mockito.when(locationRepository.findAll()).thenReturn(locations);
+        int locationSize = locationRepository.findAll().size();
+        assertEquals(locationSize, 1L);
+    }
 
     @Test
     public void testFindAll() throws Exception {

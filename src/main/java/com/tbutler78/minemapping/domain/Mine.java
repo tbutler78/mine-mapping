@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Objects;
 
 
 @Entity
@@ -284,10 +285,7 @@ public class Mine  implements Serializable, Comparable<Mine>{
 		if (this.deposit == null){
 			return -1;
 		}
-		else if (other.getDeposit() == null){
-			return 1;
-		}
-		else if (this.deposit== (other.getDeposit()))
+		else if (this.deposit.equals(other.getDeposit()))
 			return 0;
 		else if ((this.deposit).compareTo(other.getDeposit()) > 0)
 			return 1;
@@ -295,6 +293,19 @@ public class Mine  implements Serializable, Comparable<Mine>{
 			return -1;
 	}
 
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Mine mine = (Mine) o;
+		return Objects.equals(sequenceNumber, mine.sequenceNumber);
+	}
+
+	@Override
+	public int hashCode() {
+
+		return Objects.hash(sequenceNumber);
+	}
 
 	@Override
 	public String toString() {

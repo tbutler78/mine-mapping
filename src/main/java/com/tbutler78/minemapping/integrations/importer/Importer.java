@@ -12,5 +12,4 @@ public abstract class Importer {
     @Autowired
     protected AccessAdapter accessAdapter;
 
-    //abstract public boolean getData();
 }

@@ -52,6 +52,7 @@ public class PropertyFileScan implements Serializable {
     private String entryDate;
 
     public PropertyFileScan() {
+        // Default constructor
     }
 
     public int getId() {

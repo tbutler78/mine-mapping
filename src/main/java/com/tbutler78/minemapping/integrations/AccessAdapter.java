@@ -5,9 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 
 @Component
@@ -26,7 +24,6 @@ public class AccessAdapter {
 // "SELECT * FROM PLAYER"
 
     public AccessTable getResultSet(String query, int maxRows) {
-            List<String> results = new ArrayList<>();
         AccessTable accessTable = new AccessTable();
 
         try {
@@ -37,7 +34,7 @@ public class AccessAdapter {
 
             log.error("Problem in loading or "
                                        + "registering MS Access JDBC driver");
-            cnfex.printStackTrace();
+            log.error(cnfex.getException().toString());
         }
 
         try {
@@ -60,18 +57,9 @@ public class AccessAdapter {
                 result = new HashMap<>();
                 for (int i=1; i<=columns; i++){
                     result.put(rsmd.getColumnName(i), resultSet.getString(i) != null ? resultSet.getString(i) : "");
-                   // log.info(rsmd.getColumnTypeName(i) + " - " + rsmd.getColumnName(i));
-                    // log.info((CaseFormat.UPPER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, rsmd.getColumnName(i))));
-                }
-                /*resultSet.toString();
-                System.out.println(resultSet.getInt(1) + "\t" +
-                                           resultSet.getString(2) + "\t" +
-                                           resultSet.getString(3) + "\t" +
-                                           resultSet.getString(4) + "\t" +
-                     resultSet.getString(5));
-*/
+                                  }
                 accessTable.addRow(result);
-//log.info(result.toString());
+
             }
 
         }
