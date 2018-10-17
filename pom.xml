@@ -21,7 +21,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <sonar.maven.plugin.version>2.7.1</sonar.maven.plugin.version>
-        <jacoco.version>0.7.4.201502262128</jacoco.version>
+        <jacoco.version>0.8.2</jacoco.version>
         <querydsl.version>3.7.3</querydsl.version>
         <powermock.version>1.6.6</powermock.version>
     </properties>
