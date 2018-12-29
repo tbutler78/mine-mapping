@@ -10,3 +10,9 @@
 /src/main/resources/batch/MinesAndProspects_1.2016.1..mdb
 postgresql-42.0.0.jar
 .DS_Store
+bin/
+.metadata/
+.classpath
+RemoteSystemsTempFiles/
+Servers/
+.project
