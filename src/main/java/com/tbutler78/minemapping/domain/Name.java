@@ -1,9 +1,6 @@
 package com.tbutler78.minemapping.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -13,6 +10,7 @@ public class Name implements Serializable{
 	private static final long serialVersionUID = -8551478845763476317L;
 
 	@Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
 	private String sequenceNumber;
 	@Column(name="SeparatedNames_Deposit_FieldName")

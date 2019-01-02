@@ -1,9 +1,9 @@
 package com.tbutler78.minemapping.system;
 
-import com.tbutler78.minemapping.integrations.AccessAdapter;
 import com.tbutler78.minemapping.integrations.importer.CountyImporter;
 import com.tbutler78.minemapping.integrations.importer.MinesImporter;
 import com.tbutler78.minemapping.integrations.importer.NameImporter;
+import com.tbutler78.minemapping.integrations.importer.PropertyFileScanImporter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
@@ -16,12 +16,14 @@ public class ApplicationStartup
     private final CountyImporter countyImporter;
     private final MinesImporter minesImporter;
     private final NameImporter nameImporter;
+    private final PropertyFileScanImporter propertyFileScanImporter;
 
     @Autowired
-    public ApplicationStartup(CountyImporter countyImporter, MinesImporter minesImporter, NameImporter nameImporter) {
+    public ApplicationStartup(CountyImporter countyImporter, MinesImporter minesImporter, NameImporter nameImporter, PropertyFileScanImporter propertyFileScanImporter) {
         this.countyImporter = countyImporter;
         this.minesImporter = minesImporter;
         this.nameImporter = nameImporter;
+        this.propertyFileScanImporter = propertyFileScanImporter;
     }
 
     /**
@@ -30,10 +32,13 @@ public class ApplicationStartup
      */
     @Override
     public void onApplicationEvent(final ApplicationReadyEvent event) {
+        /*
+        propertyFileScanImporter.processData();
+
         nameImporter.processData();
         countyImporter.processData();
         minesImporter.processData();
-
+        */
         return;
     }
 

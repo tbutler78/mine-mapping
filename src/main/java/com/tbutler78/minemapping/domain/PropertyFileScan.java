@@ -1,9 +1,7 @@
 package com.tbutler78.minemapping.domain;
 
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -11,6 +9,7 @@ import java.io.Serializable;
 public class PropertyFileScan implements Serializable {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String propertyNumber;
@@ -218,9 +217,26 @@ public class PropertyFileScan implements Serializable {
     @Override
     public String toString() {
         return "PropertyFileScan{" +
-                "id=" + id +
-                ", propertyNumber='" + propertyNumber;
+            "id=" + id +
+            ", propertyNumber='" + propertyNumber + '\'' +
+            ", propertyScanName='" + propertyScanName + '\'' +
+            ", originalFileName='" + originalFileName + '\'' +
+            ", fileSize='" + fileSize + '\'' +
+            ", fileName='" + fileName + '\'' +
+            ", itemType='" + itemType + '\'' +
+            ", infoText='" + infoText + '\'' +
+            ", maps='" + maps + '\'' +
+            ", author='" + author + '\'' +
+            ", comments='" + comments + '\'' +
+            ", folderName='" + folderName + '\'' +
+            ", dates='" + dates + '\'' +
+            ", mapsToReview='" + mapsToReview + '\'' +
+            ", reScanFile=" + reScanFile +
+            ", crossRefPropertiesComments='" + crossRefPropertiesComments + '\'' +
+            ", year='" + year + '\'' +
+            ", company='" + company + '\'' +
+            ", initials='" + initials + '\'' +
+            ", entryDate='" + entryDate + '\'' +
+            '}';
     }
-
-
 }

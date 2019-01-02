@@ -23,6 +23,7 @@ public class NameImporter extends Importer {
     @Autowired
     NameRepository nameRepository;
 
+    @Override
     public void processData(){
         getData().getRows().stream().forEach( t -> {
             String nameKey = t.get("NameKey");
@@ -40,6 +41,7 @@ public class NameImporter extends Importer {
 
                 log.info("Processing: " + name.toString());
                       nameRepository.save(name);
+                      log.info(name.toString());
                 } catch (Exception e){
                     log.error(e.toString());
                 }

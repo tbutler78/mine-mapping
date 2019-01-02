@@ -24,6 +24,7 @@ public class MinesImporter extends Importer {
     @Autowired
     MineRepository  mineRepository;
 
+    @Override
     public void processData(){
         getData().getRows().stream().forEach( t -> {
             log.info("Processing Mine");
