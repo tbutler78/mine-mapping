@@ -11,25 +11,28 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ApplicationStartup
-        implements ApplicationListener<ApplicationReadyEvent> {
+    implements ApplicationListener<ApplicationReadyEvent> {
+
+    private final CountyImporter countyImporter;
+    private final MinesImporter minesImporter;
+    private final NameImporter nameImporter;
 
     @Autowired
-    CountyImporter countyImporter;
+    public ApplicationStartup(CountyImporter countyImporter, MinesImporter minesImporter, NameImporter nameImporter) {
+        this.countyImporter = countyImporter;
+        this.minesImporter = minesImporter;
+        this.nameImporter = nameImporter;
+    }
 
-    @Autowired
-    MinesImporter minesImporter;
-
-    @Autowired
-    NameImporter nameImporter;
     /**
      * This event is executed as late as conceivably possible to indicate that
      * the application is ready to service requests.
      */
     @Override
     public void onApplicationEvent(final ApplicationReadyEvent event) {
-    //nameImporter.processData();
-       countyImporter.processData();
-      minesImporter.processData();
+        nameImporter.processData();
+        countyImporter.processData();
+        minesImporter.processData();
 
         return;
     }

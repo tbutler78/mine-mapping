@@ -26,8 +26,10 @@ public class NameImporter extends Importer {
     public void processData(){
         getData().getRows().stream().forEach( t -> {
             String nameKey = t.get("NameKey");
+            log.info(nameKey);
 
-            if (nameRepository.findOneByNameKey(nameKey) == null ) {
+          try {
+
                 Name name = new Name();
                 name.setSequenceNumber(t.get("SequenceNumber"));
                 name.setMetric(Long.parseLong(t.get("Metric")));
@@ -37,14 +39,13 @@ public class NameImporter extends Importer {
                 name.setSeparatedNamesDepositFieldName(t.get("SeparatedNames_Deposit_FieldName"));
 
                 log.info("Processing: " + name.toString());
-                try {
-                    nameRepository.save(name);
+                      nameRepository.save(name);
                 } catch (Exception e){
                     log.error(e.toString());
                 }
 
 
-            }
+
 
         });
 
