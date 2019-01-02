@@ -14,9 +14,16 @@ import java.util.stream.Collectors;
  */
 @Component
 public class CountyService {
-    @Autowired
-    CountyRepository countyRepository;
+    private final CountyRepository countyRepository;
 
+    @Autowired
+    public CountyService(CountyRepository countyRepository) {
+        this.countyRepository = countyRepository;
+    }
+
+    public County findOneByName(String name){
+      return countyRepository.findOneByName(name);
+    }
 
     public List<County> getCounties(){
         return countyRepository.findAll()
