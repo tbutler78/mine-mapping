@@ -9,14 +9,14 @@ import java.util.List;
 
 @Service
 
-public class NameService 
-{
-	//private UserDao userDao;
+public class NameService {
+
+  private final NameRepository nameRepository;
 	
 	@Autowired
-	private NameRepository nameRepository;
-
-	
+  public NameService(NameRepository nameRepository) {
+    this.nameRepository = nameRepository;
+  }
 	public List<Name> findAll(){
 		return nameRepository.findAll();
 	}

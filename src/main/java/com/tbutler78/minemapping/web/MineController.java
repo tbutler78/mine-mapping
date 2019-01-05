@@ -6,45 +6,42 @@ import com.tbutler78.minemapping.web.command.MineResponse;
 import com.tbutler78.minemapping.web.command.MineSummary;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 /**
  * Created by butlert on 4/13/17.
  */
-@Controller
+@RestController
 @RequestMapping("mines")
 public class MineController {
 
+    private final MineService mineService;
     @Autowired
-    MineService mineService;
+	public MineController(MineService mineService) {
+		this.mineService = mineService;
+	}
     @ResponseBody
     @RequestMapping(value="/county/{county}")
     public MineCommand getMines(@PathVariable String county){
         return new MineCommand(mineService.findByCounty(county));
     }
 
-    @ResponseBody
-	@RequestMapping(value="minename/{name}")
+   @GetMapping("/minename/{name}")
 	public List<Mine> getMinesByName(@PathVariable String name){
 		return  mineService.findMineByName(name);
 	}
 
-    @ResponseBody
-    @RequestMapping
-	@CrossOrigin(origins = "http://localhost:3000")
+    @GetMapping("/")
     public List<Mine> getAllMines(){
-        return mineService.findAll().subList(0,10);
+        return mineService.findAll();
     }
 
     @ResponseBody
     @RequestMapping(value="/{id}")
     public Mine getMine(@PathVariable Long id){
-        return mineService.findMine(id);
+        return mineService.getMine(id);
     }
 
     @ResponseBody

@@ -15,8 +15,11 @@ import java.util.List;
 @Controller
 @RequestMapping("reference")
 public class ReferenceController {
+    private final ReferenceService referenceService;
     @Autowired
-    ReferenceService referenceService;
+    public ReferenceController(ReferenceService referenceService) {
+        this.referenceService = referenceService;
+    }
 
     @ResponseBody
     @RequestMapping

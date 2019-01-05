@@ -12,10 +12,10 @@ import java.util.List;
  */
 @Component
 public class PropertyFileScanService {
-    private PropertyFileScanRepository propertyFileScanRepository;
+    private final PropertyFileScanRepository propertyFileScanRepository;
 
     @Autowired
-    PropertyFileScanService(PropertyFileScanRepository propertyFileScanRepository){
+    public PropertyFileScanService(PropertyFileScanRepository propertyFileScanRepository){
         this.propertyFileScanRepository = propertyFileScanRepository;
     }
 

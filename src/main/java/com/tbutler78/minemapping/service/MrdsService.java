@@ -13,8 +13,11 @@ import java.util.List;
 @Service
 public class MrdsService {
 
+    private final MrdsLookupRepository mrdsLookupRepository;
     @Autowired
-    MrdsLookupRepository mrdsLookupRepository;
+    public MrdsService(MrdsLookupRepository mrdsLookupRepository) {
+        this.mrdsLookupRepository = mrdsLookupRepository;
+    }
 
     public List<MrdsLookup> getAll(){
         return mrdsLookupRepository.findAll();

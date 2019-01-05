@@ -17,12 +17,12 @@ import java.util.stream.Collectors;
 @Service
 
 public class MineService {
-	private MineRepository mineRepository;
-	private PropertyFileScanService propertyFileScanService;
-	private ReferenceService referenceService;
+	private final MineRepository mineRepository;
+	private final PropertyFileScanService propertyFileScanService;
+	private final ReferenceService referenceService;
 
 	@Autowired
-	MineService(MineRepository mineRepository, PropertyFileScanService propertyFileScanService, ReferenceService referenceService) {
+	public MineService(MineRepository mineRepository, PropertyFileScanService propertyFileScanService, ReferenceService referenceService) {
 		this.mineRepository = mineRepository;
 		this.propertyFileScanService = propertyFileScanService;
 		this.referenceService = referenceService;
@@ -35,7 +35,7 @@ public class MineService {
 	public List<MineResponse> findAllMineSummaries() {
 		List<MineResponse> summaries = new ArrayList<>();
 		mineRepository.findAll().stream().forEach(m ->
-				summaries.add(new MineResponse(m.getDeposit(), m.getLatitude(), m.getLongitude()))
+				summaries.add(new MineResponse(m.getDeposit(), m.getLatitude(), m.getLongitude(), m.getCountyName()))
 		);
 		return summaries;
 	}
@@ -45,19 +45,18 @@ public class MineService {
 		List<MineResponse> summaries = new ArrayList<>();
 		mineRepository.findByCountyNameAndLatitudeIsNotNullAndLongitudeIsNotNull(county).stream()
 				.sorted(Comparator.comparing(Mine::getDeposit)).forEach(m -> {
-			summaries.add(new MineResponse(m.getDeposit(), m.getLatitude(), m.getLongitude()));
+			summaries.add(new MineResponse(m.getDeposit(), m.getLatitude(), m.getLongitude(), m.getCountyName()));
 		});
 		return summaries;
 	}
 
 	public List<Mine> findByCounty(String county) {
-		List<Mine> mines = mineRepository.findByCountyNameAndLatitudeIsNotNullAndLongitudeIsNotNull(county).stream()
+		return mineRepository.findByCountyNameAndLatitudeIsNotNullAndLongitudeIsNotNull(county).stream()
 				.sorted(Comparator.comparing(Mine::getDeposit)).collect(Collectors.toList());
 
-		return mines;
 	}
 
-	public Mine findMine(Long id) {
+	public Mine getMine(Long id) {
 		return mineRepository.getOne(id);
 	}
 
@@ -66,7 +65,7 @@ public class MineService {
 	}
 
 	public MineSummary getMineSummary(Long id){
-		Mine mine = findMine(id);
+		Mine mine = getMine(id);
 		List<PropertyFileScan> propertyFileScans = propertyFileScanService.findByPropertyNumber(mine.getSequenceNumber());
 		List<Reference> references = referenceService.findBySequenceNumber(mine.getSequenceNumber());
 

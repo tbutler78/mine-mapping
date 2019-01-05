@@ -16,8 +16,11 @@ import java.util.List;
 @RequestMapping("counties")
 public class CountyController {
 
+    private final CountyService countyService;
     @Autowired
-    CountyService countyService;
+    public CountyController(CountyService countyService) {
+        this.countyService = countyService;
+    }
 
     @ResponseBody
     @RequestMapping(value="/counties")

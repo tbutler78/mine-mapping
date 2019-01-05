@@ -14,13 +14,16 @@ import java.util.stream.Collectors;
  */
 @Component
 public class ReferenceService {
-    @Autowired
-    ReferenceRepository referenceRepository;
+    private final ReferenceRepository referenceRepository;
+    private final ReferenceRelateService referenceRelateService;
 
     @Autowired
-    ReferenceRelateService referenceRelateService;
+    public ReferenceService(ReferenceRepository referenceRepository, ReferenceRelateService referenceRelateService) {
+        this.referenceRepository = referenceRepository;
+        this.referenceRelateService = referenceRelateService;
+    }
 
-    public List<Reference> getAll(){
+    private List<Reference> getAll(){
         List<Reference> references = new ArrayList<>();
         referenceRepository.findAll().stream().forEach( c -> {
             c.setReferenceRelates(referenceRelateService.findByRefId(c.getReferenceId()));

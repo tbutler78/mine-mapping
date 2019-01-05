@@ -1,12 +1,12 @@
 package com.tbutler78.minemapping.repository;
 
+import com.tbutler78.minemapping.domain.County100k;
 import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.tbutler78.minemapping.domain.Name;
 import org.springframework.stereotype.Repository;
 
+/**
+ * Created by butlert on 4/21/17.
+ */
 @Repository
-public interface NameRepository extends JpaRepository<Name, Long> {
-
-    Name findOneByNameKey(String countyName);
+public interface County100kRepository extends JpaRepository<County100k, Long> {
 }

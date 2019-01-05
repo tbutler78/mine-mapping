@@ -11,7 +11,7 @@ import java.util.HashMap;
 @Component
 public class AccessAdapter {
 
-    Logger log = LoggerFactory.getLogger(AccessAdapter.class);
+	private final Logger log = LoggerFactory.getLogger(AccessAdapter.class);
 
     String MS_ACC_DB = "src/main/resources/batch/MinesAndProspects_1.2015.1.mdb";
 
