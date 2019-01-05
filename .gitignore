@@ -16,3 +16,4 @@ bin/
 RemoteSystemsTempFiles/
 Servers/
 .project
+.vscode
