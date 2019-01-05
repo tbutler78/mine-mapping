@@ -14,7 +14,7 @@ public class PropertyFileScan implements Serializable {
 
     private String propertyNumber;
 
-    private String propertyScanName;
+    private String propertyScanFile;
 
     private String originalFileName;
 
@@ -71,11 +71,11 @@ public class PropertyFileScan implements Serializable {
     }
 
     public String getPropertyScanName() {
-        return propertyScanName;
+        return propertyScanFile;
     }
 
     public void setPropertyScanName(String propertyScanName) {
-        this.propertyScanName = propertyScanName;
+        this.propertyScanFile = propertyScanName;
     }
 
     public String getOriginalFileName() {
@@ -219,7 +219,7 @@ public class PropertyFileScan implements Serializable {
         return "PropertyFileScan{" +
             "id=" + id +
             ", propertyNumber='" + propertyNumber + '\'' +
-            ", propertyScanName='" + propertyScanName + '\'' +
+            ", propertyScanName='" + propertyScanFile + '\'' +
             ", originalFileName='" + originalFileName + '\'' +
             ", fileSize='" + fileSize + '\'' +
             ", fileName='" + fileName + '\'' +

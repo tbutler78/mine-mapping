@@ -1,0 +1,254 @@
+GC Logging
+
+-XX:+UseSerialGC -Xms1024m -Xmx1024m -verbose:gc
+
+
+jdbc:postgresql://localhost:5432/mine-mapping-db
+
+liquibase --driver=org.postgresql.Driver 
+              --classpath=postgresql-9.4-1206-jdbc42.jar  --changeLogFile=db.changelog.create-initial.xml --url="jdbc:postgresql://localhost:5432/mine-mapping-db" --username=postgres --password=postgres generateChangeLog
+
+
+create schema public;
+
+comment on schema public is 'standard public schema';
+
+alter schema public owner to postgres;
+
+create table databasechangeloglock
+(
+	id integer not null
+		constraint databasechangeloglock_pkey
+			primary key,
+	locked boolean not null,
+	lockgranted timestamp,
+	lockedby varchar(255)
+);
+
+alter table databasechangeloglock owner to postgres;
+
+create table databasechangelog
+(
+	id varchar(255) not null,
+	author varchar(255) not null,
+	filename varchar(255) not null,
+	dateexecuted timestamp not null,
+	orderexecuted integer not null,
+	exectype varchar(10) not null,
+	md5sum varchar(35),
+	description varchar(255),
+	comments varchar(255),
+	tag varchar(255),
+	liquibase varchar(20),
+	contexts varchar(255),
+	labels varchar(255),
+	deployment_id varchar(10)
+);
+
+alter table databasechangelog owner to postgres;
+
+create table county
+(
+	id bigserial not null
+		constraint county_pkey
+			primary key,
+	name varchar(255)
+);
+
+alter table county owner to postgres;
+
+create table county_100k
+(
+	id bigint not null
+		constraint county_100k_pkey
+			primary key,
+	county_name varchar(255),
+	hundredkquad varchar(255)
+);
+
+alter table county_100k owner to postgres;
+
+create table locations
+(
+	id bigint not null
+		constraint locations_pkey
+			primary key,
+	latitude double precision,
+	longitude double precision,
+	mrdsrec varchar(255),
+	milsref varchar(255),
+	orange_number varchar(255),
+	deposit varchar(255),
+	point bytea
+);
+
+alter table locations owner to postgres;
+
+create table mines
+(
+	id bigserial not null
+		constraint mines_pkey
+			primary key,
+	county_name varchar(255),
+	deposit varchar(255),
+	dms_lat numeric(19,2),
+	dms_long numeric(19,2),
+	fs_agency_name varchar(255),
+	idaho_region varchar(255),
+	land_owner varchar(255),
+	latitude numeric(19,2),
+	lat_wgs84 numeric(19,2),
+	location_type integer,
+	longitude numeric(19,2),
+	lon_wgs84 numeric(19,2),
+	map_loc varchar(255),
+	mining_district varchar(255),
+	mrdsrec varchar(255),
+	new_loc varchar(255),
+	one_by_two_degree_quadrangle varchar(255),
+	hundred_k_quad varchar(255),
+	orange_num varchar(255),
+	point varchar(255),
+	q_section varchar(255),
+	range varchar(255),
+	section varchar(255),
+	sequence_number varchar(255),
+	township varchar(255),
+	trs varchar(255),
+	twentyfour_k_kquad varchar(255),
+	zip_code bigint
+);
+
+alter table mines owner to postgres;
+
+create table mrds_lookup
+(
+	id bigint not null
+		constraint mrds_lookup_pkey
+			primary key,
+	commodity varchar(255),
+	county varchar(255),
+	county2 varchar(255),
+	district varchar(255),
+	lat varchar(255),
+	lon varchar(255),
+	mrds_lookup_key varchar(255),
+	mrds_rec varchar(255),
+	range varchar(255),
+	sec_quad varchar(255),
+	sec_quads varchar(255),
+	section varchar(255),
+	sequence_number varchar(255),
+	site_name varchar(255),
+	town varchar(255),
+	utm_east varchar(255),
+	utm_north varchar(255),
+	utm_zone varchar(255)
+);
+
+alter table mrds_lookup owner to postgres;
+
+create table names
+(
+	id bigserial not null
+		constraint names_pkey
+			primary key,
+	auto_number bigint not null,
+	metric bigint not null,
+	name_key varchar(255),
+	r_index2_deposit_field_name varchar(255),
+	separated_names_deposit_field_name varchar(255),
+	sequence_number varchar(255)
+);
+
+alter table names owner to postgres;
+
+create table property_file_scans
+(
+	id serial not null
+		constraint property_file_scans_pkey
+			primary key,
+	author varchar(255),
+	comments varchar(255),
+	company varchar(255),
+	cross_ref_properties_comments varchar(255),
+	dates varchar(255),
+	entry_date varchar(255),
+	file_name varchar(255),
+	file_size varchar(255),
+	folder_name varchar(255),
+	info_text varchar(255),
+	initials varchar(255),
+	item_type varchar(255),
+	maps varchar(255),
+	maps_to_review varchar(255),
+	original_file_name varchar(255),
+	property_number varchar(255),
+	property_scan_name varchar(255),
+	re_scan_file boolean not null,
+	year varchar(255)
+);
+
+alter table property_file_scans owner to postgres;
+
+create table reference
+(
+	id bigint not null
+		constraint reference_pkey
+			primary key,
+	anno varchar(255),
+	edit_date varchar(255),
+	edition varchar(255),
+	enter_date varchar(255),
+	file_name varchar(255),
+	folder varchar(255),
+	hyperlink varchar(255),
+	initials varchar(255),
+	institution varchar(255),
+	is_in varchar(255),
+	nd varchar(255),
+	notes varchar(255),
+	number varchar(255),
+	old_reference varchar(255),
+	origin varchar(255),
+	page_count varchar(255),
+	pages varchar(255),
+	plate_count varchar(255),
+	pub_city varchar(255),
+	pub_id varchar(255),
+	pub_number varchar(255),
+	pub_state varchar(255),
+	publisher varchar(255),
+	publisher_abbv varchar(255),
+	ref_abstract varchar(255),
+	reference_id varchar(255),
+	scale varchar(255),
+	second_title varchar(255),
+	second_title_date varchar(255),
+	series_type varchar(255),
+	sheet_count varchar(255),
+	title varchar(255),
+	url varchar(255),
+	url_intra varchar(255),
+	url_year varchar(255),
+	volume varchar(255),
+	year_date varchar(255),
+	year_hyperlink varchar(255)
+);
+
+alter table reference owner to postgres;
+
+create table reference_relate
+(
+	id bigint not null
+		constraint reference_relate_pkey
+			primary key,
+	notes_for_reference_update2015 varchar(255),
+	page_numbers varchar(255),
+	ref_id varchar(255),
+	reference varchar(255),
+	sequence_number varchar(255)
+);
+
+alter table reference_relate owner to postgres;
+
