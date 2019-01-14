@@ -22,11 +22,11 @@ public class Location  implements Serializable, Comparable<Location>{
 	private long id;
 	
 	private String deposit;
-	private Double Latitude;
-	private Double Longitude;
-	private String MilsREF;
-	private String MRDSREC;
-	private String OrangeNumber;
+	private Double latitude;
+	private Double longitude;
+	private String milsREF;
+	private String mrdsrec;
+	private String orangeNumber;
 	private Point point;
 
 	public String getDeposit() {
@@ -38,43 +38,43 @@ public class Location  implements Serializable, Comparable<Location>{
 	}
 
 	public Double getLatitude() {
-		return Latitude;
+		return latitude;
 	}
 
 	public void setLatitude(Double latitude) {
-		Latitude = latitude;
+		this.latitude = latitude;
 	}
 
 	public Double getLongitude() {
-		return Longitude;
+		return longitude;
 	}
 
 	public void setLongitude(Double longitude) {
-		Longitude = longitude;
+		this.longitude = longitude;
 	}
 
 	public String getMilsREF() {
-		return MilsREF;
+		return milsREF;
 	}
 
 	public void setMilsREF(String milsREF) {
-		MilsREF = milsREF;
+		this.milsREF = milsREF;
 	}
 
-	public String getMRDSREC() {
-		return MRDSREC;
+	public String getMrdsrec() {
+		return mrdsrec;
 	}
 
-	public void setMRDSREC(String mRDSREC) {
-		MRDSREC = mRDSREC;
+	public void setMrdsrec(String mrdsrec) {
+		this.mrdsrec = mrdsrec;
 	}
 
 	public String getOrangeNumber() {
-		return OrangeNumber;
+		return orangeNumber;
 	}
 
 	public void setOrangeNumber(String orangeNumber) {
-		OrangeNumber = orangeNumber;
+		this.orangeNumber = orangeNumber;
 	}
 
 	public Point getPoint() {
@@ -94,7 +94,7 @@ public class Location  implements Serializable, Comparable<Location>{
 	 @Override
 	public String toString() {
 		return "Location [id=" + id + ", deposit=" + deposit + ", Latitude="
-				+ Latitude + ", Longitude=" + Longitude + "]";
+				+ latitude + ", Longitude=" + longitude + "]";
 	}
 
 	public int compareTo(Location other) {
@@ -115,12 +115,12 @@ public class Location  implements Serializable, Comparable<Location>{
         if (o == null || getClass() != o.getClass()) return false;
         Location location = (Location) o;
         return id == location.id &&
-                Objects.equals(MRDSREC, location.MRDSREC);
+                Objects.equals(mrdsrec, location.mrdsrec);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, MRDSREC);
+        return Objects.hash(id, mrdsrec);
     }
 }

@@ -41,13 +41,13 @@ public class LocationServiceTest {
     public void testRepository() {
         Mockito.when(locationRepository.findAll()).thenReturn(locations);
         int locationSize = locationRepository.findAll().size();
-        assertEquals(locationSize, 1L);
+        assertEquals(1L, locationSize);
     }
 
     @Test
     public void testFindAll() throws Exception {
         Mockito.when(locationRepository.findAll()).thenReturn(locations);
-        assertEquals(locationService.findAll().size(),1L);
+        assertEquals(1L, locationService.findAll().size());
 
     }
 }

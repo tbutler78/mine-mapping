@@ -1,9 +1,7 @@
 package com.tbutler78.minemapping.integrations.importer;
 
-import com.tbutler78.minemapping.domain.County;
 import com.tbutler78.minemapping.domain.Mine;
 import com.tbutler78.minemapping.integrations.AccessTable;
-import com.tbutler78.minemapping.repository.CountyRepository;
 import com.tbutler78.minemapping.repository.MineRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,7 +34,7 @@ public class MinesImporter extends Importer {
                 if (mine == null) {
                    mine = new Mine();
                    buildMine(mine, t);
-                   log.info("Adding " + mine.toString());
+                   log.info(String.format("Adding %s", mine.toString()));
                     mineRepository.save(mine);
 
                 } else {

@@ -4,13 +4,10 @@ import com.tbutler78.minemapping.domain.ReferenceRelate;
 import com.tbutler78.minemapping.repository.ReferenceRelateRepository;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.Assert;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import org.mockito.internal.matchers.Any;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,7 +44,7 @@ public class ReferenceRelateServiceTest {
     @Test
     public void testGetAll() {
         Mockito.when(referenceRelateRepository.findAll()).thenReturn(referenceRelateList);
-        List results = referenceRelateService.getAll();
+        List<ReferenceRelate> results = referenceRelateService.getAll();
         assertEquals(results.size(), 1L);
     }
 

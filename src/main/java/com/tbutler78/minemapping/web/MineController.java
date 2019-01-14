@@ -22,8 +22,8 @@ public class MineController {
 	public MineController(MineService mineService) {
 		this.mineService = mineService;
 	}
-    @ResponseBody
-    @RequestMapping(value="/county/{county}")
+   
+    @GetMapping(value="/county/{county}")
     public MineCommand getMines(@PathVariable String county){
         return new MineCommand(mineService.findByCounty(county));
     }
@@ -38,27 +38,22 @@ public class MineController {
         return mineService.findAll();
     }
 
-    @ResponseBody
-    @RequestMapping(value="/{id}")
+    @GetMapping(value="/{id}")
     public Mine getMine(@PathVariable Long id){
         return mineService.getMine(id);
     }
 
-    @ResponseBody
-
-    @RequestMapping(path="/mine-summaries")
+	@GetMapping(path="/mine-summaries")
     public List<MineResponse> getMineSummaries(){
         return mineService.findAllMineSummaries();
     }
 
-    @ResponseBody
-    @RequestMapping(value="/mine-summaries/{county}")
+    @GetMapping(value="/mine-summaries/{county}")
     public List<MineResponse> getMineSummariesByCounty(@PathVariable String county){
         return mineService.findAllMineSummaries(county);
     }
 
-    @ResponseBody
-	@RequestMapping(value="/mine-summary/{id}")
+    @GetMapping(value="/mine-summary/{id}")
 	public MineSummary getMineSummary(@PathVariable Long id){
     	return mineService.getMineSummary(id);
 	}

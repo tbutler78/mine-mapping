@@ -1,6 +1,5 @@
 package com.tbutler78.minemapping.domain;
 
-import com.tbutler78.minemapping.MineMappingApplicationTest;
 import com.tbutler78.minemapping.repository.MineRepository;
 import com.tbutler78.minemapping.service.MineService;
 import com.tbutler78.minemapping.service.ReferenceRelateService;
@@ -13,14 +12,10 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.mock;
 
 
 public class MineServiceTest {
@@ -61,7 +56,7 @@ public class MineServiceTest {
 
         Mockito.when(mineService.findAll()).thenReturn(mineList);
         List<Mine> results = mineService.findAll();
-        assertEquals(results.size(), 1L);
+        assertEquals(1L, results.size());
     }
 
     @Test
@@ -69,7 +64,7 @@ public class MineServiceTest {
         Mockito.when(mineRepository.findByCountyNameAndLatitudeIsNotNullAndLongitudeIsNotNull("GEM")).thenReturn(mineList);
         List<Mine> results = mineService.findByCounty("GEM");
         log.info(results.toString());
-        assertEquals(results.size(), 1L);
+        assertEquals(1L, results.size());
         results = mineService.findByCounty("Owyhee");
         assertEquals(results.size(), 0L);
     }

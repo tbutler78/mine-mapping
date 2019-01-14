@@ -54,14 +54,4 @@ public class HomeController {
 		return "home";
 	}
 
-
-	private <T> ResponseEntity<T> buildResponse(T item){
-		HttpHeaders responseHeaders = new HttpHeaders();
-		responseHeaders.add("Access-Control-Allow-Origin", "*");
-		responseHeaders.add("Access-Control-Allow-Methods", "GET, OPTIONS, POST");
-		responseHeaders.add("Access-Control-Allow-Headers", "Content-Type");
-		responseHeaders.add("Access-Control-Max-Age", "86400");
-		return new ResponseEntity<T>(item, responseHeaders, HttpStatus.OK);
-	}
-
 }

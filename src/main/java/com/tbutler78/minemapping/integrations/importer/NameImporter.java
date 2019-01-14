@@ -1,11 +1,7 @@
 package com.tbutler78.minemapping.integrations.importer;
 
-import com.tbutler78.minemapping.domain.County;
-import com.tbutler78.minemapping.domain.Location;
 import com.tbutler78.minemapping.domain.Name;
 import com.tbutler78.minemapping.integrations.AccessTable;
-import com.tbutler78.minemapping.repository.CountyRepository;
-import com.tbutler78.minemapping.repository.LocationRepository;
 import com.tbutler78.minemapping.repository.NameRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

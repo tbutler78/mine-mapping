@@ -15,6 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest
@@ -67,7 +68,7 @@ public class CountyRepositoryTest {
     List<County> counties = countyRepository.findAll();
 
     // then
-    assertThat(counties.contains(found));
+    assertTrue(counties.contains(found));
     log.info(counties.toString());
 
   }

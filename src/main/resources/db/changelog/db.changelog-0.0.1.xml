@@ -1,201 +1,201 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no" ?>
 <databaseChangeLog
-	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
-	<changeSet author="butlert" id="1">
-		<createTable tableName="county">
-			<column name="id" type="BIGINT" autoIncrement="true">
-				<constraints nullable="false" unique="true"
-					primaryKey="true" />
-			</column>
-			<column name="name" type="varchar(255)" />
-		</createTable>
-		<createTable tableName="county_100k">
-			<column name="id" type="BIGINT" autoIncrement="true">
-				<constraints nullable="false" unique="true"
-					primaryKey="true" />
-			</column>
-			<column name="county_name" type="varchar(255)" />
-			<column name="hundredkquad" type="varchar(255)" />
-		</createTable>
-		<createTable tableName="locations">
-			<column name="id" type="BIGINT" autoIncrement="true">
-				<constraints nullable="false" unique="true"
-					primaryKey="true" />
-			</column>
-			<column name="latitude" type="FLOAT8" />
-			<column name="longitude" type="FLOAT8" />
-			<column name="mrdsrec" type="VARCHAR(255)" />
-			<column name="milsref" type="VARCHAR(255)" />
-			<column name="orange_number" type="VARCHAR(255)" />
-			<column name="deposit" type="VARCHAR(255)" />
-			<column name="point" type="BYTEA" />
-		</createTable>
-		<createTable tableName="mines">
-			<column name="id" type="BIGINT" autoIncrement="true">
-				<constraints nullable="false" unique="true"
-					primaryKey="true" />
-			</column>
-			<column name="Problem" type="TEXT" />
-			<column name="DateModified"
-				type="TIMESTAMP(6) WITHOUT TIME ZONE" />
-			<column name="Initials" type="TEXT" />
-			<column name="sequence_number" type="TEXT" />
-			<column name="new_loc" type="VARCHAR(255)" />
-			<column name="map_loc" type="VARCHAR(255)" />
-			<column name="deposit" type="VARCHAR(255)" />
-			<column name="latitude" type="numeric(19, 2)" />
-			<column name="longitude" type="numeric(19, 2)" />
-			<column name="location_type" type="INT" />
-			<column name="dms_lat" type="numeric(19, 2)" />
-			<column name="dms_long" type="numeric(19, 2)" />
-			<column name="twentyfour_k_kquad" type="VARCHAR(255)" />
-			<column name="hundred_k_quad" type="VARCHAR(255)" />
-			<column name="county_name" type="VARCHAR(255)" />
-			<column name="land_owner" type="VARCHAR(255)" />
-			<column name="fs_agency_name" type="VARCHAR(255)" />
-			<column name="orange_num" type="VARCHAR(255)" />
-			<column name="one_by_two_degree_quadrangle"
-				type="VARCHAR(255)" />
-			<column name="lon_wgs84" type="numeric(19, 2)" />
-			<column name="lat_wgs84" type="numeric(19, 2)" />
-			<column name="township" type="VARCHAR(255)" />
-			<column name="range" type="VARCHAR(255)" />
-			<column name="section" type="VARCHAR(255)" />
-			<column name="q_section" type="TEXT" />
-			<column name="objectid" type="INT" />
-			<column name="zip_code" type="INT" />
-			<column name="mining_district" type="VARCHAR(255)" />
-			<column name="Hard_File" type="TEXT" />
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="butlert" id="1">
+        <createTable tableName="county">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints nullable="false" unique="true"
+                             primaryKey="true"/>
+            </column>
+            <column name="name" type="varchar(255)"/>
+        </createTable>
+        <createTable tableName="county_100k">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints nullable="false" unique="true"
+                             primaryKey="true"/>
+            </column>
+            <column name="county_name" type="varchar(255)"/>
+            <column name="hundredkquad" type="varchar(255)"/>
+        </createTable>
+        <createTable tableName="locations">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints nullable="false" unique="true"
+                             primaryKey="true"/>
+            </column>
+            <column name="latitude" type="FLOAT8"/>
+            <column name="longitude" type="FLOAT8"/>
+            <column name="mrdsrec" type="VARCHAR(255)"/>
+            <column name="milsref" type="VARCHAR(255)"/>
+            <column name="orange_number" type="VARCHAR(255)"/>
+            <column name="deposit" type="VARCHAR(255)"/>
+            <column name="point" type="BYTEA"/>
+        </createTable>
+        <createTable tableName="mines">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints nullable="false" unique="true"
+                             primaryKey="true"/>
+            </column>
+            <column name="Problem" type="TEXT"/>
+            <column name="DateModified"
+                    type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="Initials" type="TEXT"/>
+            <column name="sequence_number" type="TEXT"/>
+            <column name="new_loc" type="VARCHAR(255)"/>
+            <column name="map_loc" type="VARCHAR(255)"/>
+            <column name="deposit" type="VARCHAR(255)"/>
+            <column name="latitude" type="numeric(19, 2)"/>
+            <column name="longitude" type="numeric(19, 2)"/>
+            <column name="location_type" type="INT"/>
+            <column name="dms_lat" type="numeric(19, 2)"/>
+            <column name="dms_long" type="numeric(19, 2)"/>
+            <column name="twentyfour_k_kquad" type="VARCHAR(255)"/>
+            <column name="hundred_k_quad" type="VARCHAR(255)"/>
+            <column name="county_name" type="VARCHAR(255)"/>
+            <column name="land_owner" type="VARCHAR(255)"/>
+            <column name="fs_agency_name" type="VARCHAR(255)"/>
+            <column name="orange_num" type="VARCHAR(255)"/>
+            <column name="one_by_two_degree_quadrangle"
+                    type="VARCHAR(255)"/>
+            <column name="lon_wgs84" type="numeric(19, 2)"/>
+            <column name="lat_wgs84" type="numeric(19, 2)"/>
+            <column name="township" type="VARCHAR(255)"/>
+            <column name="range" type="VARCHAR(255)"/>
+            <column name="section" type="VARCHAR(255)"/>
+            <column name="q_section" type="TEXT"/>
+            <column name="objectid" type="INT"/>
+            <column name="zip_code" type="INT"/>
+            <column name="mining_district" type="VARCHAR(255)"/>
+            <column name="Hard_File" type="TEXT"/>
 
-			<column name="idaho_region" type="VARCHAR(255)" />
-			<column name="mrdsrec" type="VARCHAR(255)" />
-			<column name="point" type="VARCHAR(255)" />
-			<column name="trs" type="VARCHAR(255)" />
-		</createTable>
-		<createTable tableName="property_file_scans">
-			<column name="id" type="BIGINT" autoIncrement="true">
-				<constraints nullable="false" unique="true"
-					primaryKey="true" />
-			</column>
-			<column name="author" type="VARCHAR(255)" />
-			<column name="comments" type="VARCHAR(255)" />
-			<column name="company" type="VARCHAR(255)" />
-			<column name="cross_ref_properties_comments"
-				type="VARCHAR(255)" />
-			<column name="dates" type="VARCHAR(255)" />
-			<column name="entry_date" type="VARCHAR(255)" />
-			<column name="file_name" type="VARCHAR(255)" />
-			<column name="file_size" type="VARCHAR(255)" />
-			<column name="folder_name" type="VARCHAR(255)" />
-			<column name="info_text" type="VARCHAR(255)" />
-			<column name="initials" type="VARCHAR(255)" />
-			<column name="item_type" type="VARCHAR(255)" />
-			<column name="maps" type="VARCHAR(255)" />
-			<column name="maps_to_review" type="VARCHAR(255)" />
-			<column name="original_file_name" type="VARCHAR(255)" />
-			<column name="property_number" type="VARCHAR(255)" />
-			<column name="property_scan_file" type="VARCHAR(255)" />
-			<column name="re_scan_file" type="BOOLEAN" />
-			<column name="year" type="VARCHAR(255)" />
-		</createTable>
-		<createTable tableName="mrds_lookup">
-			<column name="id" type="BIGINT" autoIncrement="true">
-				<constraints nullable="false" unique="true"
-					primaryKey="true" />
-			</column>
-			<column name="commodity" type="VARCHAR(255)" />
-			<column name="county" type="VARCHAR(255)" />
-			<column name="county2" type="VARCHAR(255)" />
-			<column name="district" type="VARCHAR(255)" />
-			<column name="lat" type="VARCHAR(255)" />
-			<column name="lon" type="VARCHAR(255)" />
-			<column name="mrds_lookup_key" type="VARCHAR(255)" />
-			<column name="mrds_rec" type="VARCHAR(255)" />
-			<column name="range" type="VARCHAR(255)" />
-			<column name="sec_quad" type="VARCHAR(255)" />
-			<column name="sec_quads" type="VARCHAR(255)" />
-			<column name="section" type="VARCHAR(255)" />
-			<column name="sequence_number" type="VARCHAR(255)" />
-			<column name="site_name" type="VARCHAR(255)" />
-			<column name="town" type="VARCHAR(255)" />
-			<column name="utm_east" type="VARCHAR(255)" />
-			<column name="utm_north" type="VARCHAR(255)" />
-			<column name="utm_zone" type="VARCHAR(255)" />
-		</createTable>
-		<createTable tableName="names">
-			<column name="id" type="BIGINT" autoIncrement="true">
-				<constraints nullable="false" unique="true"
-					primaryKey="true" />
-			</column>
-			<column name="auto_number" type="BIGINT">
-				<constraints nullable="false" />
-			</column>
-			<column name="metric" type="BIGINT" />
-			<column name="name_key" type="VARCHAR(255)" />
-			<column name="r_index2_deposit_field_name" type="VARCHAR(255)" />
-			<column name="separated_names_deposit_field_name"
-				type="VARCHAR(255)" />
-			<column name="sequence_number" type="VARCHAR(255)" />
-		</createTable>
-		<createTable tableName="reference">
-			<column name="id" type="BIGINT" autoIncrement="true">
-				<constraints nullable="false" unique="true"
-					primaryKey="true" />
-			</column>
-			<column name="anno" type="VARCHAR(255)" />
-			<column name="edit_date" type="VARCHAR(255)" />
-			<column name="edition" type="VARCHAR(255)" />
-			<column name="enter_date" type="VARCHAR(255)" />
-			<column name="file_name" type="VARCHAR(255)" />
-			<column name="folder" type="VARCHAR(255)" />
-			<column name="hyperlink" type="VARCHAR(255)" />
-			<column name="initials" type="VARCHAR(255)" />
-			<column name="institution" type="VARCHAR(255)" />
-			<column name="is_in" type="VARCHAR(255)" />
-			<column name="nd" type="VARCHAR(255)" />
-			<column name="notes" type="VARCHAR(255)" />
-			<column name="number" type="VARCHAR(255)" />
-			<column name="old_reference" type="VARCHAR(255)" />
-			<column name="origin" type="VARCHAR(255)" />
-			<column name="page_count" type="VARCHAR(255)" />
-			<column name="pages" type="VARCHAR(255)" />
-			<column name="plate_count" type="VARCHAR(255)" />
-			<column name="pub_city" type="VARCHAR(255)" />
-			<column name="pub_id" type="VARCHAR(255)" />
-			<column name="pub_number" type="VARCHAR(255)" />
-			<column name="pub_state" type="VARCHAR(255)" />
-			<column name="publisher" type="VARCHAR(255)" />
-			<column name="publisher_abbv" type="VARCHAR(255)" />
-			<column name="ref_abstract" type="VARCHAR(255)" />
-			<column name="reference_id" type="VARCHAR(255)" />
-			<column name="scale" type="VARCHAR(255)" />
-			<column name="second_title" type="VARCHAR(255)" />
-			<column name="second_title_date" type="VARCHAR(255)" />
-			<column name="series_type" type="VARCHAR(255)" />
-			<column name="sheet_count" type="VARCHAR(255)" />
-			<column name="title" type="VARCHAR(255)" />
-			<column name="url" type="VARCHAR(255)" />
-			<column name="url_intra" type="VARCHAR(255)" />
-			<column name="url_year" type="VARCHAR(255)" />
-			<column name="volume" type="VARCHAR(255)" />
-			<column name="year_date" type="VARCHAR(255)" />
-			<column name="year_hyperlink" type="VARCHAR(255)" />
-		</createTable>
+            <column name="idaho_region" type="VARCHAR(255)"/>
+            <column name="mrdsrec" type="VARCHAR(255)"/>
+            <column name="point" type="VARCHAR(255)"/>
+            <column name="trs" type="VARCHAR(255)"/>
+        </createTable>
+        <createTable tableName="property_file_scans">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints nullable="false" unique="true"
+                             primaryKey="true"/>
+            </column>
+            <column name="author" type="VARCHAR(255)"/>
+            <column name="comments" type="VARCHAR(255)"/>
+            <column name="company" type="VARCHAR(255)"/>
+            <column name="cross_ref_properties_comments"
+                    type="VARCHAR(255)"/>
+            <column name="dates" type="VARCHAR(255)"/>
+            <column name="entry_date" type="VARCHAR(255)"/>
+            <column name="file_name" type="VARCHAR(255)"/>
+            <column name="file_size" type="VARCHAR(255)"/>
+            <column name="folder_name" type="VARCHAR(255)"/>
+            <column name="info_text" type="VARCHAR(255)"/>
+            <column name="initials" type="VARCHAR(255)"/>
+            <column name="item_type" type="VARCHAR(255)"/>
+            <column name="maps" type="VARCHAR(255)"/>
+            <column name="maps_to_review" type="VARCHAR(255)"/>
+            <column name="original_file_name" type="VARCHAR(255)"/>
+            <column name="property_number" type="VARCHAR(255)"/>
+            <column name="property_scan_file" type="VARCHAR(255)"/>
+            <column name="re_scan_file" type="BOOLEAN"/>
+            <column name="year" type="VARCHAR(255)"/>
+        </createTable>
+        <createTable tableName="mrds_lookup">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints nullable="false" unique="true"
+                             primaryKey="true"/>
+            </column>
+            <column name="commodity" type="VARCHAR(255)"/>
+            <column name="county" type="VARCHAR(255)"/>
+            <column name="county2" type="VARCHAR(255)"/>
+            <column name="district" type="VARCHAR(255)"/>
+            <column name="lat" type="VARCHAR(255)"/>
+            <column name="lon" type="VARCHAR(255)"/>
+            <column name="mrds_lookup_key" type="VARCHAR(255)"/>
+            <column name="mrds_rec" type="VARCHAR(255)"/>
+            <column name="range" type="VARCHAR(255)"/>
+            <column name="sec_quad" type="VARCHAR(255)"/>
+            <column name="sec_quads" type="VARCHAR(255)"/>
+            <column name="section" type="VARCHAR(255)"/>
+            <column name="sequence_number" type="VARCHAR(255)"/>
+            <column name="site_name" type="VARCHAR(255)"/>
+            <column name="town" type="VARCHAR(255)"/>
+            <column name="utm_east" type="VARCHAR(255)"/>
+            <column name="utm_north" type="VARCHAR(255)"/>
+            <column name="utm_zone" type="VARCHAR(255)"/>
+        </createTable>
+        <createTable tableName="names">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints nullable="false" unique="true"
+                             primaryKey="true"/>
+            </column>
+            <column name="auto_number" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="metric" type="BIGINT"/>
+            <column name="name_key" type="VARCHAR(255)"/>
+            <column name="r_index2_deposit_field_name" type="VARCHAR(255)"/>
+            <column name="separated_names_deposit_field_name"
+                    type="VARCHAR(255)"/>
+            <column name="sequence_number" type="VARCHAR(255)"/>
+        </createTable>
+        <createTable tableName="reference">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints nullable="false" unique="true"
+                             primaryKey="true"/>
+            </column>
+            <column name="anno" type="VARCHAR(255)"/>
+            <column name="edit_date" type="VARCHAR(255)"/>
+            <column name="edition" type="VARCHAR(255)"/>
+            <column name="enter_date" type="VARCHAR(255)"/>
+            <column name="file_name" type="VARCHAR(255)"/>
+            <column name="folder" type="VARCHAR(255)"/>
+            <column name="hyperlink" type="VARCHAR(255)"/>
+            <column name="initials" type="VARCHAR(255)"/>
+            <column name="institution" type="VARCHAR(255)"/>
+            <column name="is_in" type="VARCHAR(255)"/>
+            <column name="nd" type="VARCHAR(255)"/>
+            <column name="notes" type="VARCHAR(255)"/>
+            <column name="number" type="VARCHAR(255)"/>
+            <column name="old_reference" type="VARCHAR(255)"/>
+            <column name="origin" type="VARCHAR(255)"/>
+            <column name="page_count" type="VARCHAR(255)"/>
+            <column name="pages" type="VARCHAR(255)"/>
+            <column name="plate_count" type="VARCHAR(255)"/>
+            <column name="pub_city" type="VARCHAR(255)"/>
+            <column name="pub_id" type="VARCHAR(255)"/>
+            <column name="pub_number" type="VARCHAR(255)"/>
+            <column name="pub_state" type="VARCHAR(255)"/>
+            <column name="publisher" type="VARCHAR(255)"/>
+            <column name="publisher_abbv" type="VARCHAR(255)"/>
+            <column name="ref_abstract" type="VARCHAR(255)"/>
+            <column name="reference_id" type="VARCHAR(255)"/>
+            <column name="scale" type="VARCHAR(255)"/>
+            <column name="second_title" type="VARCHAR(255)"/>
+            <column name="second_title_date" type="VARCHAR(255)"/>
+            <column name="series_type" type="VARCHAR(255)"/>
+            <column name="sheet_count" type="VARCHAR(255)"/>
+            <column name="title" type="VARCHAR(255)"/>
+            <column name="url" type="VARCHAR(255)"/>
+            <column name="url_intra" type="VARCHAR(255)"/>
+            <column name="url_year" type="VARCHAR(255)"/>
+            <column name="volume" type="VARCHAR(255)"/>
+            <column name="year_date" type="VARCHAR(255)"/>
+            <column name="year_hyperlink" type="VARCHAR(255)"/>
+        </createTable>
 
-		<createTable tableName="reference_relate">
-			<column name="id" type="BIGINT" autoIncrement="true">
-				<constraints nullable="false" unique="true"
-					primaryKey="true" />
-			</column>
-			<column name="notes_for_reference_update2015"
-				type="VARCHAR(255)" />
-			<column name="page_numbers" type="VARCHAR(255)" />
-			<column name="ref_id" type="VARCHAR(255)" />
-			<column name="reference" type="VARCHAR(255)" />
-			<column name="sequence_number" type="VARCHAR(255)" />
-		</createTable>
-	</changeSet>
+        <createTable tableName="reference_relate">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints nullable="false" unique="true"
+                             primaryKey="true"/>
+            </column>
+            <column name="notes_for_reference_update2015"
+                    type="VARCHAR(255)"/>
+            <column name="page_numbers" type="VARCHAR(255)"/>
+            <column name="ref_id" type="VARCHAR(255)"/>
+            <column name="reference" type="VARCHAR(255)"/>
+            <column name="sequence_number" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
 </databaseChangeLog>

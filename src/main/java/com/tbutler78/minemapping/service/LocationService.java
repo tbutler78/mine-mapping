@@ -13,7 +13,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.util.*;
 
 import static java.util.stream.Collectors.toMap;
@@ -39,7 +38,6 @@ public class LocationService {
 
 
 	public List<Location> findAll() {
-		//return userDao.findAll();
 		return locationRepository.findAll();
 	}
 
@@ -76,7 +74,7 @@ public class LocationService {
 						newCounty.setName(s);
 						saveCounty(newCounty);
 					}
-					log.info(s + ": " + (c != null ? c.toString() : "none"));
+					log.info(s, ": ", (c != null ? c.toString() : "none"));
 				});
 
 		} catch (Exception e) {

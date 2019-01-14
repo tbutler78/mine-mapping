@@ -6,24 +6,25 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Objects;
 
-
 @Entity
-@Table(name="mines")
-public class Mine  implements Serializable, Comparable<Mine>{
+@Table(name = "mines")
+public class Mine implements Serializable, Comparable<Mine> {
 
 	private static final long serialVersionUID = -5708387226479386241L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 
 	/**
-	 * Primary Key for Access: For the main entry for each property, the SequenceNumber is the same as the Property Number.
+	 * Primary Key for Access: For the main entry for each property, the
+	 * SequenceNumber is the same as the Property Number.
 	 */
 	private String sequenceNumber;
 
 	/**
-	 * Property Number, including quadrangle abbreviation and sequence number. This field is archaic and now obsolete.
+	 * Property Number, including quadrangle abbreviation and sequence number. This
+	 * field is archaic and now obsolete.
 	 */
 	private String newLoc;
 
@@ -32,50 +33,59 @@ public class Mine  implements Serializable, Comparable<Mine>{
 	 */
 	private String mapLoc;
 
-
 	/**
 	 * Name and synonym names for the mine or prospect.
 	 */
 	private String deposit;
 
 	/**
-	 * Latitude in NAD27, as digitized from 1:250,000 base AND see "location_type" field for information about  updated  locations.
+	 * Latitude in NAD27, as digitized from 1:250,000 base AND see "location_type"
+	 * field for information about updated locations.
 	 */
 	private BigDecimal latitude;
 
 	/**
-	 * Longitude in NAD 27, as digitized from 1:250,000 base AND see "location_type" field for information about  updated  locations.
+	 * Longitude in NAD 27, as digitized from 1:250,000 base AND see "location_type"
+	 * field for information about updated locations.
 	 */
 	private BigDecimal longitude;
 
-
 	/**
-	 * Location information: 3= Locations updated in 2009 using data from mineral property files and verified on 1:24,000 scale quadrangles.
+	 * Location information: 3= Locations updated in 2009 using data from mineral
+	 * property files and verified on 1:24,000 scale quadrangles.
 	 */
 	private Integer locationType;
 
 	/**
-	 * Degree Minute Second Latitude, as digitized from 1:250,000 base; or as updated from field work (see Updates table)  AND  see "location_type" field for information about  updated  locations.
+	 * Degree Minute Second Latitude, as digitized from 1:250,000 base; or as
+	 * updated from field work (see Updates table) AND see "location_type" field for
+	 * information about updated locations.
 	 */
 	private BigDecimal dmsLat;
 
 	/**
-	 * Degree Minute Second Longitude, as digitized from 1:250,000 base; or as updated from field work (see Updates table)  AND  see "location_type" field for information about  updated  locations.
+	 * Degree Minute Second Longitude, as digitized from 1:250,000 base; or as
+	 * updated from field work (see Updates table) AND see "location_type" field for
+	 * information about updated locations.
 	 */
 	private BigDecimal dmsLong;
 
-
 	/**
-	 * Name of the USGS 1:24,000 Scale Quad Name.  This was taken from the USGS database for Idaho and referenced against IDWR 1:24,000 Quad index.  Names were changed based on the name of the USGS quad. Some common names were spelled out (ex. Mtn to Mountain).
+	 * Name of the USGS 1:24,000 Scale Quad Name. This was taken from the USGS
+	 * database for Idaho and referenced against IDWR 1:24,000 Quad index. Names
+	 * were changed based on the name of the USGS quad. Some common names were
+	 * spelled out (ex. Mtn to Mountain).
 	 */
-	@Column(name="twentyfour_k_kquad")
+	@Column(name = "twentyfour_k_kquad")
 	private String twentyFourQuad;
 
-
 	/**
-	 * Name of the USGS 1:100,000 Scale Quad name.  This was taken from the USGS database for Idaho and referenced against IDWR 1:100,000 Quad index. Names were changed based on the name of the USGS quad. Some common names were spelled out (ex. Mtn to Mountain).
+	 * Name of the USGS 1:100,000 Scale Quad name. This was taken from the USGS
+	 * database for Idaho and referenced against IDWR 1:100,000 Quad index. Names
+	 * were changed based on the name of the USGS quad. Some common names were
+	 * spelled out (ex. Mtn to Mountain).
 	 */
-	@Column(name="hundred_k_quad")
+	@Column(name = "hundred_k_quad")
 	private String oneHundredQuad;
 
 	/**
@@ -84,7 +94,8 @@ public class Mine  implements Serializable, Comparable<Mine>{
 	private String countyName;
 	private String trs;
 	/**
-	 * Surface Management Agency of Idaho; based on IGS mine locations against 2009 INSIDE IDAHO (http://inside.uidaho.edu)
+	 * Surface Management Agency of Idaho; based on IGS mine locations against 2009
+	 * INSIDE IDAHO (http://inside.uidaho.edu)
 	 */
 	private String landOwner;
 	private String idahoRegion;
@@ -93,14 +104,15 @@ public class Mine  implements Serializable, Comparable<Mine>{
 	 */
 	private String fsAgencyName;
 	/**
-	 * Old number associated with IGS "Mines and Prospects Maps" series; last updated in 1992
+	 * Old number associated with IGS "Mines and Prospects Maps" series; last
+	 * updated in 1992
 	 */
 	private String orangeNum;
 
 	/**
 	 * 1x2 degreeQuadrangle name
 	 */
-	@Column(name="one_by_two_degreeQuadrangle")
+	@Column(name = "one_by_two_degreeQuadrangle")
 	private String oneByTwoDegreeQuad;
 
 	/**
@@ -119,15 +131,17 @@ public class Mine  implements Serializable, Comparable<Mine>{
 	private String qSection;
 
 	/**
-	 * Longitude  in WGS84 datum: as digitized from 1:250,000 base AND see "location_type" field for information about updated  locations.
+	 * Longitude in WGS84 datum: as digitized from 1:250,000 base AND see
+	 * "location_type" field for information about updated locations.
 	 */
-	@Column(name="lon_WGS84")
+	@Column(name = "lon_WGS84")
 	private BigDecimal longwgs;
 
 	/**
-	 * Latitude  in WGS84 datum:  as digitized from 1:250,000 base AND see "location_type" field for information about updated  locations.
+	 * Latitude in WGS84 datum: as digitized from 1:250,000 base AND see
+	 * "location_type" field for information about updated locations.
 	 */
-	@Column(name="lat_WGS84")
+	@Column(name = "lat_WGS84")
 	private BigDecimal latwgs;
 	private String mrdsrec;
 
@@ -145,7 +159,6 @@ public class Mine  implements Serializable, Comparable<Mine>{
 
 	@Transient
 	private List<PropertyFileScan> propertyFileScans;
-
 
 	public long getId() {
 		return id;
@@ -347,7 +360,6 @@ public class Mine  implements Serializable, Comparable<Mine>{
 		this.mrdsrec = mrdsrec;
 	}
 
-
 	public String getPoint() {
 		return point;
 	}
@@ -364,10 +376,9 @@ public class Mine  implements Serializable, Comparable<Mine>{
 		this.propertyFileScans = propertyFileScans;
 	}
 
-	public void addPropertyFileScan(PropertyFileScan propertyFileScan){
+	public void addPropertyFileScan(PropertyFileScan propertyFileScan) {
 		this.propertyFileScans.add(propertyFileScan);
 	}
-
 
 	public String getqSection() {
 		return qSection;
@@ -395,21 +406,24 @@ public class Mine  implements Serializable, Comparable<Mine>{
 
 	@Override
 	public int compareTo(Mine other) {
-		if (this.deposit == null){
+		if (this.deposit == null) {
 			return -1;
-		}
-		else if (this.deposit.equals(other.getDeposit()))
-			return 0;
-		else if ((this.deposit).compareTo(other.getDeposit()) > 0)
-			return 1;
+		} else if (this.deposit.equals(other.getDeposit())) {
+            return 0;
+        }
+		else if ((this.deposit).compareTo(other.getDeposit()) > 0) {
+            return 1;
+        }
 		else
 			return -1;
 	}
 
 	@Override
 	public boolean equals(Object o) {
-		if (this == o) return true;
-		if (o == null || getClass() != o.getClass()) return false;
+		if (this == o)
+			return true;
+		if (o == null || getClass() != o.getClass())
+			return false;
 		Mine mine = (Mine) o;
 		return Objects.equals(sequenceNumber, mine.sequenceNumber);
 	}
@@ -422,34 +436,15 @@ public class Mine  implements Serializable, Comparable<Mine>{
 
 	@Override
 	public String toString() {
-		return "Mine{" +
-				"id=" + id +
-				", sequenceNumber='" + sequenceNumber + '\'' +
-				", newLoc='" + newLoc + '\'' +
-				", mapLoc='" + mapLoc + '\'' +
-				", deposit='" + deposit + '\'' +
-				", latitude=" + latitude +
-				", longitude=" + longitude +
-				", locationType='" + locationType + '\'' +
-				", dmsLat=" + dmsLat +
-				", dmsLong=" + dmsLong +
-				", twentyFourQuad='" + twentyFourQuad + '\'' +
-				", oneHundredQuad='" + oneHundredQuad + '\'' +
-				", countyName='" + countyName + '\'' +
-				", trs='" + trs + '\'' +
-				", landOwner='" + landOwner + '\'' +
-				", idahoRegion='" + idahoRegion + '\'' +
-				", fsAgencyName='" + fsAgencyName + '\'' +
-				", orangeNum='" + orangeNum + '\'' +
-				", oneByTwoDegreeQuad='" + oneByTwoDegreeQuad + '\'' +
-				", township='" + township + '\'' +
-				", range='" + range + '\'' +
-				", section='" + section + '\'' +
-				", longwgs=" + longwgs +
-				", latwgs=" + latwgs +
-				", mrdsrec='" + mrdsrec + '\'' +
-				", point='" + point + '\'' +
-				", propertyFileScans=" + propertyFileScans +
-				'}';
+		return "Mine{" + "id=" + id + ", sequenceNumber='" + sequenceNumber + '\'' + ", newLoc='" + newLoc + '\''
+				+ ", mapLoc='" + mapLoc + '\'' + ", deposit='" + deposit + '\'' + ", latitude=" + latitude
+				+ ", longitude=" + longitude + ", locationType='" + locationType + '\'' + ", dmsLat=" + dmsLat
+				+ ", dmsLong=" + dmsLong + ", twentyFourQuad='" + twentyFourQuad + '\'' + ", oneHundredQuad='"
+				+ oneHundredQuad + '\'' + ", countyName='" + countyName + '\'' + ", trs='" + trs + '\''
+				+ ", landOwner='" + landOwner + '\'' + ", idahoRegion='" + idahoRegion + '\'' + ", fsAgencyName='"
+				+ fsAgencyName + '\'' + ", orangeNum='" + orangeNum + '\'' + ", oneByTwoDegreeQuad='"
+				+ oneByTwoDegreeQuad + '\'' + ", township='" + township + '\'' + ", range='" + range + '\''
+				+ ", section='" + section + '\'' + ", longwgs=" + longwgs + ", latwgs=" + latwgs + ", mrdsrec='"
+				+ mrdsrec + '\'' + ", point='" + point + '\'' + ", propertyFileScans=" + propertyFileScans + '}';
 	}
 }
