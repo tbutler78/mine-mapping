@@ -1,12 +1,14 @@
 package com.tbutler78.minemapping.integrations.importer;
 
 import com.tbutler78.minemapping.domain.Name;
-import com.tbutler78.minemapping.integrations.AccessTable;
 import com.tbutler78.minemapping.repository.NameRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by butlert on 4/12/17.
@@ -21,7 +23,7 @@ public class NameImporter extends Importer {
 
     @Override
     public void processData(){
-        getData().getRows().stream().forEach( t -> {
+        getData().forEach( t -> {
             String nameKey = t.get("NameKey");
             log.info(nameKey);
 
@@ -49,8 +51,8 @@ public class NameImporter extends Importer {
 
     }
 
-    protected AccessTable getData() {
+    protected List<HashMap<String, String>> getData() {
         return
-                accessAdapter.getResultSet("SELECT * FROM Names", 1000);
+                accessAdapter.getResultSet("SELECT * FROM Names", 1000).getRows();
 
     }}

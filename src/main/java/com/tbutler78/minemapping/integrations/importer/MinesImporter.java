@@ -1,7 +1,6 @@
 package com.tbutler78.minemapping.integrations.importer;
 
 import com.tbutler78.minemapping.domain.Mine;
-import com.tbutler78.minemapping.integrations.AccessTable;
 import com.tbutler78.minemapping.repository.MineRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by butlert on 4/12/17.
@@ -24,7 +24,7 @@ public class MinesImporter extends Importer {
 
     @Override
     public void processData(){
-        getData().getRows().stream().forEach( t -> {
+        getData().forEach( t -> {
             log.info("Processing Mine");
             String sequenceNumber = t.get("SequenceNumber");
             Mine mine;
@@ -81,8 +81,8 @@ public class MinesImporter extends Importer {
         return mine;
     }
 
-    protected AccessTable getData() {
+    protected List<HashMap<String, String>> getData() {
         return
-                accessAdapter.getResultSet("SELECT * FROM Mines", 100);
+                accessAdapter.getResultSet("SELECT * FROM Mines", 10000).getRows();
 
     }}

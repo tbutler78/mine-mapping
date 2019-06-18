@@ -1,19 +1,30 @@
-# Created by .ignore support plugin (hsz.mobi)
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+.*
+**/out/
+**/.DS_Store
+version-file.txt
 
-/.clover/
-/.idea/
-/.settings/
-/target/
-/minemapping.iml
-
-/data/
-/src/main/resources/batch/MinesAndProspects_1.2016.1..mdb
-postgresql-42.0.0.jar
-.DS_Store
-bin/
-.metadata/
+### STS ###
+.apt_generated
 .classpath
-RemoteSystemsTempFiles/
-Servers/
+.factorypath
 .project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 .vscode/

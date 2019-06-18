@@ -1,0 +1,41 @@
+version: '3.2'
+networks:
+  default:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.19.0.0/24
+
+services:
+  dns:
+    image: coredns/coredns:1.2.0
+    command: -conf /etc/coredns/Corefile
+    container_name: dns
+    networks:
+      default:
+        ipv4_address: 172.19.0.2
+        aliases: [ns1.localhost]
+    ports:
+      - "5300:53/udp"
+    volumes:
+      - ./docker/dns:/etc/coredns
+
+  postgres:
+    image: postgres:9.6
+    restart: always
+    depends_on: [dns]
+    dns: [172.19.0.2]
+    networks:
+      default:
+        aliases: [db1.localhost]
+    ports:
+      - "5432:5432"
+      # environment:
+      # - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - ../../dev/people_master_schema_postgres.sql:/docker-entrypoint-initdb.d/people_master_schema_postgres.sql
+      #- ./postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: mine-mapping-db

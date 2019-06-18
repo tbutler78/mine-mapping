@@ -1,12 +1,14 @@
 package com.tbutler78.minemapping.integrations.importer;
 
 import com.tbutler78.minemapping.domain.PropertyFileScan;
-import com.tbutler78.minemapping.integrations.AccessTable;
 import com.tbutler78.minemapping.repository.PropertyFileScanRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import java.util.HashMap;
+import java.util.List;
 
 @Component
 public class PropertyFileScanImporter extends Importer {
@@ -17,7 +19,7 @@ public class PropertyFileScanImporter extends Importer {
 
     @Override
     public void processData() {
-        getData().getRows().stream().forEach(t ->{
+        getData().forEach(t ->{
             log.info(t.get("FileName") + " " +  t.get("InfoText"));
             PropertyFileScan pfs = new PropertyFileScan();
             pfs.setAuthor(t.get("Author"));
@@ -51,7 +53,7 @@ public class PropertyFileScanImporter extends Importer {
     }
 
     @Override
-    AccessTable getData() {
-        return accessAdapter.getResultSet("SELECT * FROM PropertyFileScans", 100);
+    List<HashMap<String, String>> getData() {
+        return accessAdapter.getResultSet("SELECT * FROM PropertyFileScans", 100).getRows();
     }
 }

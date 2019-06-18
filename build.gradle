@@ -1,0 +1,67 @@
+configurations {
+    deployerJars
+}
+
+buildscript {
+    ext {
+        springBootVersion = '2.1.3.RELEASE'
+        gradlewVersion = '4.2.1'
+        confluentVersion = '4.1.0'
+        spotbugsPluginVersion = '1.6.5'
+        spotbugsVersion = '3.1.9'
+        sherterGoogleJavaFormatPlugin = '0.8'
+        googleJavaFormatVersion = '1.7'
+    }
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("gradle.plugin.com.github.spotbugs:spotbugs-gradle-plugin:${spotbugsPluginVersion}")
+        classpath("gradle.plugin.com.github.sherter.google-java-format:google-java-format-gradle-plugin:${sherterGoogleJavaFormatPlugin}")
+
+    }
+}
+
+
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group 'com.tbutler78.minemapping'
+version '1.0-SNAPSHOT'
+description 'minemapping'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven { url "http://packages.confluent.io/maven/" }
+    mavenCentral()
+    jcenter()
+
+}
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('org.springframework.boot:spring-boot-starter-security')
+    compile('com.vividsolutions:jts:1.8')
+    compile('org.postgresql:postgresql')
+    compile('org.liquibase:liquibase-core')
+    runtimeOnly('net.sf.ucanaccess:ucanaccess:4.0.1')
+    runtimeOnly('com.sun.xml.bind:jaxb-impl')
+    runtimeOnly('com.sun.xml.bind:jaxb-core')
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('com.jayway.jsonpath:json-path-assert')
+    testCompile('org.hibernate:hibernate-validator:5.3.6.Final')
+    testRuntime('com.h2database:h2')
+    deployerJars('org.springframework.build.aws:org.springframework.build.aws.maven:3.0.0.RELEASE')
+
+}
+
